@@ -1,0 +1,23 @@
+[0.513s] Invoking command in '/home/sylas/zhongxi/build/demo_py': PYTHONPATH=/home/sylas/zhongxi/build/demo_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sylas/zhongxi/install/demo_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sylas/zhongxi/build/demo_py/build --no-deps symlink_data
+[0.711s] running develop
+[0.788s] running egg_info
+[0.788s] creating demo_py.egg-info
+[0.788s] writing demo_py.egg-info/PKG-INFO
+[0.789s] writing dependency_links to demo_py.egg-info/dependency_links.txt
+[0.789s] writing entry points to demo_py.egg-info/entry_points.txt
+[0.789s] writing requirements to demo_py.egg-info/requires.txt
+[0.789s] writing top-level names to demo_py.egg-info/top_level.txt
+[0.789s] writing manifest file 'demo_py.egg-info/SOURCES.txt'
+[0.790s] reading manifest file 'demo_py.egg-info/SOURCES.txt'
+[0.790s] writing manifest file 'demo_py.egg-info/SOURCES.txt'
+[0.791s] running build_ext
+[0.791s] Creating /home/sylas/zhongxi/install/demo_py/lib/python3.10/site-packages/demo-py.egg-link (link to .)
+[0.791s] 
+[0.791s] Installed /home/sylas/zhongxi/build/demo_py
+[0.791s] running symlink_data
+[0.791s] creating /home/sylas/zhongxi/install/demo_py/share/ament_index
+[0.791s] creating /home/sylas/zhongxi/install/demo_py/share/ament_index/resource_index
+[0.791s] creating /home/sylas/zhongxi/install/demo_py/share/ament_index/resource_index/packages
+[0.791s] symbolically linking /home/sylas/zhongxi/build/demo_py/resource/demo_py -> /home/sylas/zhongxi/install/demo_py/share/ament_index/resource_index/packages
+[0.791s] symbolically linking /home/sylas/zhongxi/build/demo_py/package.xml -> /home/sylas/zhongxi/install/demo_py/share/demo_py
+[0.811s] Invoked command in '/home/sylas/zhongxi/build/demo_py' returned '0': PYTHONPATH=/home/sylas/zhongxi/build/demo_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sylas/zhongxi/install/demo_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sylas/zhongxi/build/demo_py/build --no-deps symlink_data

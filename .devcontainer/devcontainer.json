@@ -1,0 +1,51 @@
+{
+    "name": "zhongxi",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:latest": {},
+        "ghcr.io/devcontainers/features/node:latest": {},
+        "ghcr.io/devcontainers/features/python:latest": {}
+    },
+    "containerEnv": {
+        "XDG_SESSION_TYPE": "wayland",
+        "WAYLAND_DISPLAY": "wayland-0",
+        "QT_QPA_PLATFORM": "wayland",
+        "http_proxy": "http://host.docker.internal:7897",
+        "https_proxy": "http://host.docker.internal:7897",
+        "no_proxy": "localhost,127.0.0.1,::1,.local,*.docker.internal,host.docker.internal",
+        "APT_PROXY": "http://host.docker.internal:7897",
+        "DEBIAN_FRONTEND": "noninteractive",
+        "LANG": "C.UTF-8",
+        "LC_ALL": "C.UTF-8"
+    },
+    "runArgs": [
+        "--add-host=host.docker.internal:host-gateway",
+        "--mount",
+        "type=bind,source=/run/user/1000/wayland-0,target=/vscode-wayland/wayland-0,readonly",
+        "--mount",
+        "type=volume,source=vscode-wayland-runtime,target=/vscode-wayland-runtime"
+    ],
+    "postStartCommand": ["bash", "-lc", ".devcontainer/scripts/postStart.sh"],
+
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+                "files.eol": "\n",
+                "editor.tabSize": 2
+            },
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-azuretools.vscode-docker",
+                "ms-vscode-remote.remote-containers",
+                "ros.ros2-vscode-extension",
+                "redhat.vscode-yaml"
+            ]
+        }
+    },
+    "remoteUser": "root"
+}
