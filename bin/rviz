@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Rviz2启动脚本
+# 自动设置环境并启动Rviz2
+
+echo "正在启动Rviz2..."
+
+# 设置工作目录
+cd /home/chuil/Desktop/zhongxi
+
+# 设置ROS 2环境
+source install/setup.bash
+
+# 设置X11显示
+export DISPLAY=:0
+
+# 验证环境
+echo "环境检查:"
+echo "  ROS版本: ${ROS_DISTRO:-未设置}"
+echo "  DISPLAY: ${DISPLAY:-未设置}"
+
+# 检查Rviz2是否可用
+if ! command -v rviz2 &>/dev/null; then
+    echo "错误: rviz2命令不可用"
+    echo "请确保已正确安装ROS 2和Rviz2包"
+    exit 1
+fi
+
+echo "启动Rviz2..."
+# 启动Rviz2，可选参数传递
+rviz2 "$@"

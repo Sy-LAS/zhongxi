@@ -1,0 +1,13 @@
+sensor_interfaces:
+  ros__parameters:
+    camera_id: 0
+    frame_rate: 30.0
+    width: 640
+    height: 480
+    exposure_mode: 'manual'
+    exposure_time: 10000  # microseconds
+    gain: 1.0
+    brightness: 0.5
+    contrast: 0.5
+    saturation: 0.5
+    flip_image: false  # 是否翻转图像

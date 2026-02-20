@@ -1,0 +1,73 @@
+# 临时文件和系统文件
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+
+# 编译输出和构建目录
+build/
+install/
+log/
+learning/
+
+# IDE特定文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 缓存和临时文件
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# 编译器生成的文件
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# Qt相关
+*.moc
+*.moc.cpp
+*.qm
+*.ui
+*.qrc
+
+# ROS2特定
+*.db3
+*.db3-shm
+*.db3-wal
+
+# 日志文件
+*.log
+logs/
+
+# 依赖和虚拟环境
+node_modules/
+venv/
+env/
+.venv/
+
+# 编辑器备份文件
+*~
+.#*
+
+# 配置文件（如果包含敏感信息）
+config/fastdds_config.xml
+
+# 传感器接口SDK中的大型二进制文件
+src/sensor_interfaces/sdk/*/bin/
+src/sensor_interfaces/sdk/*/lib/
+
+# 可能包含敏感信息的文件
+**/password.txt
+**/secret.key
+**/token.txt

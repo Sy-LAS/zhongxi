@@ -1,0 +1,23 @@
+lidar_driver:
+  ros__parameters:
+    port: /dev/ydlidar
+    frame_id: laser_link
+    ignore_array: ""
+    baudrate: 230400
+    lidar_type: 1
+    device_type: 0
+    sample_rate: 4          # 4000次/秒测距频率
+    abnormal_check_count: 4
+    resolution_fixed: true
+    reversion: false
+    inverted: true
+    auto_reconnect: true
+    isSingleChannel: false  # 多通道
+    intensity: false
+    support_motor_dtr: false
+    angle_max: 180.0        # 0-360度扫描
+    angle_min: -180.0
+    range_max: 8.0          # 对80%反射率物体最大8m
+    range_min: 0.12         # 对10%反射率物体最小0.12m
+    frequency: 8.0          # 典型扫描频率8Hz
+    invalid_range_is_inf: false

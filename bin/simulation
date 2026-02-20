@@ -1,0 +1,18 @@
+#!/bin/bash
+# 统一仿真环境启动脚本
+
+PROJECT_DIR="/home/chuil/Desktop/zhongxi"
+SIM_DIR="$PROJECT_DIR/simulations"
+
+echo "=== 仿真环境启动器 ==="
+echo "1. 启动Rviz可视化:"
+echo "   $SIM_DIR/rviz/run_rviz.sh"
+echo ""
+echo "2. 启动Gazebo仿真 (安装后):"
+echo "   gz sim"
+echo ""
+echo "3. 启动GraphSLAM:"
+echo "   $PROJECT_DIR/run_graphslam_complete.sh"
+echo ""
+echo "4. 环境恢复:"
+echo "   $PROJECT_DIR/nomachine_recovery.sh"

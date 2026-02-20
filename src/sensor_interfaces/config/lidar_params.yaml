@@ -1,0 +1,32 @@
+lidar_driver:
+  ros__parameters:
+    # YDLidar X3 Pro 参数配置 - 参考官方驱动实现
+    port: "/dev/ydlidar"           # 使用udev规则创建的稳定设备路径
+    frame_id: "laser_frame"        # 参照官方驱动
+    ignore_array: ""               # 参照官方驱动
+    baudrate: 115200               # X3 Pro标准波特率
+    lidar_type: 1                  # TYPE_TRIANGLE
+    device_type: 0                 # YDLIDAR_TYPE_SERIAL
+    sample_rate: 3                 # X3 Pro单通道使用3k
+    abnormal_check_count: 4        # 参照官方驱动
+    
+    # 固定分辨率
+    resolution_fixed: true         # 参照官方驱动
+    
+    # 角度范围配置 (单位: 度，参照官方驱动)
+    angle_max: 180.0               # 最大角度 (度)
+    angle_min: -180.0              # 最小角度 (度)
+    
+    # 距离范围配置 (单位: 米)
+    range_max: 8.0                 # 最大测距
+    range_min: 0.1                 # 最小测距
+    
+    # 其他配置
+    intensity: false               # 是否启用强度
+    inverted: true                 # 是否倒置 (参照官方驱动)
+    auto_reconnect: true           # 自动重连
+    isSingleChannel: true          # 单通道模式 (官方参数名)
+    support_motor_dtr: false       # 电机DTR控制 (官方参数名)
+    
+    frequency: 8.0                 # 扫描频率: 5-12Hz
+    invalid_range_is_inf: false    # 无效范围处理
