@@ -1,29 +1,87 @@
 cmake_minimum_required(VERSION 3.14)
+project(graphslam)
 
-set(CMAKE_LEGACY_CYGWIN_WIN32 0)
+# 设置C++标准
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
-project(GraphSLAM)
-
-# 设置自动处理Qt文件
+# Qt自动处理
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-# 查找必要的包
+# -----------------------------
+# 查找ROS2依赖
+# -----------------------------
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)  # 新增nav_msgs依赖
 find_package(geometry_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)  # 新增
+find_package(std_msgs REQUIRED)  # 新增
 
-# qt components used (also by qglviewer): Core Gui Xml OpenGL Widgets
+# -----------------------------
+# 查找Qt5
+# -----------------------------
 find_package(Qt5 REQUIRED COMPONENTS Core Gui Xml OpenGL Widgets)
-find_package(QGLViewer REQUIRED)
 
-# Include directories
+# -----------------------------
+# 查找QGLViewer（自动查找，适配不同平台）
+# -----------------------------
+find_package(libQGLViewer-qt5 QUIET)
+if(libQGLViewer-qt5_FOUND)
+    set(QGLViewer_INCLUDE_DIRS ${libQGLViewer-qt5_INCLUDE_DIRS})
+    set(QGLViewer_LIBRARIES ${libQGLViewer-qt5_LIBRARIES})
+else()
+    # 备用方案：尝试常见路径
+    find_path(QGLVIEWER_INCLUDE_DIR qglviewer.h
+        PATHS /usr/include/QGLViewer /usr/include/aarch64-linux-gnu/QGLViewer
+        NO_DEFAULT_PATH
+    )
+    find_library(QGLVIEWER_LIBRARY QGLViewer-qt5
+        PATHS /usr/lib /usr/lib/aarch64-linux-gnu
+        NO_DEFAULT_PATH
+    )
+    
+    if(QGLVIEWER_INCLUDE_DIR AND QGLVIEWER_LIBRARY)
+        set(QGLViewer_INCLUDE_DIRS ${QGLVIEWER_INCLUDE_DIR})
+        set(QGLViewer_LIBRARIES ${QGLVIEWER_LIBRARY})
+        message(STATUS "Found QGLViewer: ${QGLVIEWER_INCLUDE_DIR}")
+    else()
+        message(WARNING "QGLViewer not found, GUI target will be disabled")
+        set(DISABLE_GUI TRUE)
+    endif()
+endif()
+
+# -----------------------------
+# 查找g2o和Eigen3
+# -----------------------------
+find_package(g2o REQUIRED)
+find_package(Eigen3 REQUIRED)
+
+# g2o兼容处理
+if(NOT TARGET g2o::core)
+    message(STATUS "Using legacy g2o variables")
+    set(G2O_LIBRARIES 
+        g2o_core 
+        g2o_solver_eigen 
+        g2o_types_slam2d 
+        g2o_opengl_helper
+    )
+else()
+    set(G2O_LIBRARIES g2o::core g2o::solver_eigen g2o::types_slam2d g2o::opengl_helper)
+endif()
+
+# -----------------------------
+# 头文件路径
+# -----------------------------
 include_directories(SYSTEM
-    ${QGLVIEWER_INCLUDE_DIR}
+    ${QGLViewer_INCLUDE_DIRS}
+    ${EIGEN3_INCLUDE_DIR}
     ${Qt5Core_INCLUDE_DIRS}
     ${Qt5Gui_INCLUDE_DIRS}
     ${Qt5Xml_INCLUDE_DIRS}
@@ -31,99 +89,152 @@ include_directories(SYSTEM
     ${Qt5OpenGL_INCLUDE_DIRS}
 )
 
-# Include directories for this project
 include_directories(
     include
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-# 递归查找源文件
+# -----------------------------
+# 目标1：graphslam_g2o（GUI版本）- 条件编译
+# -----------------------------
+if(NOT DISABLE_GUI AND QGLViewer_LIBRARIES)
+    add_executable(graphslam_g2o
+        main_window.cpp
+        slam2d_viewer.cpp
+        slam2d_viewer.cpp
+        slam2d_viewer.h
+        slam2d_g2o.cpp
+        base_main_window.ui
+        main_window.h
+    )
+
+    target_link_libraries(graphslam_g2o
+        ${G2O_LIBRARIES}
+        ${QGLViewer_LIBRARIES}
+        Qt5::Core
+        Qt5::Gui
+        Qt5::Xml
+        Qt5::Widgets
+        Qt5::OpenGL
+    )
+
+    set_target_properties(graphslam_g2o PROPERTIES OUTPUT_NAME graphslam_g2o)
+    
+    # 安装GUI目标
+    install(TARGETS graphslam_g2o DESTINATION lib/${PROJECT_NAME})
+else()
+    message(STATUS "Skipping GUI target due to missing dependencies")
+endif()
+
+# -----------------------------
+# 目标2：graphslam_node（ROS2节点）
+# -----------------------------
 file(GLOB_RECURSE SLAM2D_CORE_SOURCES "src/slam2d/*.cpp")
 file(GLOB_RECURSE NODE_SOURCES "src/node/*.cpp")
 file(GLOB_RECURSE UTIL_SOURCES "src/utils/*.cpp")
 
-# 检查源文件是否存在
-if(NOT SLAM2D_CORE_SOURCES)
-    message(FATAL_ERROR "No SLAM2D core source files found in src/slam2d/")
-endif()
-
-if(NOT NODE_SOURCES)
-    message(WARNING "No node source files found in src/node/")
-endif()
-
-# 创建主要的GraphSLAM可执行文件（GUI版本）
-add_executable(graphslam_g2o
-  main_window.cpp
-  slam2d_viewer.cpp
-  slam2d_viewer.h
-  slam2d_g2o.cpp
-  base_main_window.ui  # CMake会自动处理UI文件
-  main_window.h        # CMake会自动处理moc文件
-)
-
-# 创建ROS2节点可执行文件（只有当节点源文件存在时）
 if(NODE_SOURCES)
     add_executable(graphslam_node
-      ${NODE_SOURCES}
-      ${SLAM2D_CORE_SOURCES}
-      ${UTIL_SOURCES}
+        ${NODE_SOURCES}
+        ${SLAM2D_CORE_SOURCES}
+        ${UTIL_SOURCES}
     )
     
-    # 链接ROS2相关库
+    target_include_directories(graphslam_node PRIVATE
+        include
+        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${EIGEN3_INCLUDE_DIR}
+    )
+    
     ament_target_dependencies(graphslam_node
         rclcpp
         sensor_msgs
+        nav_msgs          # 添加nav_msgs
         geometry_msgs
         tf2
         tf2_ros
     )
     
-    # 设置输出名称
+    target_link_libraries(graphslam_node
+        ${G2O_LIBRARIES}
+    )
+    
     set_target_properties(graphslam_node PROPERTIES OUTPUT_NAME graphslam_node)
 endif()
 
-# 设置GUI可执行文件属性
-set_target_properties(graphslam_g2o PROPERTIES OUTPUT_NAME graphslam_g2o)
-
-if(Qt5_POSITION_INDEPENDENT_CODE)
-    set_property(TARGET graphslam_g2o PROPERTY COMPILE_FLAGS -fPIC)
-    message(STATUS "Generating position independent code for GraphSLAM because Qt5 was built with -reduce-relocations")
-endif()
-
-# 链接GUI相关库
-target_link_libraries(graphslam_g2o 
-    core solver_eigen types_slam2d opengl_helper
-    ${QGLVIEWER_LIBRARY}
-    ${Qt5Core_LIBRARIES}
-    ${Qt5Gui_LIBRARIES}
-    ${Qt5Xml_LIBRARIES}
-    ${Qt5Widgets_LIBRARIES}
-    ${Qt5OpenGL_LIBRARIES}
+# -----------------------------
+# 目标3：map_manager_node（地图管理节点）
+# -----------------------------
+add_executable(map_manager_node
+    map_manager_node.cpp
 )
 
+target_include_directories(map_manager_node PRIVATE
+    include
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${EIGEN3_INCLUDE_DIR}
+)
+
+ament_target_dependencies(map_manager_node
+    rclcpp
+    sensor_msgs
+    nav_msgs
+    geometry_msgs
+    tf2
+    tf2_ros
+    tf2_geometry_msgs
+    std_msgs
+)
+
+target_link_libraries(map_manager_node
+    ${G2O_LIBRARIES}
+)
+
+set_target_properties(map_manager_node PROPERTIES OUTPUT_NAME map_manager_node)
+
+# -----------------------------
+# 目标4：map_saver_node（地图保存节点）
+# -----------------------------
+add_executable(map_saver_node
+    map_saver_node.cpp
+)
+
+target_include_directories(map_saver_node PRIVATE
+    include
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${EIGEN3_INCLUDE_DIR}
+)
+
+ament_target_dependencies(map_saver_node
+    rclcpp
+    sensor_msgs
+    nav_msgs
+    geometry_msgs
+    std_msgs
+)
+
+set_target_properties(map_saver_node PROPERTIES OUTPUT_NAME map_saver_node)
+
+# -----------------------------
 # 安装规则
-install(TARGETS graphslam_g2o
-  DESTINATION lib/${PROJECT_NAME})
-
+# -----------------------------
 if(TARGET graphslam_node)
-    install(TARGETS graphslam_node
-      DESTINATION lib/${PROJECT_NAME})
+    install(TARGETS graphslam_node map_manager_node map_saver_node DESTINATION lib/${PROJECT_NAME})
 endif()
 
-# 安装launch文件
+# 只有当GUI目标存在时才安装
+if(TARGET graphslam_g2o)
+    install(TARGETS graphslam_g2o DESTINATION lib/${PROJECT_NAME})
+endif()
+
 if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/launch)
-    install(DIRECTORY launch
-      DESTINATION share/${PROJECT_NAME}/)
+    install(DIRECTORY launch DESTINATION share/${PROJECT_NAME}/)
 endif()
 
-# 安装配置文件
 if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/config)
-    install(DIRECTORY config
-      DESTINATION share/${PROJECT_NAME}/)
+    install(DIRECTORY config DESTINATION share/${PROJECT_NAME}/)
 endif()
 
-# 安装头文件
-install(DIRECTORY include/
-  DESTINATION include/${PROJECT_NAME})
+install(DIRECTORY include/ DESTINATION include/${PROJECT_NAME})
 
 ament_package()

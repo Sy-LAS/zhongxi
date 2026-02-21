@@ -1,0 +1,31 @@
+lidar_driver:
+  ros__parameters:
+    # YDLidar X3 Pro参数配置
+    port: "/dev/ttyUSB0"           # 使用实际的设备路径
+    frame_id: "laser_frame"        # 参照官方驱动
+    ignore_array: ""               # 参照官方驱动
+    baudrate: 115200               # X3 Pro标准波特率
+    lidar_type: 1                  # TYPE_TRIANGLE - 三角测距雷达
+    device_type: 0                 # YDLIDAR_TYPE_SERIAL
+    sample_rate: 3                 # X3 Pro使用3k采样率
+    abnormal_check_count: 4        # 参照官方驱动
+    
+    # 固定分辨率
+    resolution_fixed: true         # 固定分辨率
+    
+    # 角度范围配置 (单位: 度)
+    angle_max: 180.0               # 最大角度 (度)
+    angle_min: -180.0              # 最小角度 (度)
+    
+    # 距离范围配置 (单位: 米)
+    range_max: 8.0                 # X3 Pro最大测距8米
+    range_min: 0.12                # X3 Pro最小测距0.12米
+    
+    # 其他配置
+    intensity: false               # 是否启用强度
+    inverted: true                 # 是否倒置 (参照官方驱动)
+    auto_reconnect: true           # 自动重连
+    isSingleChannel: true          # X3 Pro是单通道
+    support_motor_dtr: false       # X3 Pro不需要DTR控制
+    frequency: 5.0                 # 扫描频率
+    invalid_range_is_inf: true     # 将无效范围设为无穷大

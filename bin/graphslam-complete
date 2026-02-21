@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# GraphSLAM完整环境启动脚本
+# 自动设置X11显示和ROS 2环境
+
+echo "正在启动GraphSLAM程序..."
+
+# 设置工作目录
+cd /home/chuil/Desktop/zhongxi
+
+# 设置ROS 2环境
+source install/setup.bash
+
+# 设置X11显示
+export DISPLAY=:0
+
+# 验证环境
+echo "环境变量检查:"
+echo "  ROS_DISTRO: ${ROS_DISTRO:-未设置}"
+echo "  DISPLAY: ${DISPLAY:-未设置}"
+echo "  工作目录: $(pwd)"
+
+# 检查包是否存在
+if ros2 pkg list | grep -q graphslam; then
+    echo "✓ graphslam包已找到"
+else
+    echo "✗ graphslam包未找到,正在重新构建..."
+    colcon build --packages-select graphslam
+    source install/setup.bash
+fi
+
+# 运行程序
+echo "启动graphslam_g2o..."
+ros2 run graphslam graphslam_g2o "$@"

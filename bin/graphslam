@@ -1,0 +1,11 @@
+#!/bin/bash
+# GraphSLAM运行脚本 - 解决Qt GUI问题
+
+cd /home/chuil/Desktop/zhongxi
+source install/setup.bash
+
+# 设置Qt为offscreen模式以避免GUI问题
+export QT_QPA_PLATFORM=offscreen
+
+# 运行graphslam
+ros2 run graphslam graphslam_g2o "$@"
