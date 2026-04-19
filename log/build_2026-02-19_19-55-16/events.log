@@ -1,0 +1,243 @@
+[0.000000] (-) TimerEvent: {}
+[0.000907] (-) JobUnselected: {'identifier': 'demo_py'}
+[0.001640] (-) JobUnselected: {'identifier': 'graphslam'}
+[0.002009] (-) JobUnselected: {'identifier': 'zhongxi_description'}
+[0.002503] (sensor_interfaces) JobQueued: {'identifier': 'sensor_interfaces', 'dependencies': OrderedDict()}
+[0.002734] (sensor_interfaces) JobStarted: {'identifier': 'sensor_interfaces'}
+[0.021560] (sensor_interfaces) JobProgress: {'identifier': 'sensor_interfaces', 'progress': 'cmake'}
+[0.023716] (sensor_interfaces) JobProgress: {'identifier': 'sensor_interfaces', 'progress': 'build'}
+[0.025443] (sensor_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chuil/Desktop/zhongxi/build/sensor_interfaces', '--', '-j6', '-l6'], 'cwd': '/home/chuil/Desktop/zhongxi/build/sensor_interfaces', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'chuil'), ('SSH_CLIENT', '192.168.0.102 61262 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/chuil'), ('OLDPWD', '/home/chuil/Desktop'), ('TERM_PROGRAM_VERSION', '1.109.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-7cda3e03-5fe0-4596-b77a-c3d391746f3d.sock'), ('JETSON_L4T', '36.5.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chuil'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424125055888'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/chuil/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/chuil/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/bundled/scripts/noConfigScripts'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-21a56646f1eccb5d.txt'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/home/chuil/.vscode-server/data/User/workspaceStorage/e211f3a314d4166c5841746826140cad/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ed6a4f6337.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install/zhongxi_description:/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/graphslam:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/chuil/Desktop/zhongxi/build/sensor_interfaces'), ('SSH_CONNECTION', '192.168.0.102 61262 192.168.0.107 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/chuil/Desktop/zhongxi/install/demo_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install/zhongxi_description:/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/graphslam:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.099358] (-) TimerEvent: {}
+[0.185615] (sensor_interfaces) StdoutLine: {'line': b'[ 66%] Built target ydlidar_sdk\n'}
+[0.186905] (sensor_interfaces) StdoutLine: {'line': b'[ 75%] Built target sensor_interfaces_base\n'}
+[0.199570] (-) TimerEvent: {}
+[0.224607] (sensor_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lidar_driver\x1b[0m\n'}
+[0.269295] (sensor_interfaces) StdoutLine: {'line': b'[ 83%] Built target control_board_interface\n'}
+[0.279630] (sensor_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/lidar_driver.dir/src/lidar_driver.cpp.o\x1b[0m\n'}
+[0.282678] (sensor_interfaces) StdoutLine: {'line': b'[ 95%] Built target camera_driver\n'}
+[0.299862] (-) TimerEvent: {}
+[0.401031] (-) TimerEvent: {}
+[0.502341] (-) TimerEvent: {}
+[0.603415] (-) TimerEvent: {}
+[0.704634] (-) TimerEvent: {}
+[0.805798] (-) TimerEvent: {}
+[0.907009] (-) TimerEvent: {}
+[1.008157] (-) TimerEvent: {}
+[1.109312] (-) TimerEvent: {}
+[1.210650] (-) TimerEvent: {}
+[1.311789] (-) TimerEvent: {}
+[1.412941] (-) TimerEvent: {}
+[1.514069] (-) TimerEvent: {}
+[1.615223] (-) TimerEvent: {}
+[1.716341] (-) TimerEvent: {}
+[1.817507] (-) TimerEvent: {}
+[1.918609] (-) TimerEvent: {}
+[2.019796] (-) TimerEvent: {}
+[2.120909] (-) TimerEvent: {}
+[2.222039] (-) TimerEvent: {}
+[2.323174] (-) TimerEvent: {}
+[2.424424] (-) TimerEvent: {}
+[2.525627] (-) TimerEvent: {}
+[2.626939] (-) TimerEvent: {}
+[2.728133] (-) TimerEvent: {}
+[2.829325] (-) TimerEvent: {}
+[2.930516] (-) TimerEvent: {}
+[3.031682] (-) TimerEvent: {}
+[3.132816] (-) TimerEvent: {}
+[3.233998] (-) TimerEvent: {}
+[3.335219] (-) TimerEvent: {}
+[3.436367] (-) TimerEvent: {}
+[3.537500] (-) TimerEvent: {}
+[3.638698] (-) TimerEvent: {}
+[3.739902] (-) TimerEvent: {}
+[3.841148] (-) TimerEvent: {}
+[3.942364] (-) TimerEvent: {}
+[4.043622] (-) TimerEvent: {}
+[4.145003] (-) TimerEvent: {}
+[4.246223] (-) TimerEvent: {}
+[4.347468] (-) TimerEvent: {}
+[4.448662] (-) TimerEvent: {}
+[4.549959] (-) TimerEvent: {}
+[4.651238] (-) TimerEvent: {}
+[4.752441] (-) TimerEvent: {}
+[4.853625] (-) TimerEvent: {}
+[4.954852] (-) TimerEvent: {}
+[5.055979] (-) TimerEvent: {}
+[5.157118] (-) TimerEvent: {}
+[5.258315] (-) TimerEvent: {}
+[5.359488] (-) TimerEvent: {}
+[5.460667] (-) TimerEvent: {}
+[5.561825] (-) TimerEvent: {}
+[5.662949] (-) TimerEvent: {}
+[5.764047] (-) TimerEvent: {}
+[5.865169] (-) TimerEvent: {}
+[5.966365] (-) TimerEvent: {}
+[6.067486] (-) TimerEvent: {}
+[6.168585] (-) TimerEvent: {}
+[6.269675] (-) TimerEvent: {}
+[6.370766] (-) TimerEvent: {}
+[6.471834] (-) TimerEvent: {}
+[6.572930] (-) TimerEvent: {}
+[6.674048] (-) TimerEvent: {}
+[6.775200] (-) TimerEvent: {}
+[6.876337] (-) TimerEvent: {}
+[6.977464] (-) TimerEvent: {}
+[7.078615] (-) TimerEvent: {}
+[7.179759] (-) TimerEvent: {}
+[7.280914] (-) TimerEvent: {}
+[7.382051] (-) TimerEvent: {}
+[7.412581] (sensor_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/v8stdint.h:142\x1b[m\x1b[K,\n'}
+[7.413730] (sensor_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/DriverInterface.h:2\x1b[m\x1b[K,\n'}
+[7.414148] (sensor_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/CYdLidar.h:48\x1b[m\x1b[K,\n'}
+[7.414374] (sensor_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:3\x1b[m\x1b[K:\n'}
+[7.414582] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool ydlidar::core::base::fileExists(const string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.414749] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_ino\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.414941] (sensor_interfaces) StderrLine: {'line': b'  183 |   struct stat info = {0\x1b[01;35m\x1b[K}\x1b[m\x1b[K;\n'}
+[7.415103] (sensor_interfaces) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[7.415246] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_mode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.415429] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_nlink\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.415620] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_uid\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.415766] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_gid\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.415946] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_rdev\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.416094] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::__pad1\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.416293] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_size\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.416491] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_blksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.416646] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::__pad2\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.416826] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_blocks\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.417002] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_atim\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.417163] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_mtim\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.417308] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_ctim\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.417459] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::__glibc_reserved\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.417607] (sensor_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/DriverInterface.h:3\x1b[m\x1b[K,\n'}
+[7.417747] (sensor_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/CYdLidar.h:48\x1b[m\x1b[K,\n'}
+[7.417882] (sensor_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:3\x1b[m\x1b[K:\n'}
+[7.418015] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/thread.h:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic ydlidar::core::base::Thread ydlidar::core::base::Thread::createThread(thread_proc_t, void*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.418158] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/thread.h:46:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcast between incompatible function types from \xe2\x80\x98\x1b[01m\x1b[Kthread_proc_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int (*)(void*)\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kvoid* (*)(void*)\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcast-function-type\x07-Wcast-function-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.418345] (sensor_interfaces) StderrLine: {'line': b'   46 |     pthread_create((pthread_t *)&thread_._handle, NULL, \x1b[01;35m\x1b[K(void *(*)(void *))proc\x1b[m\x1b[K,\n'}
+[7.418487] (sensor_interfaces) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.456074] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:\x1b[m\x1b[K At global scope:\n'}
+[7.456760] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:29:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KCYdLidar\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kydlidar\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[7.457004] (sensor_interfaces) StderrLine: {'line': b'   29 |         ydlidar::\x1b[01;31m\x1b[KCYdLidar\x1b[m\x1b[K* laser;\n'}
+[7.457190] (sensor_interfaces) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.470645] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Ksensor_interfaces::LidarDriver::LidarDriver()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.471282] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:59:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[Ksensor_interfaces::LidarDriver\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Klaser\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.471488] (sensor_interfaces) StderrLine: {'line': b'   59 |         : SensorNode("lidar_driver"), \x1b[01;31m\x1b[Klaser\x1b[m\x1b[K(nullptr), scan_pub_(nullptr), is_initialized_(false), initialization_retry_count_(0)\n'}
+[7.471698] (sensor_interfaces) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.482154] (-) TimerEvent: {}
+[7.519251] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:109:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klaser\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.520012] (sensor_interfaces) StderrLine: {'line': b'  109 |         \x1b[01;31m\x1b[Klaser\x1b[m\x1b[K = new ydlidar::CYdLidar();\n'}
+[7.520216] (sensor_interfaces) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.520380] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:109:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected type-specifier\n'}
+[7.520536] (sensor_interfaces) StderrLine: {'line': b'  109 |         laser = new \x1b[01;31m\x1b[Kydlidar\x1b[m\x1b[K::CYdLidar();\n'}
+[7.520684] (sensor_interfaces) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[7.582450] (-) TimerEvent: {}
+[7.591984] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:\x1b[m\x1b[K In destructor \xe2\x80\x98\x1b[01m\x1b[Kvirtual sensor_interfaces::LidarDriver::~LidarDriver()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.592686] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:138:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klaser\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.592878] (sensor_interfaces) StderrLine: {'line': b'  138 |         if (\x1b[01;31m\x1b[Klaser\x1b[m\x1b[K) {\n'}
+[7.593034] (sensor_interfaces) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.593179] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:141:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktype \xe2\x80\x98\x1b[01m\x1b[K<type error>\x1b[m\x1b[K\xe2\x80\x99 argument given to \xe2\x80\x98\x1b[01m\x1b[Kdelete\x1b[m\x1b[K\xe2\x80\x99, expected pointer\n'}
+[7.593331] (sensor_interfaces) StderrLine: {'line': b'  141 |             delete \x1b[01;31m\x1b[Klaser\x1b[m\x1b[K;\n'}
+[7.593473] (sensor_interfaces) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.614966] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool sensor_interfaces::LidarDriver::check_sensor_health()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.615641] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:149:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klaser\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.615936] (sensor_interfaces) StderrLine: {'line': b'  149 |         if (!\x1b[01;31m\x1b[Klaser\x1b[m\x1b[K || !is_initialized_) {\n'}
+[7.616122] (sensor_interfaces) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.616946] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:154:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLaserScan\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kydlidar\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.617302] (sensor_interfaces) StderrLine: {'line': b'  154 |         ydlidar::\x1b[01;31m\x1b[KLaserScan\x1b[m\x1b[K scan;\n'}
+[7.617465] (sensor_interfaces) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.617608] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:154:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[7.617754] (sensor_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_protocol.h:394\x1b[m\x1b[K,\n'}
+[7.617894] (sensor_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/DriverInterface.h:6\x1b[m\x1b[K,\n'}
+[7.618031] (sensor_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/CYdLidar.h:48\x1b[m\x1b[K,\n'}
+[7.618168] (sensor_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:3\x1b[m\x1b[K:\n'}
+[7.618334] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_datatype.h:113:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KLaserScan\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.618478] (sensor_interfaces) StderrLine: {'line': b'  113 | } \x1b[01;36m\x1b[KLaserScan\x1b[m\x1b[K;\n'}
+[7.618615] (sensor_interfaces) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.618752] (sensor_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/laser_scan.hpp:7\x1b[m\x1b[K,\n'}
+[7.618923] (sensor_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:2\x1b[m\x1b[K:\n'}
+[7.619063] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__struct.hpp:248:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::LaserScan\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.619201] (sensor_interfaces) StderrLine: {'line': b'  248 | using \x1b[01;36m\x1b[KLaserScan\x1b[m\x1b[K =\n'}
+[7.619333] (sensor_interfaces) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.634925] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:155:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klaser\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.635398] (sensor_interfaces) StderrLine: {'line': b'  155 |         return \x1b[01;31m\x1b[Klaser\x1b[m\x1b[K->doProcessSimple(scan);\n'}
+[7.635604] (sensor_interfaces) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.649700] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:155:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kscan\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kscanf\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.650215] (sensor_interfaces) StderrLine: {'line': b'  155 |         return laser->doProcessSimple(\x1b[01;31m\x1b[Kscan\x1b[m\x1b[K);\n'}
+[7.650487] (sensor_interfaces) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.650659] (sensor_interfaces) StderrLine: {'line': b'      |                                       \x1b[32m\x1b[Kscanf\x1b[m\x1b[K\n'}
+[7.669476] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool sensor_interfaces::LidarDriver::initialize_sensor()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.670068] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:164:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klaser\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.670301] (sensor_interfaces) StderrLine: {'line': b'  164 |         \x1b[01;31m\x1b[Klaser\x1b[m\x1b[K->setlidaropt(LidarPropSerialPort, port_.c_str(), port_.size());\n'}
+[7.670488] (sensor_interfaces) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.682559] (-) TimerEvent: {}
+[7.690187] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool sensor_interfaces::LidarDriver::retry_initialize()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.690734] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:238:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klaser\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.690945] (sensor_interfaces) StderrLine: {'line': b'  238 |         if (\x1b[01;31m\x1b[Klaser\x1b[m\x1b[K) {\n'}
+[7.691118] (sensor_interfaces) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.691272] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:241:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktype \xe2\x80\x98\x1b[01m\x1b[K<type error>\x1b[m\x1b[K\xe2\x80\x99 argument given to \xe2\x80\x98\x1b[01m\x1b[Kdelete\x1b[m\x1b[K\xe2\x80\x99, expected pointer\n'}
+[7.691428] (sensor_interfaces) StderrLine: {'line': b'  241 |             delete \x1b[01;31m\x1b[Klaser\x1b[m\x1b[K;\n'}
+[7.691574] (sensor_interfaces) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.707033] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:244:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klaser\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.707415] (sensor_interfaces) StderrLine: {'line': b'  244 |         \x1b[01;31m\x1b[Klaser\x1b[m\x1b[K = new ydlidar::CYdLidar();\n'}
+[7.707606] (sensor_interfaces) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.707763] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:244:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected type-specifier\n'}
+[7.707917] (sensor_interfaces) StderrLine: {'line': b'  244 |         laser = new \x1b[01;31m\x1b[Kydlidar\x1b[m\x1b[K::CYdLidar();\n'}
+[7.708059] (sensor_interfaces) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[7.723875] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid sensor_interfaces::LidarDriver::publish_scan()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.724461] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:255:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klaser\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.724645] (sensor_interfaces) StderrLine: {'line': b'  255 |         if (\x1b[01;31m\x1b[Klaser\x1b[m\x1b[K && is_initialized_) {\n'}
+[7.724804] (sensor_interfaces) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.725078] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:256:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KLaserScan\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kydlidar\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.725358] (sensor_interfaces) StderrLine: {'line': b'  256 |             ydlidar::\x1b[01;31m\x1b[KLaserScan\x1b[m\x1b[K scan;\n'}
+[7.725514] (sensor_interfaces) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.725656] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:256:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[7.725833] (sensor_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_protocol.h:394\x1b[m\x1b[K,\n'}
+[7.725980] (sensor_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/DriverInterface.h:6\x1b[m\x1b[K,\n'}
+[7.726118] (sensor_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/CYdLidar.h:48\x1b[m\x1b[K,\n'}
+[7.726276] (sensor_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:3\x1b[m\x1b[K:\n'}
+[7.726418] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_datatype.h:113:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KLaserScan\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.726554] (sensor_interfaces) StderrLine: {'line': b'  113 | } \x1b[01;36m\x1b[KLaserScan\x1b[m\x1b[K;\n'}
+[7.726688] (sensor_interfaces) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.726821] (sensor_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/laser_scan.hpp:7\x1b[m\x1b[K,\n'}
+[7.726959] (sensor_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:2\x1b[m\x1b[K:\n'}
+[7.727101] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/laser_scan__struct.hpp:248:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs::msg::LaserScan\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.727239] (sensor_interfaces) StderrLine: {'line': b'  248 | using \x1b[01;36m\x1b[KLaserScan\x1b[m\x1b[K =\n'}
+[7.727374] (sensor_interfaces) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[7.740279] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:257:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kscan\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kscanf\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.740678] (sensor_interfaces) StderrLine: {'line': b'  257 |             if (laser->doProcessSimple(\x1b[01;31m\x1b[Kscan\x1b[m\x1b[K)) {\n'}
+[7.740863] (sensor_interfaces) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.741040] (sensor_interfaces) StderrLine: {'line': b'      |                                        \x1b[32m\x1b[Kscanf\x1b[m\x1b[K\n'}
+[7.782779] (-) TimerEvent: {}
+[7.884103] (-) TimerEvent: {}
+[7.985227] (-) TimerEvent: {}
+[8.086424] (-) TimerEvent: {}
+[8.187618] (-) TimerEvent: {}
+[8.288797] (-) TimerEvent: {}
+[8.389955] (-) TimerEvent: {}
+[8.491269] (-) TimerEvent: {}
+[8.592537] (-) TimerEvent: {}
+[8.693705] (-) TimerEvent: {}
+[8.794957] (-) TimerEvent: {}
+[8.896112] (-) TimerEvent: {}
+[8.997322] (-) TimerEvent: {}
+[9.098626] (-) TimerEvent: {}
+[9.199755] (-) TimerEvent: {}
+[9.300919] (-) TimerEvent: {}
+[9.402039] (-) TimerEvent: {}
+[9.503183] (-) TimerEvent: {}
+[9.604303] (-) TimerEvent: {}
+[9.705426] (-) TimerEvent: {}
+[9.806543] (-) TimerEvent: {}
+[9.907741] (-) TimerEvent: {}
+[10.008924] (-) TimerEvent: {}
+[10.110326] (-) TimerEvent: {}
+[10.211450] (-) TimerEvent: {}
+[10.312575] (-) TimerEvent: {}
+[10.413705] (-) TimerEvent: {}
+[10.467483] (sensor_interfaces) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/lidar_driver.dir/build.make:76\xef\xbc\x9aCMakeFiles/lidar_driver.dir/src/lidar_driver.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[10.468514] (sensor_interfaces) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:224\xef\xbc\x9aCMakeFiles/lidar_driver.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[10.469373] (sensor_interfaces) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[10.482215] (sensor_interfaces) CommandEnded: {'returncode': 2}
+[10.514009] (-) TimerEvent: {}
+[10.541287] (sensor_interfaces) JobEnded: {'identifier': 'sensor_interfaces', 'rc': 2}
+[10.553494] (-) EventReactorShutdown: {}

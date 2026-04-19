@@ -1,0 +1,92 @@
+[0.025s] Invoking command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/sensor_interfaces -- -j6 -l6
+[0.184s] [  8%] Built target sensor_interfaces_base
+[0.188s] [ 75%] Built target ydlidar_sdk
+[0.260s] [ 83%] Built target control_board_interface
+[0.262s] [ 91%] Built target camera_driver
+[0.294s] [35m[1mConsolidate compiler generated dependencies of target lidar_driver[0m
+[0.347s] [ 95%] [32mBuilding CXX object CMakeFiles/lidar_driver.dir/src/lidar_driver.cpp.o[0m
+[7.364s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/v8stdint.h:142[m[K,
+[7.364s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:2[m[K,
+[7.364s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.h:44[m[K,
+[7.365s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:3[m[K:
+[7.365s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:[m[K In function ‘[01m[Kbool ydlidar::core::base::fileExists(const string&)[m[K’:
+[7.365s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.365s]   183 |   struct stat info = {0[01;35m[K}[m[K;
+[7.366s]       |                        [01;35m[K^[m[K
+[7.366s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.366s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.367s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.367s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.367s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.367s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.367s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.368s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.368s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.368s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.368s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.368s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.368s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.368s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.369s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.h:44[m[K,
+[7.369s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:3[m[K:
+[7.369s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:[m[K In member function ‘[01m[Kvirtual bool ydlidar::core::common::ChannelDevice::setDTR(bool)[m[K’:
+[7.369s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:111:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klevel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.369s]   111 |   virtual bool setDTR([01;35m[Kbool level = true[m[K) {
+[7.369s]       |                       [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[7.370s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.h:46[m[K,
+[7.370s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:3[m[K:
+[7.370s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/thread.h:[m[K In static member function ‘[01m[Kstatic ydlidar::core::base::Thread ydlidar::core::base::Thread::createThread(thread_proc_t, void*)[m[K’:
+[7.370s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/thread.h:46:57:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcast-function-type-Wcast-function-type]8;;[m[K]
+[7.371s]    46 |     pthread_create((pthread_t *)&thread_._handle, NULL, [01;35m[K(void *(*)(void *))proc[m[K,
+[7.371s]       |                                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.395s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.h:49[m[K,
+[7.395s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:3[m[K:
+[7.396s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:[m[K In function ‘[01m[Kbool ydlidar::core::common::isSupportMotorCtrl(int)[m[K’:
+[7.396s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:411:8:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kret[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[7.396s]   411 |   bool [01;35m[Kret[m[K = false;
+[7.397s]       |        [01;35m[K^~~[m[K
+[7.397s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:[m[K In function ‘[01m[Kbool ydlidar::core::common::isSupportHeartBeat(int)[m[K’:
+[7.397s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:571:8:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kret[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[7.397s]   571 |   bool [01;35m[Kret[m[K = false;
+[7.398s]       |        [01;35m[K^~~[m[K
+[13.722s] [100%] [32m[1mLinking CXX executable lidar_driver[0m
+[14.363s] [100%] Built target lidar_driver
+[14.403s] Invoked command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/sensor_interfaces -- -j6 -l6
+[14.436s] Invoking command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --install /home/chuil/Desktop/zhongxi/build/sensor_interfaces
+[14.460s] -- Install configuration: ""
+[14.460s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/lib/sensor_interfaces/camera_driver
+[14.460s] -- Installing: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/lib/sensor_interfaces/lidar_driver
+[14.467s] -- Set runtime path of "/home/chuil/Desktop/zhongxi/install/sensor_interfaces/lib/sensor_interfaces/lidar_driver" to ""
+[14.468s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/lib/sensor_interfaces/control_board_interface
+[14.468s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/lib/sensor_interfaces/libydlidar_sdk.a
+[14.468s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/lib/sensor_interfaces/libsensor_interfaces_base.a
+[14.468s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/include/
+[14.469s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/include//sensor_interfaces
+[14.469s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/include//sensor_interfaces/control_board_interface.h
+[14.469s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/include//sensor_interfaces/lidar_interface.h
+[14.469s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/include//sensor_interfaces/sensor_interfaces.h
+[14.470s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/include//sensor_interfaces/camera_interface.h
+[14.470s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces//launch
+[14.471s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces//launch/full_system.launch.py
+[14.471s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces//launch/sensors.launch.py
+[14.471s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces//config
+[14.471s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces//config/control_params.yaml
+[14.471s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces//config/camera_params.yaml
+[14.471s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces//config/lidar_params.yaml
+[14.472s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces//config/ydlidar_x3pro.yaml
+[14.472s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/ament_index/resource_index/package_run_dependencies/sensor_interfaces
+[14.472s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/ament_index/resource_index/parent_prefix_path/sensor_interfaces
+[14.472s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/environment/ament_prefix_path.sh
+[14.472s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/environment/ament_prefix_path.dsv
+[14.472s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/environment/path.sh
+[14.472s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/environment/path.dsv
+[14.473s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/local_setup.bash
+[14.473s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/local_setup.sh
+[14.473s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/local_setup.zsh
+[14.473s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/local_setup.dsv
+[14.473s] -- Installing: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/package.dsv
+[14.473s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/ament_index/resource_index/packages/sensor_interfaces
+[14.473s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/cmake/sensor_interfacesConfig.cmake
+[14.474s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/cmake/sensor_interfacesConfig-version.cmake
+[14.474s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/package.xml
+[14.478s] Invoked command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --install /home/chuil/Desktop/zhongxi/build/sensor_interfaces

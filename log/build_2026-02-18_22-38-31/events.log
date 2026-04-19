@@ -1,0 +1,279 @@
+[0.000000] (-) TimerEvent: {}
+[0.001024] (-) JobUnselected: {'identifier': 'demo_py'}
+[0.001598] (-) JobUnselected: {'identifier': 'graphslam'}
+[0.001830] (-) JobUnselected: {'identifier': 'zhongxi_description'}
+[0.002173] (sensor_interfaces) JobQueued: {'identifier': 'sensor_interfaces', 'dependencies': OrderedDict()}
+[0.002563] (sensor_interfaces) JobStarted: {'identifier': 'sensor_interfaces'}
+[0.022017] (sensor_interfaces) JobProgress: {'identifier': 'sensor_interfaces', 'progress': 'cmake'}
+[0.024083] (sensor_interfaces) JobProgress: {'identifier': 'sensor_interfaces', 'progress': 'build'}
+[0.025695] (sensor_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chuil/Desktop/zhongxi/build/sensor_interfaces', '--', '-j6', '-l6'], 'cwd': '/home/chuil/Desktop/zhongxi/build/sensor_interfaces', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'chuil'), ('SSH_CLIENT', '192.168.0.102 61636 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/chuil'), ('OLDPWD', '/home/chuil/Desktop'), ('TERM_PROGRAM_VERSION', '1.109.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-e4e3a87a-fdcf-418c-9dd5-dd95e78fd502.sock'), ('JETSON_L4T', '36.5.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chuil'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424125055888'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/chuil/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/chuil/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/bundled/scripts/noConfigScripts'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-21a56646f1eccb5d.txt'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/home/chuil/.vscode-server/data/User/workspaceStorage/e211f3a314d4166c5841746826140cad-1/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-bbf2a3efb6.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/zhongxi_description:/home/chuil/Desktop/zhongxi/install/graphslam:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/chuil/Desktop/zhongxi/build/sensor_interfaces'), ('SSH_CONNECTION', '192.168.0.102 61636 192.168.0.107 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/chuil/Desktop/zhongxi/install/demo_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/zhongxi_description:/home/chuil/Desktop/zhongxi/install/graphslam:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.099285] (-) TimerEvent: {}
+[0.119813] (sensor_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199423] (-) TimerEvent: {}
+[0.300413] (-) TimerEvent: {}
+[0.401355] (-) TimerEvent: {}
+[0.467400] (sensor_interfaces) StdoutLine: {'line': b'-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.501765] (-) TimerEvent: {}
+[0.550001] (sensor_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.555584] (sensor_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.568558] (sensor_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.589520] (sensor_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.601782] (-) TimerEvent: {}
+[0.615650] (sensor_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.683251] (sensor_interfaces) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.686232] (sensor_interfaces) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.702048] (-) TimerEvent: {}
+[0.803076] (-) TimerEvent: {}
+[0.904169] (-) TimerEvent: {}
+[0.923912] (sensor_interfaces) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.004374] (-) TimerEvent: {}
+[1.029289] (sensor_interfaces) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.089192] (sensor_interfaces) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[1.099577] (sensor_interfaces) StdoutLine: {'line': b'-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[1.104415] (-) TimerEvent: {}
+[1.146249] (sensor_interfaces) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.181416] (sensor_interfaces) StdoutLine: {'line': b'-- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.188682] (sensor_interfaces) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.204586] (-) TimerEvent: {}
+[1.305424] (-) TimerEvent: {}
+[1.348785] (sensor_interfaces) StdoutLine: {'line': b'-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[1.405640] (-) TimerEvent: {}
+[1.506582] (-) TimerEvent: {}
+[1.566403] (sensor_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.607291] (-) TimerEvent: {}
+[1.643954] (sensor_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.659727] (sensor_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/chuil/Desktop/zhongxi/build/sensor_interfaces\n'}
+[1.707420] (-) TimerEvent: {}
+[1.744313] (sensor_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target camera_driver\x1b[0m\n'}
+[1.766626] (sensor_interfaces) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/sdk/core/base/timer.cpp.o\x1b[0m\n'}
+[1.767587] (sensor_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/sdk/core/common/ydlidar_def.cpp.o\x1b[0m\n'}
+[1.767839] (sensor_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/sdk/core/serial/impl/unix/list_ports_linux.cpp.o\x1b[0m\n'}
+[1.768505] (sensor_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/sdk/core/serial/impl/windows/list_ports_win.cpp.o\x1b[0m\n'}
+[1.779368] (sensor_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/sdk/core/serial/impl/unix/unix_serial.cpp.o\x1b[0m\n'}
+[1.796646] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_def.cpp:25:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcore/common/ydlidar_def.h: \xe6\xb2\xa1\xe6\x9c\x89\xe9\x82\xa3\xe4\xb8\xaa\xe6\x96\x87\xe4\xbb\xb6\xe6\x88\x96\xe7\x9b\xae\xe5\xbd\x95\n'}
+[1.797475] (sensor_interfaces) StderrLine: {'line': b'   25 | #include \x1b[01;31m\x1b[K<core/common/ydlidar_def.h>\x1b[m\x1b[K\n'}
+[1.797986] (sensor_interfaces) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.798161] (sensor_interfaces) StderrLine: {'line': b'compilation terminated.\n'}
+[1.801577] (sensor_interfaces) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ydlidar_sdk.dir/build.make:90\xef\xbc\x9aCMakeFiles/ydlidar_sdk.dir/sdk/core/common/ydlidar_def.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[1.802375] (sensor_interfaces) StderrLine: {'line': b'gmake[2]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[1.805100] (sensor_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o\x1b[0m\n'}
+[1.808254] (-) TimerEvent: {}
+[1.898940] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/impl/unix/list_ports_linux.cpp:26:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcore/serial/serial.h: \xe6\xb2\xa1\xe6\x9c\x89\xe9\x82\xa3\xe4\xb8\xaa\xe6\x96\x87\xe4\xbb\xb6\xe6\x88\x96\xe7\x9b\xae\xe5\xbd\x95\n'}
+[1.900675] (sensor_interfaces) StderrLine: {'line': b'   26 | #include \x1b[01;31m\x1b[K<core/serial/serial.h>\x1b[m\x1b[K\n'}
+[1.900919] (sensor_interfaces) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.901084] (sensor_interfaces) StderrLine: {'line': b'compilation terminated.\n'}
+[1.904780] (sensor_interfaces) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ydlidar_sdk.dir/build.make:104\xef\xbc\x9aCMakeFiles/ydlidar_sdk.dir/sdk/core/serial/impl/unix/list_ports_linux.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[1.908333] (-) TimerEvent: {}
+[1.922616] (sensor_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/impl/unix/unix_serial.cpp:39\x1b[m\x1b[K:\n'}
+[1.923287] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/impl/unix/unix_serial.h:9:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcore/serial/serial.h: \xe6\xb2\xa1\xe6\x9c\x89\xe9\x82\xa3\xe4\xb8\xaa\xe6\x96\x87\xe4\xbb\xb6\xe6\x88\x96\xe7\x9b\xae\xe5\xbd\x95\n'}
+[1.923490] (sensor_interfaces) StderrLine: {'line': b'    9 | #include \x1b[01;31m\x1b[K<core/serial/serial.h>\x1b[m\x1b[K\n'}
+[1.923691] (sensor_interfaces) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.923847] (sensor_interfaces) StderrLine: {'line': b'compilation terminated.\n'}
+[1.928045] (sensor_interfaces) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ydlidar_sdk.dir/build.make:118\xef\xbc\x9aCMakeFiles/ydlidar_sdk.dir/sdk/core/serial/impl/unix/unix_serial.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[2.008688] (-) TimerEvent: {}
+[2.109872] (-) TimerEvent: {}
+[2.184409] (sensor_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/v8stdint.h:142\x1b[m\x1b[K,\n'}
+[2.185439] (sensor_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/timer.h:2\x1b[m\x1b[K,\n'}
+[2.185828] (sensor_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/timer.cpp:1\x1b[m\x1b[K:\n'}
+[2.186016] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool ydlidar::core::base::fileExists(const string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.186248] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_ino\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.186417] (sensor_interfaces) StderrLine: {'line': b'  183 |   struct stat info = {0\x1b[01;35m\x1b[K}\x1b[m\x1b[K;\n'}
+[2.186568] (sensor_interfaces) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[2.186710] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_mode\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.186864] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_nlink\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.187035] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_uid\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.187179] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_gid\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.187326] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_rdev\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.187493] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::__pad1\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.187662] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_size\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.187805] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_blksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.187954] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::__pad2\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.188124] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_blocks\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.188286] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_atim\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.188637] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_mtim\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.188801] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::st_ctim\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.188946] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kmissing initializer for member \xe2\x80\x98\x1b[01m\x1b[Kstat::__glibc_reserved\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers\x07-Wmissing-field-initializers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.210050] (-) TimerEvent: {}
+[2.288819] (sensor_interfaces) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:141\xef\xbc\x9aCMakeFiles/ydlidar_sdk.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[2.289644] (sensor_interfaces) StderrLine: {'line': b'gmake[1]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[2.310251] (-) TimerEvent: {}
+[2.411168] (-) TimerEvent: {}
+[2.512227] (-) TimerEvent: {}
+[2.613281] (-) TimerEvent: {}
+[2.714391] (-) TimerEvent: {}
+[2.815516] (-) TimerEvent: {}
+[2.916641] (-) TimerEvent: {}
+[3.017776] (-) TimerEvent: {}
+[3.118930] (-) TimerEvent: {}
+[3.220078] (-) TimerEvent: {}
+[3.321288] (-) TimerEvent: {}
+[3.422451] (-) TimerEvent: {}
+[3.523567] (-) TimerEvent: {}
+[3.624711] (-) TimerEvent: {}
+[3.725885] (-) TimerEvent: {}
+[3.827071] (-) TimerEvent: {}
+[3.928246] (-) TimerEvent: {}
+[4.029545] (-) TimerEvent: {}
+[4.130701] (-) TimerEvent: {}
+[4.231862] (-) TimerEvent: {}
+[4.333053] (-) TimerEvent: {}
+[4.434350] (-) TimerEvent: {}
+[4.535863] (-) TimerEvent: {}
+[4.637034] (-) TimerEvent: {}
+[4.738306] (-) TimerEvent: {}
+[4.839481] (-) TimerEvent: {}
+[4.940619] (-) TimerEvent: {}
+[5.041772] (-) TimerEvent: {}
+[5.142960] (-) TimerEvent: {}
+[5.244085] (-) TimerEvent: {}
+[5.345243] (-) TimerEvent: {}
+[5.446407] (-) TimerEvent: {}
+[5.547543] (-) TimerEvent: {}
+[5.648691] (-) TimerEvent: {}
+[5.749893] (-) TimerEvent: {}
+[5.851066] (-) TimerEvent: {}
+[5.952234] (-) TimerEvent: {}
+[6.053392] (-) TimerEvent: {}
+[6.154581] (-) TimerEvent: {}
+[6.255742] (-) TimerEvent: {}
+[6.356889] (-) TimerEvent: {}
+[6.458043] (-) TimerEvent: {}
+[6.559155] (-) TimerEvent: {}
+[6.660241] (-) TimerEvent: {}
+[6.761329] (-) TimerEvent: {}
+[6.862504] (-) TimerEvent: {}
+[6.963658] (-) TimerEvent: {}
+[7.064774] (-) TimerEvent: {}
+[7.165960] (-) TimerEvent: {}
+[7.267075] (-) TimerEvent: {}
+[7.368430] (-) TimerEvent: {}
+[7.469604] (-) TimerEvent: {}
+[7.570698] (-) TimerEvent: {}
+[7.671797] (-) TimerEvent: {}
+[7.772921] (-) TimerEvent: {}
+[7.874101] (-) TimerEvent: {}
+[7.975265] (-) TimerEvent: {}
+[8.076461] (-) TimerEvent: {}
+[8.177600] (-) TimerEvent: {}
+[8.278705] (-) TimerEvent: {}
+[8.379837] (-) TimerEvent: {}
+[8.480942] (-) TimerEvent: {}
+[8.582096] (-) TimerEvent: {}
+[8.683246] (-) TimerEvent: {}
+[8.784571] (-) TimerEvent: {}
+[8.885745] (-) TimerEvent: {}
+[8.986897] (-) TimerEvent: {}
+[9.088007] (-) TimerEvent: {}
+[9.189178] (-) TimerEvent: {}
+[9.290360] (-) TimerEvent: {}
+[9.391530] (-) TimerEvent: {}
+[9.492687] (-) TimerEvent: {}
+[9.593822] (-) TimerEvent: {}
+[9.694920] (-) TimerEvent: {}
+[9.796053] (-) TimerEvent: {}
+[9.897168] (-) TimerEvent: {}
+[9.998346] (-) TimerEvent: {}
+[10.099474] (-) TimerEvent: {}
+[10.200597] (-) TimerEvent: {}
+[10.301738] (-) TimerEvent: {}
+[10.402846] (-) TimerEvent: {}
+[10.503939] (-) TimerEvent: {}
+[10.605025] (-) TimerEvent: {}
+[10.706119] (-) TimerEvent: {}
+[10.807178] (-) TimerEvent: {}
+[10.908236] (-) TimerEvent: {}
+[11.009299] (-) TimerEvent: {}
+[11.110405] (-) TimerEvent: {}
+[11.211525] (-) TimerEvent: {}
+[11.312667] (-) TimerEvent: {}
+[11.413786] (-) TimerEvent: {}
+[11.514924] (-) TimerEvent: {}
+[11.616043] (-) TimerEvent: {}
+[11.717161] (-) TimerEvent: {}
+[11.818331] (-) TimerEvent: {}
+[11.919459] (-) TimerEvent: {}
+[12.020596] (-) TimerEvent: {}
+[12.121770] (-) TimerEvent: {}
+[12.222887] (-) TimerEvent: {}
+[12.324004] (-) TimerEvent: {}
+[12.425134] (-) TimerEvent: {}
+[12.526571] (-) TimerEvent: {}
+[12.627695] (-) TimerEvent: {}
+[12.728819] (-) TimerEvent: {}
+[12.829961] (-) TimerEvent: {}
+[12.931076] (-) TimerEvent: {}
+[13.032188] (-) TimerEvent: {}
+[13.133325] (-) TimerEvent: {}
+[13.234448] (-) TimerEvent: {}
+[13.335569] (-) TimerEvent: {}
+[13.436684] (-) TimerEvent: {}
+[13.537808] (-) TimerEvent: {}
+[13.638940] (-) TimerEvent: {}
+[13.740066] (-) TimerEvent: {}
+[13.841188] (-) TimerEvent: {}
+[13.942377] (-) TimerEvent: {}
+[14.043864] (-) TimerEvent: {}
+[14.145594] (-) TimerEvent: {}
+[14.246716] (-) TimerEvent: {}
+[14.347854] (-) TimerEvent: {}
+[14.448974] (-) TimerEvent: {}
+[14.550112] (-) TimerEvent: {}
+[14.651269] (-) TimerEvent: {}
+[14.752418] (-) TimerEvent: {}
+[14.853579] (-) TimerEvent: {}
+[14.954710] (-) TimerEvent: {}
+[15.055824] (-) TimerEvent: {}
+[15.156901] (-) TimerEvent: {}
+[15.258034] (-) TimerEvent: {}
+[15.359167] (-) TimerEvent: {}
+[15.460297] (-) TimerEvent: {}
+[15.561428] (-) TimerEvent: {}
+[15.662578] (-) TimerEvent: {}
+[15.763740] (-) TimerEvent: {}
+[15.864886] (-) TimerEvent: {}
+[15.966038] (-) TimerEvent: {}
+[16.067189] (-) TimerEvent: {}
+[16.168365] (-) TimerEvent: {}
+[16.269566] (-) TimerEvent: {}
+[16.370674] (-) TimerEvent: {}
+[16.471771] (-) TimerEvent: {}
+[16.572868] (-) TimerEvent: {}
+[16.673983] (-) TimerEvent: {}
+[16.775043] (-) TimerEvent: {}
+[16.876111] (-) TimerEvent: {}
+[16.977189] (-) TimerEvent: {}
+[17.078315] (-) TimerEvent: {}
+[17.179572] (-) TimerEvent: {}
+[17.280804] (-) TimerEvent: {}
+[17.381980] (-) TimerEvent: {}
+[17.483035] (-) TimerEvent: {}
+[17.584222] (-) TimerEvent: {}
+[17.685396] (-) TimerEvent: {}
+[17.786627] (-) TimerEvent: {}
+[17.887834] (-) TimerEvent: {}
+[17.988965] (-) TimerEvent: {}
+[18.090517] (-) TimerEvent: {}
+[18.108857] (sensor_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX executable camera_driver\x1b[0m\n'}
+[18.190622] (-) TimerEvent: {}
+[18.291749] (-) TimerEvent: {}
+[18.381105] (sensor_interfaces) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.408\n'}
+[18.391869] (-) TimerEvent: {}
+[18.492776] (-) TimerEvent: {}
+[18.593996] (-) TimerEvent: {}
+[18.695194] (-) TimerEvent: {}
+[18.796399] (-) TimerEvent: {}
+[18.897532] (-) TimerEvent: {}
+[18.998653] (-) TimerEvent: {}
+[19.099747] (-) TimerEvent: {}
+[19.200857] (-) TimerEvent: {}
+[19.302083] (-) TimerEvent: {}
+[19.403173] (-) TimerEvent: {}
+[19.504271] (-) TimerEvent: {}
+[19.605470] (-) TimerEvent: {}
+[19.706522] (-) TimerEvent: {}
+[19.789589] (sensor_interfaces) StdoutLine: {'line': b'[ 41%] Built target camera_driver\n'}
+[19.793451] (sensor_interfaces) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[19.803782] (sensor_interfaces) CommandEnded: {'returncode': 2}
+[19.806594] (-) TimerEvent: {}
+[19.859410] (sensor_interfaces) JobEnded: {'identifier': 'sensor_interfaces', 'rc': 2}
+[19.872069] (-) EventReactorShutdown: {}

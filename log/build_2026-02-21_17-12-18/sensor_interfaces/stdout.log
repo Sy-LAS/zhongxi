@@ -1,0 +1,5 @@
+[ 24%] Built target sensor_interfaces_base
+[ 72%] Built target ydlidar_sdk
+[ 80%] [32mBuilding CXX object CMakeFiles/lidar_driver.dir/src/lidar_driver.cpp.o[0m
+[ 88%] Built target camera_driver
+[ 96%] Built target control_board_interface

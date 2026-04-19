@@ -1,0 +1,59 @@
+[0.037s] Invoking command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/sensor_interfaces -- -j6 -l6
+[0.258s] [ 64%] Built target ydlidar_sdk
+[0.297s] [ 72%] Built target sensor_interfaces_base
+[0.375s] [ 88%] Built target lidar_driver
+[0.378s] [ 88%] Built target camera_driver
+[0.394s] [ 96%] [32mBuilding CXX object CMakeFiles/control_board_interface.dir/src/stm32_comms_manager.cpp.o[0m
+[0.394s] [ 96%] [32mBuilding CXX object CMakeFiles/control_board_interface.dir/src/control_board_interface.cpp.o[0m
+[1.403s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/include/sensor_interfaces/control_board_interface.h:11[m[K,
+[1.403s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/control_board_interface.cpp:1[m[K:
+[1.403s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+[1.404s]    35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+[1.404s]       |  [01;35m[K^~~~~~~[m[K
+[8.141s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/stm32_comms_manager.cpp:[m[K In member function ‘[01m[Kbool sensor_interfaces::Stm32CommsManager::sendCommand(const string&)[m[K’:
+[8.142s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/stm32_comms_manager.cpp:84:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcommand[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.142s]    84 | bool Stm32CommsManager::sendCommand([01;35m[Kconst std::string& command[m[K) {
+[8.142s]       |                                     [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[8.142s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/stm32_comms_manager.cpp:[m[K In member function ‘[01m[Kstd::string sensor_interfaces::Stm32CommsManager::readData(int)[m[K’:
+[8.143s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/stm32_comms_manager.cpp:108:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout_ms[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.143s]   108 | std::string Stm32CommsManager::readData([01;35m[Kint timeout_ms[m[K) {
+[8.143s]       |                                         [01;35m[K~~~~^~~~~~~~~~[m[K
+[35.684s] [100%] [32m[1mLinking CXX executable control_board_interface[0m
+[37.926s] [100%] Built target control_board_interface
+[37.984s] Invoked command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/sensor_interfaces -- -j6 -l6
+[38.023s] Invoking command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --install /home/chuil/Desktop/zhongxi/build/sensor_interfaces
+[38.072s] -- Install configuration: ""
+[38.078s] -- Execute custom install script
+[38.079s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/lib/sensor_interfaces/camera_driver
+[38.080s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/lib/sensor_interfaces/lidar_driver
+[38.080s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/lib/sensor_interfaces/control_board_interface
+[38.081s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/lib/sensor_interfaces/libydlidar_sdk.a
+[38.081s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/lib/sensor_interfaces/libsensor_interfaces_base.a
+[38.083s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/include//sensor_interfaces/camera_interface.h
+[38.083s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/include//sensor_interfaces/control_board_interface.h
+[38.084s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/include//sensor_interfaces/lidar_interface.h
+[38.084s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/include//sensor_interfaces/sensor_interfaces.h
+[38.085s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/include//sensor_interfaces/stm32_comms_manager.h
+[38.085s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/include//sensor_interfaces/stm32_protocol.h
+[38.085s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces//launch/full_system.launch.py
+[38.086s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces//launch/sensors.launch.py
+[38.086s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces//config/camera_params.yaml
+[38.087s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces//config/control_params.yaml
+[38.087s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces//config/lidar_params.yaml
+[38.087s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces//config/ydlidar_x3pro.yaml
+[38.088s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/ament_index/resource_index/package_run_dependencies/sensor_interfaces
+[38.088s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/ament_index/resource_index/parent_prefix_path/sensor_interfaces
+[38.089s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/environment/ament_prefix_path.sh
+[38.089s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/environment/ament_prefix_path.dsv
+[38.090s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/environment/path.sh
+[38.090s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/environment/path.dsv
+[38.090s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/local_setup.bash
+[38.091s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/local_setup.sh
+[38.091s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/local_setup.zsh
+[38.092s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/local_setup.dsv
+[38.092s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/package.dsv
+[38.093s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/ament_index/resource_index/packages/sensor_interfaces
+[38.093s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/cmake/sensor_interfacesConfig.cmake
+[38.093s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/cmake/sensor_interfacesConfig-version.cmake
+[38.094s] -- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/package.xml
+[38.101s] Invoked command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --install /home/chuil/Desktop/zhongxi/build/sensor_interfaces

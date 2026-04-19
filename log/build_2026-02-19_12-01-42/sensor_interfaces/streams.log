@@ -1,0 +1,13 @@
+[0.031s] Invoking command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/sensor_interfaces -- -j6 -l6
+[0.152s] [35m[1mConsolidate compiler generated dependencies of target ydlidar_sdk[0m
+[0.170s] [  4%] [32mBuilding CXX object CMakeFiles/sensor_interfaces_base.dir/src/sensor_interfaces.cpp.o[0m
+[0.199s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/sensor_interfaces.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Ksensor_interfaces/sensor_interfaces.h: 没有那个文件或目录
+[0.200s]     1 | #include [01;31m[K"sensor_interfaces/sensor_interfaces.h"[m[K
+[0.200s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.200s] compilation terminated.
+[0.201s] gmake[2]: *** [CMakeFiles/sensor_interfaces_base.dir/build.make:76：CMakeFiles/sensor_interfaces_base.dir/src/sensor_interfaces.cpp.o] 错误 1
+[0.202s] gmake[1]: *** [CMakeFiles/Makefile2:171：CMakeFiles/sensor_interfaces_base.dir/all] 错误 2
+[0.203s] gmake[1]: *** 正在等待未完成的任务....
+[0.223s] [ 70%] Built target ydlidar_sdk
+[0.226s] gmake: *** [Makefile:146：all] 错误 2
+[0.236s] Invoked command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/sensor_interfaces -- -j6 -l6

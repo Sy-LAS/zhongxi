@@ -1,0 +1,3 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/control_board_interface.dir/src/control_board_interface.cpp.o[0m
+[ 83%] Built target camera_driver
+[ 83%] Built target lidar_driver

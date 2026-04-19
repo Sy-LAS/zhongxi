@@ -1,0 +1,107 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found tf2_geometry_msgs: 0.25.18 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found QGLViewer: /usr/include/QGLViewer
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/chuil/Desktop/zhongxi/build/graphslam
+[ 15%] [34m[1mAutomatic MOC and UIC for target graphslam_g2o[0m
+[ 15%] [34m[1mAutomatic MOC and UIC for target map_manager_node[0m
+[ 15%] [34m[1mAutomatic MOC and UIC for target graphslam_node[0m
+[ 15%] Built target graphslam_g2o_autogen
+[ 15%] Built target graphslam_node_autogen
+[ 15%] Built target map_manager_node_autogen
+[35m[1mConsolidate compiler generated dependencies of target graphslam_g2o[0m
+[35m[1mConsolidate compiler generated dependencies of target graphslam_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/map_manager_node.dir/map_manager_node_autogen/mocs_compilation.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/map_manager_node.dir/map_manager_node.cpp.o[0m
+[ 50%] Built target graphslam_g2o
+[ 60%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/back_end.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/front_end.cpp.o[0m
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:12:10:[m[K [01;31m[Kfatal error: [m[Kg2o/types/slam2d/edge_se2_odometry.h: 没有那个文件或目录
+   12 | #include [01;31m[K<g2o/types/slam2d/edge_se2_odometry.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:104：CMakeFiles/graphslam_node.dir/src/slam2d/back_end.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+In file included from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/map_manager_node.cpp:7[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:[m[K In member function ‘[01m[Kvirtual slam2d::Pose2D slam2d::ICPFrontEnd::scanMatchPose(const slam2d::LaserScan&, const slam2d::LaserScan&, const slam2d::Pose2D&)[m[K’:
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:95:13:[m[K [01;31m[Kerror: [m[K‘[01m[KfindClosestPoints[m[K’ was not declared in this scope
+   95 |             [01;31m[KfindClosestPoints[m[K(current_scan, prev_scan, initial_pose, transform);
+      |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:103:32:[m[K [01;31m[Kerror: [m[K‘[01m[KcomputeTransform[m[K’ was not declared in this scope
+  103 |         Pose2D new_transform = [01;31m[KcomputeTransform[m[K(correspondences);
+      |                                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:120:21:[m[K [01;31m[Kerror: [m[K‘[01m[KcomposePoses[m[K’ was not declared in this scope
+  120 |     Pose2D result = [01;31m[KcomposePoses[m[K(initial_pose, transform);
+      |                     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:[m[K At global scope:
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:125:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kstd::vector<std::pair<slam2d::Point2D, slam2d::Point2D> > slam2d::ICPFrontEnd::findClosestPoints(const slam2d::LaserScan&, const slam2d::LaserScan&, const slam2d::Pose2D&, const slam2d::Pose2D&)[m[K’
+  125 | [01;31m[KICPFrontEnd[m[K::findClosestPoints(const LaserScan& current_scan,
+      | [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:125:1:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kstd::vector<std::pair<slam2d::Point2D, slam2d::Point2D> > slam2d::ICPFrontEnd::findClosestPoints(const slam2d::LaserScan&, const slam2d::LaserScan&, const slam2d::Pose2D&, const slam2d::Pose2D&)[m[K’
+In file included from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:1[m[K:
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/front_end.h:60:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass slam2d::ICPFrontEnd[m[K’ defined here
+   60 | class [01;36m[KICPFrontEnd[m[K : public FrontEnd {
+      |       [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:165:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kslam2d::Pose2D slam2d::ICPFrontEnd::computeTransform(const std::vector<std::pair<slam2d::Point2D, slam2d::Point2D> >&)[m[K’
+  165 | Pose2D [01;31m[KICPFrontEnd[m[K::computeTransform(const std::vector<std::pair<Point2D, Point2D>>& correspondences) {
+      |        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:165:8:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kslam2d::Pose2D slam2d::ICPFrontEnd::computeTransform(const std::vector<std::pair<slam2d::Point2D, slam2d::Point2D> >&)[m[K’
+In file included from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:1[m[K:
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/front_end.h:60:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass slam2d::ICPFrontEnd[m[K’ defined here
+   60 | class [01;36m[KICPFrontEnd[m[K : public FrontEnd {
+      |       [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:231:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kslam2d::Pose2D slam2d::ICPFrontEnd::composePoses(const slam2d::Pose2D&, const slam2d::Pose2D&)[m[K’
+  231 | Pose2D [01;31m[KICPFrontEnd[m[K::composePoses(const Pose2D& p1, const Pose2D& p2) {
+      |        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:231:8:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kslam2d::Pose2D slam2d::ICPFrontEnd::composePoses(const slam2d::Pose2D&, const slam2d::Pose2D&)[m[K’
+In file included from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:1[m[K:
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/front_end.h:60:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass slam2d::ICPFrontEnd[m[K’ defined here
+   60 | class [01;36m[KICPFrontEnd[m[K : public FrontEnd {
+      |       [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:[m[K In member function ‘[01m[Kvirtual bool slam2d::FeatureBasedFrontEnd::processLaserScan(const slam2d::LaserScan&, const slam2d::Pose2D&, slam2d::Pose2D&, std::vector<slam2d::Observation>&)[m[K’:
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:249:45:[m[K [01;31m[Kerror: [m[K‘[01m[KextractFeatures[m[K’ was not declared in this scope
+  249 |     std::vector<Point2D> current_features = [01;31m[KextractFeatures[m[K(scan);
+      |                                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:260:62:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst slam2d::Pose2D&[m[K’ from expression of type ‘[01m[Kslam2d::Point2D[m[K’
+  260 |                 Point2D global_point = utils::transformPoint([01;31m[Klocal_point[m[K, predicted_pose);
+      |                                                              [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:2[m[K:
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/utils/transformations.h:49:38:[m[K [01;36m[Knote: [m[Kin passing argument 1 of ‘[01m[Kslam2d::Point2D slam2d::utils::transformPoint(const slam2d::Pose2D&, const slam2d::Point2D&)[m[K’
+   49 | Point2D transformPoint([01;36m[Kconst Pose2D& pose[m[K, const Point2D& point);
+      |                        [01;36m[K~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:[m[K At global scope:
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:291:22:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kstd::vector<slam2d::Point2D> slam2d::FeatureBasedFrontEnd::extractFeatures(const slam2d::LaserScan&)[m[K’
+  291 | std::vector<Point2D> [01;31m[KFeatureBasedFrontEnd[m[K::extractFeatures(const LaserScan& scan) {
+      |                      [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:291:22:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kstd::vector<slam2d::Point2D> slam2d::FeatureBasedFrontEnd::extractFeatures(const slam2d::LaserScan&)[m[K’
+In file included from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:1[m[K:
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/front_end.h:83:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass slam2d::FeatureBasedFrontEnd[m[K’ defined here
+   83 | class [01;36m[KFeatureBasedFrontEnd[m[K : public FrontEnd {
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:118：CMakeFiles/graphslam_node.dir/src/slam2d/front_end.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:170：CMakeFiles/graphslam_node.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+[ 65%] [32m[1mLinking CXX executable map_manager_node[0m
+[ 65%] Built target map_manager_node
+gmake: *** [Makefile:146：all] 错误 2

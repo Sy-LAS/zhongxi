@@ -1,0 +1,20 @@
+[  8%] [34m[1mAutomatic MOC and UIC for target graphslam_g2o[0m
+[  8%] [34m[1mAutomatic MOC and UIC for target graphslam_node[0m
+[ 12%] [34m[1mAutomatic MOC and UIC for target map_saver_node[0m
+[ 16%] [34m[1mAutomatic MOC and UIC for target map_manager_node[0m
+[ 16%] Built target graphslam_g2o_autogen
+[ 16%] Built target graphslam_node_autogen
+[ 16%] Built target map_saver_node_autogen
+[ 16%] Built target map_manager_node_autogen
+[ 20%] [32mBuilding CXX object CMakeFiles/graphslam_g2o.dir/slam2d_g2o.cpp.o[0m
+[ 33%] Built target map_saver_node
+[ 70%] Built target graphslam_node
+[ 83%] Built target map_manager_node
+In file included from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/slam2d_g2o.cpp:24[m[K:
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/main_window.h:23:10:[m[K [01;31m[Kfatal error: [m[Kui_main_window.h: 没有那个文件或目录
+   23 | #include [01;31m[K"ui_main_window.h"[m[K  // Updated to use the new UI file
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/graphslam_g2o.dir/build.make:118：CMakeFiles/graphslam_g2o.dir/slam2d_g2o.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:147：CMakeFiles/graphslam_g2o.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

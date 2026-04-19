@@ -1,0 +1,238 @@
+[0.000000] (-) TimerEvent: {}
+[0.000950] (GraphSLAM) JobQueued: {'identifier': 'GraphSLAM', 'dependencies': OrderedDict()}
+[0.001673] (GraphSLAM) JobStarted: {'identifier': 'GraphSLAM'}
+[0.018838] (GraphSLAM) JobProgress: {'identifier': 'GraphSLAM', 'progress': 'cmake'}
+[0.020581] (GraphSLAM) JobProgress: {'identifier': 'GraphSLAM', 'progress': 'build'}
+[0.022295] (GraphSLAM) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/build/GraphSLAM', '--', '-j6', '-l6'], 'cwd': '/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/build/GraphSLAM', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'chuil'), ('SSH_CLIENT', '192.168.0.102 54698 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/chuil/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/chuil/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/chuil'), ('OLDPWD', '/home/chuil/Desktop/zhongxi/zhongxi_2_5'), ('TERM_PROGRAM_VERSION', '1.108.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-3196a25f-31fe-42e5-b2dd-385879544de7.sock'), ('JETSON_L4T', '36.5.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/chuil/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/chuil/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chuil'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424125055888'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/chuil/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/chuil/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/chuil/.vscode-server/cli/servers/Stable-c9d77990917f3102ada88be140d28b038d1dd7c7/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/bundled/scripts/noConfigScripts'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-be7ceeecedf248ba.txt'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/home/chuil/.vscode-server/data/User/workspaceStorage/877dbae6315939ba4de2be7038eb2a31/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-639accb1f1.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/build/GraphSLAM'), ('SSH_CONNECTION', '192.168.0.102 54698 192.168.0.107 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('JETSON_P_NUMBER', 'p3767-0005'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.091148] (GraphSLAM) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098898] (-) TimerEvent: {}
+[0.199579] (-) TimerEvent: {}
+[0.300552] (-) TimerEvent: {}
+[0.401746] (-) TimerEvent: {}
+[0.433422] (GraphSLAM) StdoutLine: {'line': b'-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.501961] (-) TimerEvent: {}
+[0.511606] (GraphSLAM) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.516637] (GraphSLAM) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.529217] (GraphSLAM) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.548879] (GraphSLAM) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.574295] (GraphSLAM) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.602073] (-) TimerEvent: {}
+[0.640363] (GraphSLAM) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.643257] (GraphSLAM) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.702221] (-) TimerEvent: {}
+[0.803056] (-) TimerEvent: {}
+[0.861360] (GraphSLAM) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.903241] (-) TimerEvent: {}
+[0.964059] (GraphSLAM) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.003408] (-) TimerEvent: {}
+[1.023913] (GraphSLAM) StdoutLine: {'line': b'-- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.031856] (GraphSLAM) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.103547] (-) TimerEvent: {}
+[1.204314] (-) TimerEvent: {}
+[1.305255] (-) TimerEvent: {}
+[1.356773] (GraphSLAM) StderrLine: {'line': b'WARNING: Package name "GraphSLAM" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.\n'}
+[1.396274] (GraphSLAM) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.405339] (-) TimerEvent: {}
+[1.506150] (-) TimerEvent: {}
+[1.512051] (GraphSLAM) StdoutLine: {'line': b'-- Generating done\n'}
+[1.529306] (GraphSLAM) StdoutLine: {'line': b'-- Build files have been written to: /home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/build/GraphSLAM\n'}
+[1.606424] (-) TimerEvent: {}
+[1.639182] (GraphSLAM) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target graphslam_g2o\x1b[0m\n'}
+[1.640185] (GraphSLAM) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target graphslam_node\x1b[0m\n'}
+[1.702426] (GraphSLAM) StdoutLine: {'line': b'[ 12%] Built target graphslam_node_autogen\n'}
+[1.703247] (GraphSLAM) StdoutLine: {'line': b'[ 12%] Built target graphslam_g2o_autogen\n'}
+[1.706552] (-) TimerEvent: {}
+[1.735459] (GraphSLAM) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target graphslam_node\x1b[0m\n'}
+[1.739348] (GraphSLAM) StderrLine: {'line': b'gmake[2]: *** \xe6\xb2\xa1\xe6\x9c\x89\xe8\xa7\x84\xe5\x88\x99\xe5\x8f\xaf\xe5\x88\xb6\xe4\xbd\x9c\xe7\x9b\xae\xe6\xa0\x87\xe2\x80\x9c/usr/lib/aarch64-linux-gnu/libQGLViewer.so\xe2\x80\x9d\xef\xbc\x8c\xe7\x94\xb1\xe2\x80\x9cgraphslam_g2o\xe2\x80\x9d \xe9\x9c\x80\xe6\xb1\x82\xe3\x80\x82 \xe5\x81\x9c\xe6\xad\xa2\xe3\x80\x82\n'}
+[1.739934] (GraphSLAM) StderrLine: {'line': b'gmake[2]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[1.758305] (GraphSLAM) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/graphslam_g2o.dir/slam2d_g2o.cpp.o\x1b[0m\n'}
+[1.759506] (GraphSLAM) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/graphslam_g2o.dir/main_window.cpp.o\x1b[0m\n'}
+[1.759771] (GraphSLAM) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/graphslam_g2o.dir/graphslam_g2o_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[1.772556] (GraphSLAM) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/graphslam_g2o.dir/slam2d_viewer.cpp.o\x1b[0m\n'}
+[1.797033] (GraphSLAM) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/front_end.cpp.o\x1b[0m\n'}
+[1.797891] (GraphSLAM) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/map.cpp.o\x1b[0m\n'}
+[1.806886] (-) TimerEvent: {}
+[1.907995] (-) TimerEvent: {}
+[2.009167] (-) TimerEvent: {}
+[2.110353] (-) TimerEvent: {}
+[2.211538] (-) TimerEvent: {}
+[2.284682] (GraphSLAM) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/slam2d_viewer.cpp:19\x1b[m\x1b[K:\n'}
+[2.285440] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/slam2d_viewer.h:23:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kqglviewer.h: \xe6\xb2\xa1\xe6\x9c\x89\xe9\x82\xa3\xe4\xb8\xaa\xe6\x96\x87\xe4\xbb\xb6\xe6\x88\x96\xe7\x9b\xae\xe5\xbd\x95\n'}
+[2.285701] (GraphSLAM) StderrLine: {'line': b'   23 | #include \x1b[01;31m\x1b[K"qglviewer.h"\x1b[m\x1b[K\n'}
+[2.285866] (GraphSLAM) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.286021] (GraphSLAM) StderrLine: {'line': b'compilation terminated.\n'}
+[2.299084] (GraphSLAM) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/graphslam_g2o.dir/build.make:104\xef\xbc\x9aCMakeFiles/graphslam_g2o.dir/slam2d_viewer.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[2.311859] (-) TimerEvent: {}
+[2.327590] (GraphSLAM) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/utils.cpp.o\x1b[0m\n'}
+[2.412208] (-) TimerEvent: {}
+[2.509362] (GraphSLAM) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/build/GraphSLAM/graphslam_g2o_autogen/include/ui_base_main_window.h:30\x1b[m\x1b[K,\n'}
+[2.510833] (GraphSLAM) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/main_window.h:22\x1b[m\x1b[K,\n'}
+[2.511102] (GraphSLAM) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/main_window.cpp:19\x1b[m\x1b[K:\n'}
+[2.511289] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/slam2d_viewer.h:23:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kqglviewer.h: \xe6\xb2\xa1\xe6\x9c\x89\xe9\x82\xa3\xe4\xb8\xaa\xe6\x96\x87\xe4\xbb\xb6\xe6\x88\x96\xe7\x9b\xae\xe5\xbd\x95\n'}
+[2.511488] (GraphSLAM) StderrLine: {'line': b'   23 | #include \x1b[01;31m\x1b[K"qglviewer.h"\x1b[m\x1b[K\n'}
+[2.511645] (GraphSLAM) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.511789] (GraphSLAM) StderrLine: {'line': b'compilation terminated.\n'}
+[2.515988] (-) TimerEvent: {}
+[2.519688] (GraphSLAM) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/build/GraphSLAM/graphslam_g2o_autogen/include/ui_base_main_window.h:30\x1b[m\x1b[K,\n'}
+[2.520401] (GraphSLAM) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/main_window.h:22\x1b[m\x1b[K,\n'}
+[2.520636] (GraphSLAM) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/slam2d_g2o.cpp:24\x1b[m\x1b[K:\n'}
+[2.520810] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/slam2d_viewer.h:23:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kqglviewer.h: \xe6\xb2\xa1\xe6\x9c\x89\xe9\x82\xa3\xe4\xb8\xaa\xe6\x96\x87\xe4\xbb\xb6\xe6\x88\x96\xe7\x9b\xae\xe5\xbd\x95\n'}
+[2.521022] (GraphSLAM) StderrLine: {'line': b'   23 | #include \x1b[01;31m\x1b[K"qglviewer.h"\x1b[m\x1b[K\n'}
+[2.521179] (GraphSLAM) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.521327] (GraphSLAM) StderrLine: {'line': b'compilation terminated.\n'}
+[2.527202] (GraphSLAM) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/graphslam_g2o.dir/build.make:90\xef\xbc\x9aCMakeFiles/graphslam_g2o.dir/main_window.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[2.534271] (GraphSLAM) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/graphslam_g2o.dir/build.make:118\xef\xbc\x9aCMakeFiles/graphslam_g2o.dir/slam2d_g2o.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[2.554572] (GraphSLAM) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/utils/transformations.cpp.o\x1b[0m\n'}
+[2.556376] (GraphSLAM) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/utils/laser_scan.cpp.o\x1b[0m\n'}
+[2.569066] (GraphSLAM) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/build/GraphSLAM/graphslam_g2o_autogen/include/ui_base_main_window.h:30\x1b[m\x1b[K,\n'}
+[2.569978] (GraphSLAM) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/build/GraphSLAM/graphslam_g2o_autogen/EWIEGA46WW/../../../../main_window.h:22\x1b[m\x1b[K,\n'}
+[2.570177] (GraphSLAM) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/build/GraphSLAM/graphslam_g2o_autogen/EWIEGA46WW/moc_main_window.cpp:10\x1b[m\x1b[K,\n'}
+[2.570340] (GraphSLAM) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/build/GraphSLAM/graphslam_g2o_autogen/mocs_compilation.cpp:2\x1b[m\x1b[K:\n'}
+[2.570502] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/slam2d_viewer.h:23:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kqglviewer.h: \xe6\xb2\xa1\xe6\x9c\x89\xe9\x82\xa3\xe4\xb8\xaa\xe6\x96\x87\xe4\xbb\xb6\xe6\x88\x96\xe7\x9b\xae\xe5\xbd\x95\n'}
+[2.570700] (GraphSLAM) StderrLine: {'line': b'   23 | #include \x1b[01;31m\x1b[K"qglviewer.h"\x1b[m\x1b[K\n'}
+[2.570849] (GraphSLAM) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.570988] (GraphSLAM) StderrLine: {'line': b'compilation terminated.\n'}
+[2.587917] (GraphSLAM) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/graphslam_g2o.dir/build.make:76\xef\xbc\x9aCMakeFiles/graphslam_g2o.dir/graphslam_g2o_autogen/mocs_compilation.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[2.588872] (GraphSLAM) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:141\xef\xbc\x9aCMakeFiles/graphslam_g2o.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[2.589089] (GraphSLAM) StderrLine: {'line': b'gmake[1]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[2.616313] (-) TimerEvent: {}
+[2.717543] (-) TimerEvent: {}
+[2.818882] (-) TimerEvent: {}
+[2.920060] (-) TimerEvent: {}
+[3.021249] (-) TimerEvent: {}
+[3.122526] (-) TimerEvent: {}
+[3.223720] (-) TimerEvent: {}
+[3.324992] (-) TimerEvent: {}
+[3.426347] (-) TimerEvent: {}
+[3.529715] (-) TimerEvent: {}
+[3.630919] (-) TimerEvent: {}
+[3.732180] (-) TimerEvent: {}
+[3.833366] (-) TimerEvent: {}
+[3.934644] (-) TimerEvent: {}
+[4.035904] (-) TimerEvent: {}
+[4.137231] (-) TimerEvent: {}
+[4.238602] (-) TimerEvent: {}
+[4.339916] (-) TimerEvent: {}
+[4.441264] (-) TimerEvent: {}
+[4.542573] (-) TimerEvent: {}
+[4.643864] (-) TimerEvent: {}
+[4.745118] (-) TimerEvent: {}
+[4.846395] (-) TimerEvent: {}
+[4.947718] (-) TimerEvent: {}
+[5.048996] (-) TimerEvent: {}
+[5.150432] (-) TimerEvent: {}
+[5.251758] (-) TimerEvent: {}
+[5.353120] (-) TimerEvent: {}
+[5.454476] (-) TimerEvent: {}
+[5.555711] (-) TimerEvent: {}
+[5.656936] (-) TimerEvent: {}
+[5.758283] (-) TimerEvent: {}
+[5.859546] (-) TimerEvent: {}
+[5.960776] (-) TimerEvent: {}
+[6.031792] (GraphSLAM) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/slam2d/map.cpp:2\x1b[m\x1b[K:\n'}
+[6.032643] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:115:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmean\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.032865] (GraphSLAM) StderrLine: {'line': b'  115 |     std::normal_distribution<> dist(\x1b[01;31m\x1b[Kmean\x1b[m\x1b[K, stddev);\n'}
+[6.033039] (GraphSLAM) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[6.051055] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:115:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstddev\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.051959] (GraphSLAM) StderrLine: {'line': b'  115 |     std::normal_distribution<> dist(mean, \x1b[01;31m\x1b[Kstddev\x1b[m\x1b[K);\n'}
+[6.052164] (GraphSLAM) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.052321] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:116:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kreturn\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.052475] (GraphSLAM) StderrLine: {'line': b'  116 |     \x1b[01;31m\x1b[Kreturn\x1b[m\x1b[K dist(gen);\n'}
+[6.052620] (GraphSLAM) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.052764] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:120:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.052946] (GraphSLAM) StderrLine: {'line': b'  120 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K // namespace slam2d\n'}
+[6.053110] (GraphSLAM) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.061011] (-) TimerEvent: {}
+[6.140967] (GraphSLAM) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/slam2d/front_end.cpp:2\x1b[m\x1b[K:\n'}
+[6.141833] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:115:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmean\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.142053] (GraphSLAM) StderrLine: {'line': b'  115 |     std::normal_distribution<> dist(\x1b[01;31m\x1b[Kmean\x1b[m\x1b[K, stddev);\n'}
+[6.142223] (GraphSLAM) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[6.161416] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:115:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstddev\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.162306] (-) TimerEvent: {}
+[6.162737] (GraphSLAM) StderrLine: {'line': b'  115 |     std::normal_distribution<> dist(mean, \x1b[01;31m\x1b[Kstddev\x1b[m\x1b[K);\n'}
+[6.162974] (GraphSLAM) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.163142] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:116:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kreturn\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.163360] (GraphSLAM) StderrLine: {'line': b'  116 |     \x1b[01;31m\x1b[Kreturn\x1b[m\x1b[K dist(gen);\n'}
+[6.163510] (GraphSLAM) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.163654] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:120:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.163809] (GraphSLAM) StderrLine: {'line': b'  120 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K // namespace slam2d\n'}
+[6.163949] (GraphSLAM) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.168288] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/slam2d/front_end.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kslam2d::Pose2D slam2d::FrontEnd::predictPose(const slam2d::Pose2D&, const slam2d::Pose2D&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.168891] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/slam2d/front_end.cpp:22:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsampleNormalDistribution\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kslam2d::utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.169102] (GraphSLAM) StderrLine: {'line': b'   22 |     double delta_rot1 = rot1 + utils::\x1b[01;31m\x1b[KsampleNormalDistribution\x1b[m\x1b[K(\n'}
+[6.169265] (GraphSLAM) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.171755] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/slam2d/front_end.cpp:25:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsampleNormalDistribution\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kslam2d::utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.172214] (GraphSLAM) StderrLine: {'line': b'   25 |     double delta_trans = trans + utils::\x1b[01;31m\x1b[KsampleNormalDistribution\x1b[m\x1b[K(\n'}
+[6.172397] (GraphSLAM) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.179269] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/slam2d/front_end.cpp:29:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KsampleNormalDistribution\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kslam2d::utils\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.179603] (GraphSLAM) StderrLine: {'line': b'   29 |     double delta_rot2 = rot2 + utils::\x1b[01;31m\x1b[KsampleNormalDistribution\x1b[m\x1b[K(\n'}
+[6.179782] (GraphSLAM) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.262678] (-) TimerEvent: {}
+[6.364638] (-) TimerEvent: {}
+[6.465966] (-) TimerEvent: {}
+[6.567250] (-) TimerEvent: {}
+[6.668476] (-) TimerEvent: {}
+[6.671632] (GraphSLAM) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:132\xef\xbc\x9aCMakeFiles/graphslam_node.dir/src/slam2d/map.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[6.672465] (GraphSLAM) StderrLine: {'line': b'gmake[2]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[6.735862] (GraphSLAM) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/slam2d/utils.cpp:3\x1b[m\x1b[K:\n'}
+[6.736781] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:115:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmean\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.737064] (GraphSLAM) StderrLine: {'line': b'  115 |     std::normal_distribution<> dist(\x1b[01;31m\x1b[Kmean\x1b[m\x1b[K, stddev);\n'}
+[6.737239] (GraphSLAM) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[6.757166] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:115:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstddev\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.758043] (GraphSLAM) StderrLine: {'line': b'  115 |     std::normal_distribution<> dist(mean, \x1b[01;31m\x1b[Kstddev\x1b[m\x1b[K);\n'}
+[6.758225] (GraphSLAM) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.758380] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:116:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kreturn\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.758586] (GraphSLAM) StderrLine: {'line': b'  116 |     \x1b[01;31m\x1b[Kreturn\x1b[m\x1b[K dist(gen);\n'}
+[6.758734] (GraphSLAM) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.758875] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:120:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.759019] (GraphSLAM) StderrLine: {'line': b'  120 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K // namespace slam2d\n'}
+[6.759154] (GraphSLAM) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.764943] (GraphSLAM) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:118\xef\xbc\x9aCMakeFiles/graphslam_node.dir/src/slam2d/front_end.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[6.768602] (-) TimerEvent: {}
+[6.850304] (GraphSLAM) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/utils/transformations.cpp:1\x1b[m\x1b[K:\n'}
+[6.851099] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:115:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmean\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.851383] (GraphSLAM) StderrLine: {'line': b'  115 |     std::normal_distribution<> dist(\x1b[01;31m\x1b[Kmean\x1b[m\x1b[K, stddev);\n'}
+[6.851553] (GraphSLAM) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[6.866796] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:115:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstddev\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.867686] (GraphSLAM) StderrLine: {'line': b'  115 |     std::normal_distribution<> dist(mean, \x1b[01;31m\x1b[Kstddev\x1b[m\x1b[K);\n'}
+[6.867905] (GraphSLAM) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.868077] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:116:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kreturn\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.868237] (GraphSLAM) StderrLine: {'line': b'  116 |     \x1b[01;31m\x1b[Kreturn\x1b[m\x1b[K dist(gen);\n'}
+[6.868389] (GraphSLAM) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.868535] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:120:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.868681] (-) TimerEvent: {}
+[6.869107] (GraphSLAM) StderrLine: {'line': b'  120 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K // namespace slam2d\n'}
+[6.869293] (GraphSLAM) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.913689] (GraphSLAM) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/utils/laser_scan.cpp:2\x1b[m\x1b[K:\n'}
+[6.914501] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:115:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmean\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.914695] (GraphSLAM) StderrLine: {'line': b'  115 |     std::normal_distribution<> dist(\x1b[01;31m\x1b[Kmean\x1b[m\x1b[K, stddev);\n'}
+[6.914850] (GraphSLAM) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[6.933316] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:115:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstddev\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.933931] (GraphSLAM) StderrLine: {'line': b'  115 |     std::normal_distribution<> dist(mean, \x1b[01;31m\x1b[Kstddev\x1b[m\x1b[K);\n'}
+[6.934100] (GraphSLAM) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.934254] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:116:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kreturn\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.934405] (GraphSLAM) StderrLine: {'line': b'  116 |     \x1b[01;31m\x1b[Kreturn\x1b[m\x1b[K dist(gen);\n'}
+[6.934552] (GraphSLAM) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.934689] (GraphSLAM) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:120:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.934889] (GraphSLAM) StderrLine: {'line': b'  120 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K // namespace slam2d\n'}
+[6.935028] (GraphSLAM) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.969029] (-) TimerEvent: {}
+[7.070825] (-) TimerEvent: {}
+[7.172007] (-) TimerEvent: {}
+[7.273190] (-) TimerEvent: {}
+[7.374389] (-) TimerEvent: {}
+[7.453317] (GraphSLAM) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:160\xef\xbc\x9aCMakeFiles/graphslam_node.dir/src/utils/laser_scan.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[7.474652] (-) TimerEvent: {}
+[7.575774] (-) TimerEvent: {}
+[7.677062] (-) TimerEvent: {}
+[7.730605] (GraphSLAM) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:146\xef\xbc\x9aCMakeFiles/graphslam_node.dir/src/slam2d/utils.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[7.777236] (-) TimerEvent: {}
+[7.878357] (-) TimerEvent: {}
+[7.979569] (-) TimerEvent: {}
+[8.071857] (GraphSLAM) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:174\xef\xbc\x9aCMakeFiles/graphslam_node.dir/src/utils/transformations.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[8.072818] (GraphSLAM) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:167\xef\xbc\x9aCMakeFiles/graphslam_node.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[8.073645] (GraphSLAM) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[8.079648] (-) TimerEvent: {}
+[8.082679] (GraphSLAM) CommandEnded: {'returncode': 2}
+[8.112916] (GraphSLAM) JobEnded: {'identifier': 'GraphSLAM', 'rc': 2}
+[8.124583] (-) EventReactorShutdown: {}

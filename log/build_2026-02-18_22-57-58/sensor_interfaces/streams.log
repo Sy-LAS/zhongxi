@@ -1,0 +1,39 @@
+[0.025s] Invoking command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/sensor_interfaces -- -j6 -l6
+[0.091s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.447s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.516s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.521s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.534s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.554s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.581s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.649s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.651s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.903s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.016s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.080s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[1.090s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[1.141s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.177s] -- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)
+[1.185s] -- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.351s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[1.411s] [31mCMake Error at CMakeLists.txt:41 (find_package):
+[1.411s]   By not providing "Findserial.cmake" in CMAKE_MODULE_PATH this project has
+[1.412s]   asked CMake to find a package configuration file provided by "serial", but
+[1.412s]   CMake did not find one.
+[1.412s] 
+[1.412s]   Could not find a package configuration file provided by "serial" with any
+[1.412s]   of the following names:
+[1.412s] 
+[1.412s]     serialConfig.cmake
+[1.413s]     serial-config.cmake
+[1.413s] 
+[1.413s]   Add the installation prefix of "serial" to CMAKE_PREFIX_PATH or set
+[1.413s]   "serial_DIR" to a directory containing one of the above files.  If "serial"
+[1.413s]   provides a separate development package or SDK, be sure it has been
+[1.413s]   installed.
+[1.413s] 
+[1.414s] [0m
+[1.414s] -- Configuring incomplete, errors occurred!
+[1.414s] See also "/home/chuil/Desktop/zhongxi/build/sensor_interfaces/CMakeFiles/CMakeOutput.log".
+[1.449s] gmake: *** [Makefile:727：cmake_check_build_system] 错误 1
+[1.457s] Invoked command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/sensor_interfaces -- -j6 -l6

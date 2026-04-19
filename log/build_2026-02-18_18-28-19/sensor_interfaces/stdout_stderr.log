@@ -1,0 +1,197 @@
+[ 30%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ydlidar_driver.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ETLidarDriver.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/CYdLidar.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ydlidar_sdk.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/core/serial/serial.cpp.o[0m
+[01m[K/home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ETLidarDriver.cpp:31:10:[m[K [01;31m[Kfatal error: [m[Kcore/network/PassiveSocket.h: 没有那个文件或目录
+   31 | #include [01;31m[K<core/network/PassiveSocket.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ydlidar_driver.cpp:24:10:[m[K [01;31m[Kfatal error: [m[Kcore/serial/serial.h: 没有那个文件或目录
+   24 | #include [01;31m[K<core/serial/serial.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+In file included from [01m[K/home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/CYdLidar.cpp:24[m[K:
+[01m[K/home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/CYdLidar.h:46:10:[m[K [01;31m[Kfatal error: [m[Kcore/base/utils.h: 没有那个文件或目录
+   46 | #include [01;31m[K<core/base/utils.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/ydlidar_sdk_lib.dir/build.make:118：CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ydlidar_driver.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[2]: *** [CMakeFiles/ydlidar_sdk_lib.dir/build.make:90：CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/CYdLidar.cpp.o] 错误 1
+gmake[2]: *** [CMakeFiles/ydlidar_sdk_lib.dir/build.make:104：CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ETLidarDriver.cpp.o] 错误 1
+[ 60%] [32m[1mLinking CXX executable camera_driver[0m
+In file included from [01m[K/home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ydlidar_sdk.cpp:26[m[K:
+[01m[K/home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ydlidar_sdk.h:47:10:[m[K [01;31m[Kfatal error: [m[Kcore/common/ydlidar_def.h: 没有那个文件或目录
+   47 | #include [01;31m[K<core/common/ydlidar_def.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/ydlidar_sdk_lib.dir/build.make:132：CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ydlidar_sdk.cpp.o] 错误 1
+In file included from [01m[K/home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/core/serial/serial.cpp:11[m[K:
+[01m[K/home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/core/serial/serial.h:9:10:[m[K [01;31m[Kfatal error: [m[Kcore/base/v8stdint.h: 没有那个文件或目录
+    9 | #include [01;31m[K<core/base/v8stdint.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/ydlidar_sdk_lib.dir/build.make:76：CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/core/serial/serial.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:141：CMakeFiles/ydlidar_sdk_lib.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.408
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::Exception::Exception(YAML::Mark const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+camera_driver.cpp:(.text._ZN4YAML9ExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML9ExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x60): undefined reference to `vtable for YAML::Exception'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML9ExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML9ExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x64): undefined reference to `vtable for YAML::Exception'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::RepresentationException::RepresentationException(YAML::Mark const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+camera_driver.cpp:(.text._ZN4YAML23RepresentationExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML23RepresentationExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x24): undefined reference to `vtable for YAML::RepresentationException'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML23RepresentationExceptionC2ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML23RepresentationExceptionC5ERKNS_4MarkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x28): undefined reference to `vtable for YAML::RepresentationException'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::InvalidNode::InvalidNode(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+camera_driver.cpp:(.text._ZN4YAML11InvalidNodeC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML11InvalidNodeC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x7c): undefined reference to `vtable for YAML::InvalidNode'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML11InvalidNodeC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML11InvalidNodeC5ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x80): undefined reference to `vtable for YAML::InvalidNode'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::BadConversion::BadConversion(YAML::Mark const&)':
+camera_driver.cpp:(.text._ZN4YAML13BadConversionC2ERKNS_4MarkE[_ZN4YAML13BadConversionC5ERKNS_4MarkE]+0x78): undefined reference to `vtable for YAML::BadConversion'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML13BadConversionC2ERKNS_4MarkE[_ZN4YAML13BadConversionC5ERKNS_4MarkE]+0x7c): undefined reference to `vtable for YAML::BadConversion'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::detail::memory_holder::create_node()':
+camera_driver.cpp:(.text._ZN4YAML6detail13memory_holder11create_nodeEv[_ZN4YAML6detail13memory_holder11create_nodeEv]+0x14): undefined reference to `YAML::detail::memory::create_node()'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::detail::node_ref::mark_defined()':
+camera_driver.cpp:(.text._ZN4YAML6detail8node_ref12mark_definedEv[_ZN4YAML6detail8node_ref12mark_definedEv]+0x14): undefined reference to `YAML::detail::node_data::mark_defined()'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::detail::node_ref::set_null()':
+camera_driver.cpp:(.text._ZN4YAML6detail8node_ref8set_nullEv[_ZN4YAML6detail8node_ref8set_nullEv]+0x14): undefined reference to `YAML::detail::node_data::set_null()'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::detail::node_ref::set_scalar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+camera_driver.cpp:(.text._ZN4YAML6detail8node_ref10set_scalarERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[_ZN4YAML6detail8node_ref10set_scalarERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE]+0x1c): undefined reference to `YAML::detail::node_data::set_scalar(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::detail::node_ref::begin()':
+camera_driver.cpp:(.text._ZN4YAML6detail8node_ref5beginEv[_ZN4YAML6detail8node_ref5beginEv]+0x38): undefined reference to `YAML::detail::node_data::begin()'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::detail::node_ref::end()':
+camera_driver.cpp:(.text._ZN4YAML6detail8node_ref3endEv[_ZN4YAML6detail8node_ref3endEv]+0x38): undefined reference to `YAML::detail::node_data::end()'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::Node::EnsureNodeExists() const':
+camera_driver.cpp:(.text._ZNK4YAML4Node16EnsureNodeExistsEv[_ZNK4YAML4Node16EnsureNodeExistsEv]+0x48): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node16EnsureNodeExistsEv[_ZNK4YAML4Node16EnsureNodeExistsEv]+0x4c): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node16EnsureNodeExistsEv[_ZNK4YAML4Node16EnsureNodeExistsEv]+0x50): undefined reference to `typeinfo for YAML::InvalidNode'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node16EnsureNodeExistsEv[_ZNK4YAML4Node16EnsureNodeExistsEv]+0x54): undefined reference to `typeinfo for YAML::InvalidNode'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::Node::Mark() const':
+camera_driver.cpp:(.text._ZNK4YAML4Node4MarkEv[_ZNK4YAML4Node4MarkEv]+0x4c): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node4MarkEv[_ZNK4YAML4Node4MarkEv]+0x50): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node4MarkEv[_ZNK4YAML4Node4MarkEv]+0x54): undefined reference to `typeinfo for YAML::InvalidNode'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node4MarkEv[_ZNK4YAML4Node4MarkEv]+0x58): undefined reference to `typeinfo for YAML::InvalidNode'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::Node::Type() const':
+camera_driver.cpp:(.text._ZNK4YAML4Node4TypeEv[_ZNK4YAML4Node4TypeEv]+0x48): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node4TypeEv[_ZNK4YAML4Node4TypeEv]+0x4c): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node4TypeEv[_ZNK4YAML4Node4TypeEv]+0x50): undefined reference to `typeinfo for YAML::InvalidNode'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node4TypeEv[_ZNK4YAML4Node4TypeEv]+0x54): undefined reference to `typeinfo for YAML::InvalidNode'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::Node::Scalar[abi:cxx11]() const':
+camera_driver.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x48): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x4c): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x50): undefined reference to `typeinfo for YAML::InvalidNode'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x54): undefined reference to `typeinfo for YAML::InvalidNode'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node6ScalarB5cxx11Ev[_ZNK4YAML4Node6ScalarB5cxx11Ev]+0x80): undefined reference to `YAML::detail::node_data::empty_scalar[abi:cxx11]()'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `CameraDriver::loadCameraInfo()':
+camera_driver.cpp:(.text._ZN12CameraDriver14loadCameraInfoEv[_ZN12CameraDriver14loadCameraInfoEv]+0x5c): undefined reference to `YAML::LoadFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `int YAML::Node::as<int>() const':
+camera_driver.cpp:(.text._ZNK4YAML4Node2asIiEET_v[_ZNK4YAML4Node2asIiEET_v]+0x60): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node2asIiEET_v[_ZNK4YAML4Node2asIiEET_v]+0x64): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node2asIiEET_v[_ZNK4YAML4Node2asIiEET_v]+0x68): undefined reference to `typeinfo for YAML::InvalidNode'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node2asIiEET_v[_ZNK4YAML4Node2asIiEET_v]+0x6c): undefined reference to `typeinfo for YAML::InvalidNode'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `std::vector<double, std::allocator<double> > YAML::Node::as<std::vector<double, std::allocator<double> > >() const':
+camera_driver.cpp:(.text._ZNK4YAML4Node2asISt6vectorIdSaIdEEEET_v[_ZNK4YAML4Node2asISt6vectorIdSaIdEEEET_v]+0x64): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node2asISt6vectorIdSaIdEEEET_v[_ZNK4YAML4Node2asISt6vectorIdSaIdEEEET_v]+0x68): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node2asISt6vectorIdSaIdEEEET_v[_ZNK4YAML4Node2asISt6vectorIdSaIdEEEET_v]+0x6c): undefined reference to `typeinfo for YAML::InvalidNode'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node2asISt6vectorIdSaIdEEEET_v[_ZNK4YAML4Node2asISt6vectorIdSaIdEEEET_v]+0x70): undefined reference to `typeinfo for YAML::InvalidNode'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::TypedBadConversion<int>::~TypedBadConversion()':
+camera_driver.cpp:(.text._ZN4YAML18TypedBadConversionIiED2Ev[_ZN4YAML18TypedBadConversionIiED5Ev]+0x20): undefined reference to `YAML::BadConversion::~BadConversion()'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::TypedBadConversion<std::vector<double, std::allocator<double> > >::~TypedBadConversion()':
+camera_driver.cpp:(.text._ZN4YAML18TypedBadConversionISt6vectorIdSaIdEEED2Ev[_ZN4YAML18TypedBadConversionISt6vectorIdSaIdEEED5Ev]+0x20): undefined reference to `YAML::BadConversion::~BadConversion()'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::get<char [12]>(char const (&) [12], std::shared_ptr<YAML::detail::memory_holder>)':
+camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA12_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA12_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0xd8): undefined reference to `YAML::detail::node_data::convert_to_map(std::shared_ptr<YAML::detail::memory_holder> const&)'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA12_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA12_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x104): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA12_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA12_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x108): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA12_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA12_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x10c): undefined reference to `typeinfo for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA12_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA12_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x110): undefined reference to `typeinfo for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA12_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA12_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x1d8): undefined reference to `YAML::detail::node_data::insert_map_pair(YAML::detail::node&, YAML::detail::node&)'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::get<char [13]>(char const (&) [13], std::shared_ptr<YAML::detail::memory_holder>)':
+camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA13_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA13_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0xd8): undefined reference to `YAML::detail::node_data::convert_to_map(std::shared_ptr<YAML::detail::memory_holder> const&)'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA13_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA13_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x104): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA13_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA13_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x108): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA13_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA13_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x10c): undefined reference to `typeinfo for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA13_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA13_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x110): undefined reference to `typeinfo for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA13_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA13_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x1d8): undefined reference to `YAML::detail::node_data::insert_map_pair(YAML::detail::node&, YAML::detail::node&)'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::get<char [14]>(char const (&) [14], std::shared_ptr<YAML::detail::memory_holder>)':
+camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA14_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA14_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0xd8): undefined reference to `YAML::detail::node_data::convert_to_map(std::shared_ptr<YAML::detail::memory_holder> const&)'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA14_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA14_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x104): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA14_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA14_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x108): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA14_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA14_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x10c): undefined reference to `typeinfo for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA14_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA14_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x110): undefined reference to `typeinfo for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA14_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA14_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x1d8): undefined reference to `YAML::detail::node_data::insert_map_pair(YAML::detail::node&, YAML::detail::node&)'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::get<char [5]>(char const (&) [5], std::shared_ptr<YAML::detail::memory_holder>)':
+camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA5_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA5_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0xd8): undefined reference to `YAML::detail::node_data::convert_to_map(std::shared_ptr<YAML::detail::memory_holder> const&)'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA5_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA5_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x104): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA5_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA5_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x108): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA5_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA5_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x10c): undefined reference to `typeinfo for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA5_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA5_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x110): undefined reference to `typeinfo for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA5_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA5_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x1d8): undefined reference to `YAML::detail::node_data::insert_map_pair(YAML::detail::node&, YAML::detail::node&)'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `double YAML::Node::as<double>() const':
+camera_driver.cpp:(.text._ZNK4YAML4Node2asIdEET_v[_ZNK4YAML4Node2asIdEET_v]+0x60): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node2asIdEET_v[_ZNK4YAML4Node2asIdEET_v]+0x64): undefined reference to `YAML::InvalidNode::~InvalidNode()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node2asIdEET_v[_ZNK4YAML4Node2asIdEET_v]+0x68): undefined reference to `typeinfo for YAML::InvalidNode'
+/usr/bin/ld: camera_driver.cpp:(.text._ZNK4YAML4Node2asIdEET_v[_ZNK4YAML4Node2asIdEET_v]+0x6c): undefined reference to `typeinfo for YAML::InvalidNode'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::get<char [24]>(char const (&) [24], std::shared_ptr<YAML::detail::memory_holder>)':
+camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA24_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA24_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0xd8): undefined reference to `YAML::detail::node_data::convert_to_map(std::shared_ptr<YAML::detail::memory_holder> const&)'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA24_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA24_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x104): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA24_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA24_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x108): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA24_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA24_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x10c): undefined reference to `typeinfo for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA24_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA24_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x110): undefined reference to `typeinfo for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA24_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA24_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x1d8): undefined reference to `YAML::detail::node_data::insert_map_pair(YAML::detail::node&, YAML::detail::node&)'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::get<char [21]>(char const (&) [21], std::shared_ptr<YAML::detail::memory_holder>)':
+camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA21_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA21_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0xd8): undefined reference to `YAML::detail::node_data::convert_to_map(std::shared_ptr<YAML::detail::memory_holder> const&)'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA21_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA21_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x104): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA21_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA21_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x108): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA21_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA21_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x10c): undefined reference to `typeinfo for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA21_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA21_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x110): undefined reference to `typeinfo for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA21_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA21_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x1d8): undefined reference to `YAML::detail::node_data::insert_map_pair(YAML::detail::node&, YAML::detail::node&)'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::get<char [18]>(char const (&) [18], std::shared_ptr<YAML::detail::memory_holder>)':
+camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA18_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA18_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0xd8): undefined reference to `YAML::detail::node_data::convert_to_map(std::shared_ptr<YAML::detail::memory_holder> const&)'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA18_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA18_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x104): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA18_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA18_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x108): undefined reference to `YAML::BadSubscript::~BadSubscript()'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA18_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA18_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x10c): undefined reference to `typeinfo for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA18_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA18_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x110): undefined reference to `typeinfo for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML6detail9node_data3getIA18_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data3getIA18_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x1d8): undefined reference to `YAML::detail::node_data::insert_map_pair(YAML::detail::node&, YAML::detail::node&)'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::BadSubscript::BadSubscript<char [12]>(YAML::Mark const&, char const (&) [12])':
+camera_driver.cpp:(.text._ZN4YAML12BadSubscriptC2IA12_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA12_cEERKNS_4MarkERKT_]+0x60): undefined reference to `vtable for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML12BadSubscriptC2IA12_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA12_cEERKNS_4MarkERKT_]+0x64): undefined reference to `vtable for YAML::BadSubscript'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::convert_to_node<char [12]>(char const (&) [12], std::shared_ptr<YAML::detail::memory_holder>)':
+camera_driver.cpp:(.text._ZN4YAML6detail9node_data15convert_to_nodeIA12_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data15convert_to_nodeIA12_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x64): undefined reference to `YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::BadSubscript::BadSubscript<char [13]>(YAML::Mark const&, char const (&) [13])':
+camera_driver.cpp:(.text._ZN4YAML12BadSubscriptC2IA13_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA13_cEERKNS_4MarkERKT_]+0x60): undefined reference to `vtable for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML12BadSubscriptC2IA13_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA13_cEERKNS_4MarkERKT_]+0x64): undefined reference to `vtable for YAML::BadSubscript'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::convert_to_node<char [13]>(char const (&) [13], std::shared_ptr<YAML::detail::memory_holder>)':
+camera_driver.cpp:(.text._ZN4YAML6detail9node_data15convert_to_nodeIA13_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data15convert_to_nodeIA13_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x64): undefined reference to `YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::BadSubscript::BadSubscript<char [14]>(YAML::Mark const&, char const (&) [14])':
+camera_driver.cpp:(.text._ZN4YAML12BadSubscriptC2IA14_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA14_cEERKNS_4MarkERKT_]+0x60): undefined reference to `vtable for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML12BadSubscriptC2IA14_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA14_cEERKNS_4MarkERKT_]+0x64): undefined reference to `vtable for YAML::BadSubscript'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::convert_to_node<char [14]>(char const (&) [14], std::shared_ptr<YAML::detail::memory_holder>)':
+camera_driver.cpp:(.text._ZN4YAML6detail9node_data15convert_to_nodeIA14_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data15convert_to_nodeIA14_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x64): undefined reference to `YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::BadSubscript::BadSubscript<char [5]>(YAML::Mark const&, char const (&) [5])':
+camera_driver.cpp:(.text._ZN4YAML12BadSubscriptC2IA5_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA5_cEERKNS_4MarkERKT_]+0x60): undefined reference to `vtable for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML12BadSubscriptC2IA5_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA5_cEERKNS_4MarkERKT_]+0x64): undefined reference to `vtable for YAML::BadSubscript'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::convert_to_node<char [5]>(char const (&) [5], std::shared_ptr<YAML::detail::memory_holder>)':
+camera_driver.cpp:(.text._ZN4YAML6detail9node_data15convert_to_nodeIA5_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data15convert_to_nodeIA5_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x64): undefined reference to `YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::TypedBadConversion<double>::~TypedBadConversion()':
+camera_driver.cpp:(.text._ZN4YAML18TypedBadConversionIdED2Ev[_ZN4YAML18TypedBadConversionIdED5Ev]+0x20): undefined reference to `YAML::BadConversion::~BadConversion()'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::BadSubscript::BadSubscript<char [24]>(YAML::Mark const&, char const (&) [24])':
+camera_driver.cpp:(.text._ZN4YAML12BadSubscriptC2IA24_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA24_cEERKNS_4MarkERKT_]+0x60): undefined reference to `vtable for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML12BadSubscriptC2IA24_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA24_cEERKNS_4MarkERKT_]+0x64): undefined reference to `vtable for YAML::BadSubscript'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::convert_to_node<char [24]>(char const (&) [24], std::shared_ptr<YAML::detail::memory_holder>)':
+camera_driver.cpp:(.text._ZN4YAML6detail9node_data15convert_to_nodeIA24_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data15convert_to_nodeIA24_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x64): undefined reference to `YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::BadSubscript::BadSubscript<char [21]>(YAML::Mark const&, char const (&) [21])':
+camera_driver.cpp:(.text._ZN4YAML12BadSubscriptC2IA21_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA21_cEERKNS_4MarkERKT_]+0x60): undefined reference to `vtable for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML12BadSubscriptC2IA21_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA21_cEERKNS_4MarkERKT_]+0x64): undefined reference to `vtable for YAML::BadSubscript'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::convert_to_node<char [21]>(char const (&) [21], std::shared_ptr<YAML::detail::memory_holder>)':
+camera_driver.cpp:(.text._ZN4YAML6detail9node_data15convert_to_nodeIA21_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data15convert_to_nodeIA21_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x64): undefined reference to `YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::BadSubscript::BadSubscript<char [18]>(YAML::Mark const&, char const (&) [18])':
+camera_driver.cpp:(.text._ZN4YAML12BadSubscriptC2IA18_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA18_cEERKNS_4MarkERKT_]+0x60): undefined reference to `vtable for YAML::BadSubscript'
+/usr/bin/ld: camera_driver.cpp:(.text._ZN4YAML12BadSubscriptC2IA18_cEERKNS_4MarkERKT_[_ZN4YAML12BadSubscriptC5IA18_cEERKNS_4MarkERKT_]+0x64): undefined reference to `vtable for YAML::BadSubscript'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o: in function `YAML::detail::node& YAML::detail::node_data::convert_to_node<char [18]>(char const (&) [18], std::shared_ptr<YAML::detail::memory_holder>)':
+camera_driver.cpp:(.text._ZN4YAML6detail9node_data15convert_to_nodeIA18_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE[_ZN4YAML6detail9node_data15convert_to_nodeIA18_cEERNS0_4nodeERKT_St10shared_ptrINS0_13memory_holderEE]+0x64): undefined reference to `YAML::detail::memory_holder::merge(YAML::detail::memory_holder&)'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o:(.data.rel.ro._ZTIN4YAML18TypedBadConversionIdEE[_ZTIN4YAML18TypedBadConversionIdEE]+0x10): undefined reference to `typeinfo for YAML::BadConversion'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o:(.data.rel.ro._ZTIN4YAML18TypedBadConversionISt6vectorIdSaIdEEEE[_ZTIN4YAML18TypedBadConversionISt6vectorIdSaIdEEEE]+0x10): undefined reference to `typeinfo for YAML::BadConversion'
+/usr/bin/ld: CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o:(.data.rel.ro._ZTIN4YAML18TypedBadConversionIiEE[_ZTIN4YAML18TypedBadConversionIiEE]+0x10): undefined reference to `typeinfo for YAML::BadConversion'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/camera_driver.dir/build.make:193：camera_driver] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:167：CMakeFiles/camera_driver.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

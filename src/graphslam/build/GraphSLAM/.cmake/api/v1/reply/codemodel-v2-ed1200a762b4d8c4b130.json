@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-7e07f464ac49231dc103.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "GraphSLAM",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "GraphSLAM_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GraphSLAM_uninstall-d630940ea407a3b01e14.json",
+					"name" : "GraphSLAM_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "graphslam_g2o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-graphslam_g2o-6537d527e6641ee0924a.json",
+					"name" : "graphslam_g2o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "graphslam_g2o_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-graphslam_g2o_autogen-bb7baf07cd81cd24c981.json",
+					"name" : "graphslam_g2o_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "graphslam_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-graphslam_node-a9a143a4c6f565995cc9.json",
+					"name" : "graphslam_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "graphslam_node_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-graphslam_node_autogen-ea6a54625ad5cc43c0de.json",
+					"name" : "graphslam_node_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-b83ccf466489352b6671.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/build/GraphSLAM",
+		"source" : "/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

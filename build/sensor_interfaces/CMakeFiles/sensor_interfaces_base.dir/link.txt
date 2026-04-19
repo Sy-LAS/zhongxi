@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsensor_interfaces_base.a CMakeFiles/sensor_interfaces_base.dir/src/sensor_interfaces.cpp.o
+/usr/bin/ranlib libsensor_interfaces_base.a

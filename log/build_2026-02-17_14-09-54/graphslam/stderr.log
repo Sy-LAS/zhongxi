@@ -1,0 +1,11 @@
+In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:41[m[K,
+                 from [01m[K/usr/local/include/g2o/core/eigen_types.h:31[m[K,
+                 from [01m[K/usr/local/include/g2o/core/matrix_operations.h:32[m[K,
+                 from [01m[K/usr/local/include/g2o/core/sparse_block_matrix.h:41[m[K,
+                 from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/slam2d_viewer.h:22[m[K,
+                 from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/slam2d_viewer.cpp:19[m[K:
+/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h: In instantiation of ‘[01m[KEigen::Rotation2D<Scalar> Eigen::Rotation2D<Scalar>::inverse() const [with _Scalar = double][m[K’:
+[01m[K/usr/local/include/g2o/types/slam2d/se2.h:85:24:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:98:39:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[KEigen::Rotation2D<double>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+   98 |   EIGEN_DEVICE_FUNC inline Rotation2D [01;36m[Kinverse[m[K() const { return Rotation2D(-m_angle); }
+      |                                       [01;36m[K^~~~~~~[m[K

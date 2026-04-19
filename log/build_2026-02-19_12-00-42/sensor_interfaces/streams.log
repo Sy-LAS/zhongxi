@@ -1,0 +1,714 @@
+[0.024s] Invoking command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake /home/chuil/Desktop/zhongxi/src/sensor_interfaces -DCMAKE_INSTALL_PREFIX=/home/chuil/Desktop/zhongxi/install/sensor_interfaces
+[0.161s] -- The C compiler identification is GNU 11.4.0
+[0.295s] -- The CXX compiler identification is GNU 11.4.0
+[0.326s] -- Detecting C compiler ABI info
+[0.510s] -- Detecting C compiler ABI info - done
+[0.527s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.527s] -- Detecting C compile features
+[0.528s] -- Detecting C compile features - done
+[0.539s] -- Detecting CXX compiler ABI info
+[0.745s] -- Detecting CXX compiler ABI info - done
+[0.774s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.775s] -- Detecting CXX compile features
+[0.777s] -- Detecting CXX compile features - done
+[0.787s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.191s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.451s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[1.539s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.549s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.567s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.592s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.628s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.724s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.725s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.903s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.976s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.078s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.096s] -- Looking for pthread.h
+[2.281s] -- Looking for pthread.h - found
+[2.283s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.510s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.521s] -- Found Threads: TRUE  
+[2.648s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.712s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[2.730s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[2.804s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.841s] -- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)
+[2.850s] -- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)
+[3.024s] -- Found tf2_geometry_msgs: 0.25.18 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[3.056s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.059s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.059s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.064s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[3.088s] -- Found OpenCV: /usr (found version "4.8.0") 
+[3.121s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[3.122s] -- Checking for module 'serial'
+[3.128s] --   No package 'serial' found
+[3.307s] -- Configuring done
+[3.385s] -- Generating done
+[3.412s] -- Build files have been written to: /home/chuil/Desktop/zhongxi/build/sensor_interfaces
+[3.458s] Invoked command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake /home/chuil/Desktop/zhongxi/src/sensor_interfaces -DCMAKE_INSTALL_PREFIX=/home/chuil/Desktop/zhongxi/install/sensor_interfaces
+[3.466s] Invoking command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/sensor_interfaces -- -j6 -l6
+[3.599s] [ 16%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/sdk/core/network/PassiveSocket.cpp.o[0m
+[3.600s] [ 16%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/sdk/core/base/timer.cpp.o[0m
+[3.600s] [ 20%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/sdk/core/network/SimpleSocket.cpp.o[0m
+[3.601s] [ 20%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/sdk/core/network/ActiveSocket.cpp.o[0m
+[3.601s] [ 20%] [32mBuilding CXX object CMakeFiles/sensor_interfaces_base.dir/src/sensor_interfaces.cpp.o[0m
+[3.608s] [ 25%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/sdk/core/common/ydlidar_def.cpp.o[0m
+[3.630s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/sensor_interfaces.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Ksensor_interfaces/sensor_interfaces.h: 没有那个文件或目录
+[3.631s]     1 | #include [01;31m[K"sensor_interfaces/sensor_interfaces.h"[m[K
+[3.631s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.631s] compilation terminated.
+[3.635s] gmake[2]: *** [CMakeFiles/sensor_interfaces_base.dir/build.make:76：CMakeFiles/sensor_interfaces_base.dir/src/sensor_interfaces.cpp.o] 错误 1
+[3.636s] gmake[1]: *** [CMakeFiles/Makefile2:171：CMakeFiles/sensor_interfaces_base.dir/all] 错误 2
+[3.636s] gmake[1]: *** 正在等待未完成的任务....
+[3.660s] [ 29%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/sdk/core/serial/impl/unix/list_ports_linux.cpp.o[0m
+[3.713s] [ 33%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/sdk/core/serial/impl/unix/unix_serial.cpp.o[0m
+[4.088s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/v8stdint.h:142[m[K,
+[4.089s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/timer.h:2[m[K,
+[4.089s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/timer.cpp:1[m[K:
+[4.089s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:[m[K In function ‘[01m[Kbool ydlidar::core::base::fileExists(const string&)[m[K’:
+[4.089s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.089s]   183 |   struct stat info = {0[01;35m[K}[m[K;
+[4.089s]       |                        [01;35m[K^[m[K
+[4.093s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.094s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.094s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.094s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.094s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.094s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.095s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.095s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.095s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.095s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.095s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.095s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.096s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.096s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.277s] [ 37%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/sdk/core/serial/impl/windows/list_ports_win.cpp.o[0m
+[4.328s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/v8stdint.h:142[m[K,
+[4.328s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/StatTimer.h:82[m[K,
+[4.329s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:92[m[K,
+[4.329s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/ActiveSocket.h:46[m[K,
+[4.329s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/ActiveSocket.cpp:43[m[K:
+[4.330s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:[m[K In function ‘[01m[Kbool ydlidar::core::base::fileExists(const string&)[m[K’:
+[4.330s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.330s]   183 |   struct stat info = {0[01;35m[K}[m[K;
+[4.331s]       |                        [01;35m[K^[m[K
+[4.331s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.332s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.332s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.333s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.333s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.333s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.334s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.334s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.335s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.335s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.336s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.337s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.337s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.338s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.342s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:93[m[K,
+[4.344s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/ActiveSocket.h:46[m[K,
+[4.344s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/ActiveSocket.cpp:43[m[K:
+[4.344s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:[m[K In member function ‘[01m[Kvirtual bool ydlidar::core::common::ChannelDevice::setDTR(bool)[m[K’:
+[4.345s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:111:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klevel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.345s]   111 |   virtual bool setDTR([01;35m[Kbool level = true[m[K) {
+[4.345s]       |                       [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[4.352s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/ActiveSocket.h:46[m[K,
+[4.353s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/ActiveSocket.cpp:43[m[K:
+[4.354s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:[m[K In member function ‘[01m[Kvirtual bool ydlidar::core::network::CSimpleSocket::Open(const char*, uint16_t)[m[K’:
+[4.354s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:538:33:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KpAddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.356s]   538 |   virtual bool Open([01;35m[Kconst char *pAddr[m[K, uint16_t nPort) {
+[4.356s]       |                     [01;35m[K~~~~~~~~~~~~^~~~~[m[K
+[4.357s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:538:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnPort[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.357s]   538 |   virtual bool Open(const char *pAddr, [01;35m[Kuint16_t nPort[m[K) {
+[4.357s]       |                                        [01;35m[K~~~~~~~~~^~~~~[m[K
+[4.378s] [ 41%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/sdk/core/serial/impl/windows/win_serial.cpp.o[0m
+[4.417s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/v8stdint.h:142[m[K,
+[4.417s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/StatTimer.h:82[m[K,
+[4.417s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:92[m[K,
+[4.418s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/ActiveSocket.h:46[m[K,
+[4.418s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/PassiveSocket.h:45[m[K,
+[4.418s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/PassiveSocket.cpp:43[m[K:
+[4.418s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:[m[K In function ‘[01m[Kbool ydlidar::core::base::fileExists(const string&)[m[K’:
+[4.418s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.418s]   183 |   struct stat info = {0[01;35m[K}[m[K;
+[4.418s]       |                        [01;35m[K^[m[K
+[4.419s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.419s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.419s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.419s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.419s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.419s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.420s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.420s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.420s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.420s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.420s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.420s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.421s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.421s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.423s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:93[m[K,
+[4.424s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/ActiveSocket.h:46[m[K,
+[4.424s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/PassiveSocket.h:45[m[K,
+[4.424s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/PassiveSocket.cpp:43[m[K:
+[4.424s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:[m[K In member function ‘[01m[Kvirtual bool ydlidar::core::common::ChannelDevice::setDTR(bool)[m[K’:
+[4.425s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:111:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klevel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.425s]   111 |   virtual bool setDTR([01;35m[Kbool level = true[m[K) {
+[4.425s]       |                       [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[4.425s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/ActiveSocket.h:46[m[K,
+[4.425s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/PassiveSocket.h:45[m[K,
+[4.425s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/PassiveSocket.cpp:43[m[K:
+[4.425s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:[m[K In member function ‘[01m[Kvirtual bool ydlidar::core::network::CSimpleSocket::Open(const char*, uint16_t)[m[K’:
+[4.426s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:538:33:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KpAddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.426s]   538 |   virtual bool Open([01;35m[Kconst char *pAddr[m[K, uint16_t nPort) {
+[4.426s]       |                     [01;35m[K~~~~~~~~~~~~^~~~~[m[K
+[4.426s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:538:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnPort[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.426s]   538 |   virtual bool Open(const char *pAddr, [01;35m[Kuint16_t nPort[m[K) {
+[4.426s]       |                                        [01;35m[K~~~~~~~~~^~~~~[m[K
+[4.427s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/PassiveSocket.cpp:[m[K In member function ‘[01m[Kbool ydlidar::core::network::CPassiveSocket::BindMulticast(const char*, const char*, uint16_t)[m[K’:
+[4.428s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/PassiveSocket.cpp:60:20:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KnReuse[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[4.428s]    60 |   int32_t          [01;35m[KnReuse[m[K;
+[4.428s]       |                    [01;35m[K^~~~~~[m[K
+[4.451s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/v8stdint.h:142[m[K,
+[4.451s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/StatTimer.h:82[m[K,
+[4.451s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:92[m[K,
+[4.451s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.cpp:43[m[K:
+[4.452s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:[m[K In function ‘[01m[Kbool ydlidar::core::base::fileExists(const string&)[m[K’:
+[4.452s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.452s]   183 |   struct stat info = {0[01;35m[K}[m[K;
+[4.452s]       |                        [01;35m[K^[m[K
+[4.452s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.452s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.453s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.453s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.453s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.454s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.454s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.454s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.454s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.455s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.455s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.455s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.455s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.455s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.456s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:93[m[K,
+[4.456s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.cpp:43[m[K:
+[4.456s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:[m[K In member function ‘[01m[Kvirtual bool ydlidar::core::common::ChannelDevice::setDTR(bool)[m[K’:
+[4.456s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:111:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klevel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.456s]   111 |   virtual bool setDTR([01;35m[Kbool level = true[m[K) {
+[4.456s]       |                       [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[4.461s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.cpp:43[m[K:
+[4.461s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:[m[K In member function ‘[01m[Kvirtual bool ydlidar::core::network::CSimpleSocket::Open(const char*, uint16_t)[m[K’:
+[4.462s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:538:33:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KpAddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.462s]   538 |   virtual bool Open([01;35m[Kconst char *pAddr[m[K, uint16_t nPort) {
+[4.462s]       |                     [01;35m[K~~~~~~~~~~~~^~~~~[m[K
+[4.462s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:538:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnPort[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.462s]   538 |   virtual bool Open(const char *pAddr, [01;35m[Kuint16_t nPort[m[K) {
+[4.462s]       |                                        [01;35m[K~~~~~~~~~^~~~~[m[K
+[4.468s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.cpp:[m[K In member function ‘[01m[Kvirtual void ydlidar::core::network::CSimpleSocket::flush()[m[K’:
+[4.468s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.cpp:199:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kret[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.468s]   199 |     int [01;35m[Kret[m[K = waitfordata(1024, 2000, &size);
+[4.469s]       |         [01;35m[K^~~[m[K
+[4.469s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.cpp:[m[K In member function ‘[01m[Kvirtual size_t ydlidar::core::network::CSimpleSocket::available()[m[K’:
+[4.469s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.cpp:211:7:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kmax_fd[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[4.469s]   211 |   int [01;35m[Kmax_fd[m[K;
+[4.470s]       |       [01;35m[K^~~~~~[m[K
+[4.474s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.cpp:[m[K In member function ‘[01m[Kuint32_t ydlidar::core::network::CSimpleSocket::SetWindowSize(uint32_t, uint32_t)[m[K’:
+[4.474s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.cpp:431:12:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KnRetVal[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[4.474s]   431 |   uint32_t [01;35m[KnRetVal[m[K = 0;
+[4.474s]       |            [01;35m[K^~~~~~~[m[K
+[4.477s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.cpp:[m[K In member function ‘[01m[Kvirtual bool ydlidar::core::network::CSimpleSocket::Shutdown(ydlidar::core::network::CSimpleSocket::CShutdownMode)[m[K’:
+[4.477s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.cpp:628:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnShutdown[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.477s]   628 | bool CSimpleSocket::Shutdown([01;35m[KCShutdownMode nShutdown[m[K) {
+[4.477s]       |                              [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[4.553s] [ 45%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/sdk/core/serial/serial.cpp.o[0m
+[4.648s] [ 50%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/sdk/src/CYdLidar.cpp.o[0m
+[4.673s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/v8stdint.h:142[m[K,
+[4.674s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/serial.h:9[m[K,
+[4.674s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/impl/unix/list_ports_linux.cpp:26[m[K:
+[4.674s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:[m[K In function ‘[01m[Kbool ydlidar::core::base::fileExists(const string&)[m[K’:
+[4.674s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.677s]   183 |   struct stat info = {0[01;35m[K}[m[K;
+[4.677s]       |                        [01;35m[K^[m[K
+[4.678s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.678s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.678s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.678s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.678s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.683s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.684s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.684s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.684s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.684s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.684s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.685s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.685s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.685s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.685s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/serial.h:10[m[K,
+[4.685s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/impl/unix/list_ports_linux.cpp:26[m[K:
+[4.685s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:[m[K In member function ‘[01m[Kvirtual bool ydlidar::core::common::ChannelDevice::setDTR(bool)[m[K’:
+[4.685s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:111:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klevel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.686s]   111 |   virtual bool setDTR([01;35m[Kbool level = true[m[K) {
+[4.686s]       |                       [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[4.692s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/impl/unix/list_ports_linux.cpp:[m[K In function ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> > glob(const std::vector<std::__cxx11::basic_string<char> >&)[m[K’:
+[4.692s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/impl/unix/list_ports_linux.cpp:59:7:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kglob_retval[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[4.693s]    59 |   int [01;35m[Kglob_retval[m[K = glob(patterns[0].c_str(), 0, NULL, &glob_results);
+[4.693s]       |       [01;35m[K^~~~~~~~~~~[m[K
+[4.698s] [ 54%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/sdk/src/ETLidarDriver.cpp.o[0m
+[4.862s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/v8stdint.h:142[m[K,
+[4.864s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/serial.h:9[m[K,
+[4.864s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/impl/unix/unix_serial.h:9[m[K,
+[4.864s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/impl/unix/unix_serial.cpp:39[m[K:
+[4.866s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:[m[K In function ‘[01m[Kbool ydlidar::core::base::fileExists(const string&)[m[K’:
+[4.866s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.866s]   183 |   struct stat info = {0[01;35m[K}[m[K;
+[4.866s]       |                        [01;35m[K^[m[K
+[4.867s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.867s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.867s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.867s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.867s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.867s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.868s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.868s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.868s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.868s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.868s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.868s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.869s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.869s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[4.869s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/serial.h:10[m[K,
+[4.869s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/impl/unix/unix_serial.h:9[m[K,
+[4.869s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/impl/unix/unix_serial.cpp:39[m[K:
+[4.869s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:[m[K In member function ‘[01m[Kvirtual bool ydlidar::core::common::ChannelDevice::setDTR(bool)[m[K’:
+[4.869s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:111:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klevel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.870s]   111 |   virtual bool setDTR([01;35m[Kbool level = true[m[K) {
+[4.870s]       |                       [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[4.887s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/impl/unix/unix_serial.cpp:[m[K In member function ‘[01m[Kbool ydlidar::core::serial::Serial::SerialImpl::setCustomBaudRate(long unsigned int)[m[K’:
+[4.887s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/impl/unix/unix_serial.cpp:1322:40:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Klong unsigned int[m[K’ and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.887s]  1322 |   if ([01;35m[Kserial.custom_divisor * baudrate != serial.baud_base[m[K) {
+[4.887s]       |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[5.012s] [ 58%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/sdk/src/filters/NoiseFilter.cpp.o[0m
+[5.230s] [ 62%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/sdk/src/ydlidar_driver.cpp.o[0m
+[5.362s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/v8stdint.h:142[m[K,
+[5.362s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/DriverInterface.h:2[m[K,
+[5.363s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/CYdLidar.h:48[m[K,
+[5.363s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/CYdLidar.cpp:24[m[K:
+[5.363s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:[m[K In function ‘[01m[Kbool ydlidar::core::base::fileExists(const string&)[m[K’:
+[5.364s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.364s]   183 |   struct stat info = {0[01;35m[K}[m[K;
+[5.364s]       |                        [01;35m[K^[m[K
+[5.365s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.365s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.366s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.366s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.366s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.367s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.367s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.368s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.368s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.368s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.369s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.369s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.370s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.370s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.373s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/DriverInterface.h:3[m[K,
+[5.373s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/CYdLidar.h:48[m[K,
+[5.374s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/CYdLidar.cpp:24[m[K:
+[5.374s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/thread.h:[m[K In static member function ‘[01m[Kstatic ydlidar::core::base::Thread ydlidar::core::base::Thread::createThread(thread_proc_t, void*)[m[K’:
+[5.374s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/thread.h:46:57:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcast-function-type-Wcast-function-type]8;;[m[K]
+[5.374s]    46 |     pthread_create((pthread_t *)&thread_._handle, NULL, [01;35m[K(void *(*)(void *))proc[m[K,
+[5.375s]       |                                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.435s] [ 66%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/sdk/src/ydlidar_sdk.cpp.o[0m
+[5.524s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/v8stdint.h:142[m[K,
+[5.525s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/StatTimer.h:82[m[K,
+[5.525s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:92[m[K,
+[5.525s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/ActiveSocket.h:46[m[K,
+[5.525s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/PassiveSocket.h:45[m[K,
+[5.525s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:31[m[K:
+[5.526s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:[m[K In function ‘[01m[Kbool ydlidar::core::base::fileExists(const string&)[m[K’:
+[5.526s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.526s]   183 |   struct stat info = {0[01;35m[K}[m[K;
+[5.526s]       |                        [01;35m[K^[m[K
+[5.526s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.526s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.527s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.527s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.527s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.527s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.527s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.527s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.528s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.528s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.528s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.528s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.538s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.539s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.539s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:93[m[K,
+[5.539s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/ActiveSocket.h:46[m[K,
+[5.539s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/PassiveSocket.h:45[m[K,
+[5.539s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:31[m[K:
+[5.540s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:[m[K In member function ‘[01m[Kvirtual bool ydlidar::core::common::ChannelDevice::setDTR(bool)[m[K’:
+[5.540s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:111:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klevel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.540s]   111 |   virtual bool setDTR([01;35m[Kbool level = true[m[K) {
+[5.540s]       |                       [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[5.540s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/ActiveSocket.h:46[m[K,
+[5.540s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/PassiveSocket.h:45[m[K,
+[5.540s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:31[m[K:
+[5.541s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:[m[K In member function ‘[01m[Kvirtual bool ydlidar::core::network::CSimpleSocket::Open(const char*, uint16_t)[m[K’:
+[5.541s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:538:33:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KpAddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.541s]   538 |   virtual bool Open([01;35m[Kconst char *pAddr[m[K, uint16_t nPort) {
+[5.541s]       |                     [01;35m[K~~~~~~~~~~~~^~~~~[m[K
+[5.541s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:538:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnPort[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.541s]   538 |   virtual bool Open(const char *pAddr, [01;35m[Kuint16_t nPort[m[K) {
+[5.542s]       |                                        [01;35m[K~~~~~~~~~^~~~~[m[K
+[5.542s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.h:46[m[K,
+[5.542s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:32[m[K:
+[5.542s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/thread.h:[m[K In static member function ‘[01m[Kstatic ydlidar::core::base::Thread ydlidar::core::base::Thread::createThread(thread_proc_t, void*)[m[K’:
+[5.542s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/thread.h:46:57:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcast-function-type-Wcast-function-type]8;;[m[K]
+[5.557s]    46 |     pthread_create((pthread_t *)&thread_._handle, NULL, [01;35m[K(void *(*)(void *))proc[m[K,
+[5.558s]       |                                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.899s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/v8stdint.h:142[m[K,
+[5.901s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_protocol.h:35[m[K,
+[5.902s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/filters/FilterInterface.h:4[m[K,
+[5.903s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/filters/NoiseFilter.h:3[m[K,
+[5.904s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/filters/NoiseFilter.cpp:2[m[K:
+[5.905s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:[m[K In function ‘[01m[Kbool ydlidar::core::base::fileExists(const string&)[m[K’:
+[5.906s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.906s]   183 |   struct stat info = {0[01;35m[K}[m[K;
+[5.907s]       |                        [01;35m[K^[m[K
+[5.908s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.909s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.911s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.911s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.912s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.913s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.914s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.915s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.916s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.917s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.918s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.919s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.920s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.920s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.947s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/v8stdint.h:142[m[K,
+[5.948s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/serial.h:9[m[K,
+[5.948s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/serial.cpp:11[m[K:
+[5.948s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:[m[K In function ‘[01m[Kbool ydlidar::core::base::fileExists(const string&)[m[K’:
+[5.949s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.949s]   183 |   struct stat info = {0[01;35m[K}[m[K;
+[5.949s]       |                        [01;35m[K^[m[K
+[5.949s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.949s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.950s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.950s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.950s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.950s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.950s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.950s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.950s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.951s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.951s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.951s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.951s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.951s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[5.951s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/serial.h:10[m[K,
+[5.952s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/serial.cpp:11[m[K:
+[5.952s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:[m[K In member function ‘[01m[Kvirtual bool ydlidar::core::common::ChannelDevice::setDTR(bool)[m[K’:
+[5.952s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:111:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klevel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.952s]   111 |   virtual bool setDTR([01;35m[Kbool level = true[m[K) {
+[5.952s]       |                       [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[6.076s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/common.h:45[m[K,
+[6.076s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/serial.cpp:12[m[K:
+[6.077s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/thread.h:[m[K In static member function ‘[01m[Kstatic ydlidar::core::base::Thread ydlidar::core::base::Thread::createThread(thread_proc_t, void*)[m[K’:
+[6.077s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/thread.h:46:57:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcast-function-type-Wcast-function-type]8;;[m[K]
+[6.077s]    46 |     pthread_create((pthread_t *)&thread_._handle, NULL, [01;35m[K(void *(*)(void *))proc[m[K,
+[6.077s]       |                                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.199s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.h:51[m[K,
+[6.201s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:32[m[K:
+[6.201s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:[m[K In function ‘[01m[Kbool ydlidar::core::common::isSupportMotorCtrl(int)[m[K’:
+[6.201s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:411:8:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kret[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[6.201s]   411 |   bool [01;35m[Kret[m[K = false;
+[6.201s]       |        [01;35m[K^~~[m[K
+[6.202s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:[m[K In function ‘[01m[Kbool ydlidar::core::common::isSupportHeartBeat(int)[m[K’:
+[6.202s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:571:8:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kret[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[6.202s]   571 |   bool [01;35m[Kret[m[K = false;
+[6.202s]       |        [01;35m[K^~~[m[K
+[6.289s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/v8stdint.h:142[m[K,
+[6.290s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/serial.h:9[m[K,
+[6.290s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.cpp:24[m[K:
+[6.290s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:[m[K In function ‘[01m[Kbool ydlidar::core::base::fileExists(const string&)[m[K’:
+[6.290s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.291s]   183 |   struct stat info = {0[01;35m[K}[m[K;
+[6.291s]       |                        [01;35m[K^[m[K
+[6.291s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.291s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.291s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.291s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.292s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.292s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.292s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.292s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.292s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.292s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.292s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.293s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.293s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.293s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.293s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/serial.h:10[m[K,
+[6.293s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.cpp:24[m[K:
+[6.293s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:[m[K In member function ‘[01m[Kvirtual bool ydlidar::core::common::ChannelDevice::setDTR(bool)[m[K’:
+[6.294s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:111:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klevel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.294s]   111 |   virtual bool setDTR([01;35m[Kbool level = true[m[K) {
+[6.294s]       |                       [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[6.358s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:32[m[K:
+[6.359s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.h:[m[K In constructor ‘[01m[Kydlidar::ETLidarDriver::ETLidarDriver()[m[K’:
+[6.359s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.h:444:29:[m[K [01;35m[Kwarning: [m[K‘[01m[Kydlidar::ETLidarDriver::m_sampleRate[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[6.359s]   444 |   int                       [01;35m[Km_sampleRate[m[K;
+[6.359s]       |                             [01;35m[K^~~~~~~~~~~~[m[K
+[6.359s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.h:438:19:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool ydlidar::ETLidarDriver::m_force_update[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[6.360s]   438 |   bool            [01;35m[Km_force_update[m[K;
+[6.360s]       |                   [01;35m[K^~~~~~~~~~~~~~[m[K
+[6.360s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:51:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[6.360s]    51 | [01;35m[KETLidarDriver[m[K::ETLidarDriver() :
+[6.360s]       | [01;35m[K^~~~~~~~~~~~~[m[K
+[6.366s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:[m[K In member function ‘[01m[Kvirtual result_t ydlidar::ETLidarDriver::connect(const char*, uint32_t)[m[K’:
+[6.366s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:142:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kuint32_t[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[6.366s]   142 |   if ([01;35m[Kconfig.dataRecvPort != baudrate[m[K) {
+[6.368s]       |       [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[6.368s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:[m[K In member function ‘[01m[Kvirtual result_t ydlidar::ETLidarDriver::getHealth(device_health&, uint32_t)[m[K’:
+[6.369s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:251:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.369s]   251 | result_t ETLidarDriver::getHealth(device_health &health, [01;35m[Kuint32_t timeout[m[K) {
+[6.369s]       |                                                          [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[6.369s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:[m[K In member function ‘[01m[Kvirtual result_t ydlidar::ETLidarDriver::getDeviceInfo(device_info&, uint32_t)[m[K’:
+[6.371s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:261:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.372s]   261 | result_t ETLidarDriver::getDeviceInfo(device_info &info, [01;35m[Kuint32_t timeout[m[K) {
+[6.372s]       |                                                          [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[6.372s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:[m[K In member function ‘[01m[Kvirtual result_t ydlidar::ETLidarDriver::startScan(bool, uint32_t)[m[K’:
+[6.372s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:271:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kforce[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.372s]   271 | result_t ETLidarDriver::startScan([01;35m[Kbool force[m[K, uint32_t timeout) {
+[6.373s]       |                                   [01;35m[K~~~~~^~~~~[m[K
+[6.373s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:271:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.373s]   271 | result_t ETLidarDriver::startScan(bool force, [01;35m[Kuint32_t timeout[m[K) {
+[6.373s]       |                                               [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[6.373s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/v8stdint.h:142[m[K,
+[6.373s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/DriverInterface.h:2[m[K,
+[6.373s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/CYdLidar.h:48[m[K,
+[6.374s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_sdk.cpp:27[m[K:
+[6.374s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:[m[K In function ‘[01m[Kbool ydlidar::core::base::fileExists(const string&)[m[K’:
+[6.374s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.374s]   183 |   struct stat info = {0[01;35m[K}[m[K;
+[6.374s]       |                        [01;35m[K^[m[K
+[6.374s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.382s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.382s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.383s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.383s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.383s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.383s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.383s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.384s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.384s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.384s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.384s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.384s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.384s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[6.385s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:[m[K In member function ‘[01m[Kbool ydlidar::ETLidarDriver::startMeasure()[m[K’:
+[6.385s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:376:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcfg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.385s]   376 |   lidarConfig [01;35m[Kcfg[m[K;
+[6.385s]       |               [01;35m[K^~~[m[K
+[6.385s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/DriverInterface.h:3[m[K,
+[6.385s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/CYdLidar.h:48[m[K,
+[6.385s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_sdk.cpp:27[m[K:
+[6.386s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/thread.h:[m[K In static member function ‘[01m[Kstatic ydlidar::core::base::Thread ydlidar::core::base::Thread::createThread(thread_proc_t, void*)[m[K’:
+[6.386s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/thread.h:46:57:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcast-function-type-Wcast-function-type]8;;[m[K]
+[6.386s]    46 |     pthread_create((pthread_t *)&thread_._handle, NULL, [01;35m[K(void *(*)(void *))proc[m[K,
+[6.386s]       |                                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.386s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:[m[K In member function ‘[01m[Kbool ydlidar::ETLidarDriver::stopMeasure()[m[K’:
+[6.386s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:389:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcfg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.386s]   389 |   lidarConfig [01;35m[Kcfg[m[K;
+[6.387s]       |               [01;35m[K^~~[m[K
+[6.387s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:[m[K In member function ‘[01m[Kbool ydlidar::ETLidarDriver::dataPortConnect(const char*, int)[m[K’:
+[6.387s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:614:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KlidarIP[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.387s]   614 | bool ETLidarDriver::dataPortConnect([01;35m[Kconst char *lidarIP[m[K, int localPort) {
+[6.387s]       |                                     [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[6.387s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:[m[K In member function ‘[01m[Kvirtual result_t ydlidar::ETLidarDriver::getScanFrequency(scan_frequency&, uint32_t)[m[K’:
+[6.388s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:677:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.388s]   677 |     [01;35m[Kuint32_t timeout[m[K) {
+[6.388s]       |     [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[6.388s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:[m[K In member function ‘[01m[Kvirtual result_t ydlidar::ETLidarDriver::setScanFrequencyAdd(scan_frequency&, uint32_t)[m[K’:
+[6.399s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:698:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.420s]   698 |     [01;35m[Kuint32_t timeout[m[K) {
+[6.421s]       |     [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[6.421s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:[m[K In member function ‘[01m[Kvirtual result_t ydlidar::ETLidarDriver::setScanFrequencyDis(scan_frequency&, uint32_t)[m[K’:
+[6.421s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:734:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.421s]   734 |     [01;35m[Kuint32_t timeout[m[K) {
+[6.421s]       |     [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[6.422s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:[m[K In member function ‘[01m[Kvirtual result_t ydlidar::ETLidarDriver::setScanFrequencyAddMic(scan_frequency&, uint32_t)[m[K’:
+[6.422s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:769:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.422s]   769 |     [01;35m[Kuint32_t timeout[m[K) {
+[6.422s]       |     [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[6.422s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:[m[K In member function ‘[01m[Kvirtual result_t ydlidar::ETLidarDriver::setScanFrequencyDisMic(scan_frequency&, uint32_t)[m[K’:
+[6.422s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:806:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.422s]   806 |     [01;35m[Kuint32_t timeout[m[K) {
+[6.423s]       |     [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[6.423s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:[m[K In member function ‘[01m[Kvirtual result_t ydlidar::ETLidarDriver::getSamplingRate(sampling_rate&, uint32_t)[m[K’:
+[6.423s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:840:71:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.424s]   840 | result_t ETLidarDriver::getSamplingRate(sampling_rate &rate, [01;35m[Kuint32_t timeout[m[K) {
+[6.424s]       |                                                              [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[6.424s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:[m[K In member function ‘[01m[Kvirtual result_t ydlidar::ETLidarDriver::setSamplingRate(sampling_rate&, uint32_t)[m[K’:
+[6.424s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:866:56:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krate[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.424s]   866 | result_t ETLidarDriver::setSamplingRate([01;35m[Ksampling_rate &rate[m[K, uint32_t timeout) {
+[6.424s]       |                                         [01;35m[K~~~~~~~~~~~~~~~^~~~[m[K
+[6.425s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:866:71:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.425s]   866 | result_t ETLidarDriver::setSamplingRate(sampling_rate &rate, [01;35m[Kuint32_t timeout[m[K) {
+[6.425s]       |                                                              [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[6.425s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:[m[K In member function ‘[01m[Kvirtual result_t ydlidar::ETLidarDriver::getZeroOffsetAngle(offset_angle&, uint32_t)[m[K’:
+[6.425s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:870:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kangle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.425s]   870 | result_t ETLidarDriver::getZeroOffsetAngle([01;35m[Koffset_angle &angle[m[K,
+[6.425s]       |                                            [01;35m[K~~~~~~~~~~~~~~^~~~~[m[K
+[6.426s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:871:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.426s]   871 |     [01;35m[Kuint32_t timeout[m[K) {
+[6.426s]       |     [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[6.426s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:[m[K In member function ‘[01m[Kvirtual result_t ydlidar::ETLidarDriver::setScanHeartbeat(scan_heart_beat&, uint32_t)[m[K’:
+[6.426s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:875:59:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbeat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.426s]   875 | result_t ETLidarDriver::setScanHeartbeat([01;35m[Kscan_heart_beat &beat[m[K,
+[6.426s]       |                                          [01;35m[K~~~~~~~~~~~~~~~~~^~~~[m[K
+[6.427s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:876:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.427s]   876 |     [01;35m[Kuint32_t timeout[m[K) {
+[6.427s]       |     [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[6.427s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:[m[K In member function ‘[01m[Kresult_t ydlidar::ETLidarDriver::startAutoScan(bool, uint32_t)[m[K’:
+[6.427s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:881:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kans[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.427s]   881 |   result_t [01;35m[Kans[m[K;
+[6.427s]       |            [01;35m[K^~~[m[K
+[6.428s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:880:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kforce[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.428s]   880 | result_t ETLidarDriver::startAutoScan([01;35m[Kbool force[m[K, uint32_t timeout) {
+[6.428s]       |                                       [01;35m[K~~~~~^~~~~[m[K
+[6.428s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:880:60:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.428s]   880 | result_t ETLidarDriver::startAutoScan(bool force, [01;35m[Kuint32_t timeout[m[K) {
+[6.428s]       |                                                   [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[6.428s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:[m[K In member function ‘[01m[Kresult_t ydlidar::ETLidarDriver::waitPackage(node_info*, uint32_t)[m[K’:
+[6.429s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ETLidarDriver.cpp:1142:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.429s]  1142 | result_t ETLidarDriver::waitPackage(node_info *node, [01;35m[Kuint32_t timeout[m[K) {
+[6.429s]       |                                                      [01;35m[K~~~~~~~~~^~~~~~~[m[K
+[6.501s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/filters/NoiseFilter.cpp:[m[K In member function ‘[01m[Kvoid NoiseFilter::filter_noise(const LaserScan&, int, int, LaserScan&)[m[K’:
+[6.502s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/filters/NoiseFilter.cpp:182:26:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kisincre[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.502s]   182 |                     bool [01;35m[Kisincre[m[K = (in.points[minIndex].range - lastDistance) < 0;
+[6.502s]       |                          [01;35m[K^~~~~~~[m[K
+[6.502s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/filters/NoiseFilter.cpp:94:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KlastInclineRange[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.503s]    94 |     double [01;35m[KlastInclineRange[m[K = lastRange;
+[6.503s]       |            [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[6.503s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/filters/NoiseFilter.cpp:97:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KlastIncline[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.503s]    97 |     double [01;35m[KlastIncline[m[K = 0;
+[6.503s]       |            [01;35m[K^~~~~~~~~~~[m[K
+[6.503s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/filters/NoiseFilter.cpp:98:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KhasFirst[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.504s]    98 |     bool [01;35m[KhasFirst[m[K = false;
+[6.504s]       |          [01;35m[K^~~~~~~~[m[K
+[6.504s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/filters/NoiseFilter.cpp:103:12:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KlastOffset[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[6.504s]   103 |     double [01;35m[KlastOffset[m[K = 0;
+[6.504s]       |            [01;35m[K^~~~~~~~~~[m[K
+[6.504s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/filters/NoiseFilter.cpp:106:12:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KlastDiff[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[6.504s]   106 |     double [01;35m[KlastDiff[m[K = 0;
+[6.505s]       |            [01;35m[K^~~~~~~~[m[K
+[6.505s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/filters/NoiseFilter.cpp:107:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KisIncrease[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.505s]   107 |     bool [01;35m[KisIncrease[m[K = false;
+[6.505s]       |          [01;35m[K^~~~~~~~~~[m[K
+[6.505s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/filters/NoiseFilter.cpp:109:12:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KminIndexDistance[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[6.505s]   109 |     double [01;35m[KminIndexDistance[m[K = 0;
+[6.505s]       |            [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[6.515s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/filters/NoiseFilter.cpp:[m[K In member function ‘[01m[Kvoid NoiseFilter::filter_tail(const LaserScan&, int, int, LaserScan&)[m[K’:
+[6.515s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/filters/NoiseFilter.cpp:268:12:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KlastInclineRange[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[6.516s]   268 |     double [01;35m[KlastInclineRange[m[K = lastRange;
+[6.516s]       |            [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[6.516s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/ActiveSocket.h:46[m[K,
+[6.516s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.cpp:25[m[K:
+[6.516s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:[m[K In member function ‘[01m[Kvirtual bool ydlidar::core::network::CSimpleSocket::Open(const char*, uint16_t)[m[K’:
+[6.516s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:538:33:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KpAddr[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.517s]   538 |   virtual bool Open([01;35m[Kconst char *pAddr[m[K, uint16_t nPort) {
+[6.517s]       |                     [01;35m[K~~~~~~~~~~~~^~~~~[m[K
+[6.517s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/network/SimpleSocket.h:538:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KnPort[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.517s]   538 |   virtual bool Open(const char *pAddr, [01;35m[Kuint16_t nPort[m[K) {
+[6.517s]       |                                        [01;35m[K~~~~~~~~~^~~~~[m[K
+[6.518s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/filters/NoiseFilter.cpp:[m[K In member function ‘[01m[Kvoid NoiseFilter::filter_tail2(const LaserScan&, int, int, LaserScan&)[m[K’:
+[6.518s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/filters/NoiseFilter.cpp:579:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%u[m[K’ expects argument of type ‘[01m[Kunsigned int[m[K’, but argument 2 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[6.518s]   579 |     printf("Noise count [01;35m[K%u[m[K\n", [32m[KnoiseCount[m[K);
+[6.518s]       |                         [01;35m[K~^[m[K     [32m[K~~~~~~~~~~[m[K
+[6.518s]       |                          [01;35m[K|[m[K     [32m[K|[m[K
+[6.519s]       |                          [01;35m[K|[m[K     [32m[Ksize_t {aka long unsigned int}[m[K
+[6.519s]       |                          [01;35m[Kunsigned int[m[K
+[6.519s]       |                         [32m[K%lu[m[K
+[6.627s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/serial.h:10[m[K,
+[6.627s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/impl/unix/unix_serial.h:9[m[K,
+[6.627s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/serial/common.h:41[m[K,
+[6.628s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/CYdLidar.cpp:25[m[K:
+[6.628s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:[m[K In member function ‘[01m[Kvirtual bool ydlidar::core::common::ChannelDevice::setDTR(bool)[m[K’:
+[6.628s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:111:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klevel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.628s]   111 |   virtual bool setDTR([01;35m[Kbool level = true[m[K) {
+[6.628s]       |                       [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[6.773s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.h:46[m[K,
+[6.773s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.cpp:26[m[K:
+[6.774s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/thread.h:[m[K In static member function ‘[01m[Kstatic ydlidar::core::base::Thread ydlidar::core::base::Thread::createThread(thread_proc_t, void*)[m[K’:
+[6.774s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/thread.h:46:57:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcast-function-type-Wcast-function-type]8;;[m[K]
+[6.774s]    46 |     pthread_create((pthread_t *)&thread_._handle, NULL, [01;35m[K(void *(*)(void *))proc[m[K,
+[6.774s]       |                                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.785s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.h:49[m[K,
+[6.786s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/CYdLidar.cpp:30[m[K:
+[6.786s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:[m[K In function ‘[01m[Kbool ydlidar::core::common::isSupportMotorCtrl(int)[m[K’:
+[6.786s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:411:8:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kret[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[6.786s]   411 |   bool [01;35m[Kret[m[K = false;
+[6.786s]       |        [01;35m[K^~~[m[K
+[6.802s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:[m[K In function ‘[01m[Kbool ydlidar::core::common::isSupportHeartBeat(int)[m[K’:
+[6.802s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:571:8:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kret[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[6.802s]   571 |   bool [01;35m[Kret[m[K = false;
+[6.802s]       |        [01;35m[K^~~[m[K
+[6.846s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/CYdLidar.cpp:[m[K In member function ‘[01m[Kbool CYdLidar::doProcessSimple(LaserScan&)[m[K’:
+[6.846s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/CYdLidar.cpp:649:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[6.846s]   649 |     for (int i = 0; [01;35m[Ki < count[m[K; i++)
+[6.846s]       |                     [01;35m[K~~^~~~~~~[m[K
+[7.023s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_sdk.cpp:[m[K In function ‘[01m[Kint lidarPortList(LidarPort*)[m[K’:
+[7.024s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_sdk.cpp:223:11:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[7.024s]   223 |     if ([01;35m[Ki < sizeof(LidarPort) / sizeof(string_t)[m[K) {
+[7.024s]       |         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.070s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.h:49[m[K,
+[7.070s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.cpp:26[m[K:
+[7.070s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:[m[K In function ‘[01m[Kbool ydlidar::core::common::isSupportMotorCtrl(int)[m[K’:
+[7.071s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:411:8:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kret[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[7.071s]   411 |   bool [01;35m[Kret[m[K = false;
+[7.071s]       |        [01;35m[K^~~[m[K
+[7.072s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:[m[K In function ‘[01m[Kbool ydlidar::core::common::isSupportHeartBeat(int)[m[K’:
+[7.072s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:571:8:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kret[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[7.072s]   571 |   bool [01;35m[Kret[m[K = false;
+[7.072s]       |        [01;35m[K^~~[m[K
+[7.221s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual const char* ydlidar::YDlidarDriver::DescribeError(bool)[m[K’:
+[7.221s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.cpp:165:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KisTCP[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.221s]   165 | const char *YDlidarDriver::DescribeError([01;35m[Kbool isTCP[m[K) {
+[7.221s]       |                                          [01;35m[K~~~~~^~~~~[m[K
+[7.253s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.cpp:[m[K In member function ‘[01m[Kvoid ydlidar::YDlidarDriver::parseNodeFromeBuffer(node_info*)[m[K’:
+[7.254s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.cpp:1251:105:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around arithmetic in operand of ‘[01m[K|[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[7.254s]  1251 |                                                    [01;35m[Kpackages.packageSampleDistance[package_Sample_Index] &[m[K
+[7.254s]       |                                                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[7.254s]  1252 | [01;35m[K                                                   0x0003[m[K)) << LIDAR_RESP_MEASUREMENT_QUALITY_SHIFT;
+[7.254s]       |                                                    [01;35m[K~~~~~~[m[K                                                
+[7.302s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.h:49[m[K,
+[7.303s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/CYdLidar.cpp:30[m[K:
+[7.303s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:[m[K In function ‘[01m[Kvoid ydlidar::core::common::parsePackageNode(const node_info&, LaserDebug&)[m[K’:
+[7.303s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:845:42:[m[K [01;35m[Kwarning: [m[Kthis statement may fall through [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-fallthrough=-Wimplicit-fallthrough=]8;;[m[K]
+[7.303s]   845 |       [01;35m[Kinfo.W3F4CusHardVer_W4F0CusSoftVer = node.debugInfo[m[K;
+[7.304s]       |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[7.304s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:847:5:[m[K [01;36m[Knote: [m[Khere
+[7.304s]   847 |     [01;36m[Kcase[m[K 12://W7F0LaserCurrent
+[7.304s]       |     [01;36m[K^~~~[m[K
+[7.306s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:[m[K In function ‘[01m[Kbool ydlidar::core::common::ParseLaserDebugInfo(const LaserDebug&, device_info&)[m[K’:
+[7.306s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:898:67:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksprintf[m[K’ writing a terminating nul past the end of the destination [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat-overflow=-Wformat-overflow=]8;;[m[K]
+[7.306s]   898 |       sprintf(reinterpret_cast<char *>(value.serialnum + 8), "%08d[01;35m[K"[m[K, Number);
+[7.306s]       |                                                                   [01;35m[K^[m[K
+[7.306s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_help.h:898:14:[m[K [01;36m[Knote: [m[K‘[01m[Ksprintf[m[K’ output 9 bytes into a destination of size 8
+[7.306s]   898 |       [01;36m[Ksprintf(reinterpret_cast<char *>(value.serialnum + 8), "%08d", Number)[m[K;
+[7.307s]       |       [01;36m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.257s] [ 70%] [32m[1mLinking CXX static library libydlidar_sdk.a[0m
+[8.395s] [ 70%] Built target ydlidar_sdk
+[8.398s] gmake: *** [Makefile:146：all] 错误 2
+[8.406s] Invoked command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/sensor_interfaces -- -j6 -l6

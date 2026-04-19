@@ -1,0 +1,29 @@
+[0.027s] Invoking command in '/home/chuil/Desktop/zhongxi/build/graphslam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/graphslam -- -j6 -l6
+[0.171s] [ 10%] [34m[1mAutomatic MOC and UIC for target graphslam_g2o[0m
+[0.172s] [ 10%] [34m[1mAutomatic MOC and UIC for target graphslam_node[0m
+[0.173s] [ 15%] [34m[1mAutomatic MOC and UIC for target map_manager_node[0m
+[0.223s] [ 15%] Built target map_manager_node_autogen
+[0.224s] [ 15%] Built target graphslam_g2o_autogen
+[0.234s] [ 15%] Built target graphslam_node_autogen
+[0.272s] [35m[1mConsolidate compiler generated dependencies of target graphslam_node[0m
+[0.291s] [ 40%] Built target graphslam_g2o
+[0.292s] [ 55%] Built target map_manager_node
+[0.352s] [ 60%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/back_end.cpp.o[0m
+[7.432s] In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:41[m[K,
+[7.432s]                  from [01m[K/usr/local/include/g2o/core/eigen_types.h:31[m[K,
+[7.432s]                  from [01m[K/usr/local/include/g2o/core/jacobian_workspace.h:34[m[K,
+[7.433s]                  from [01m[K/usr/local/include/g2o/core/optimizable_graph.h:39[m[K,
+[7.433s]                  from [01m[K/usr/local/include/g2o/core/sparse_optimizer.h:33[m[K,
+[7.433s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/back_end.h:8[m[K,
+[7.433s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:1[m[K:
+[7.434s] /usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h: In instantiation of ‘[01m[KEigen::Rotation2D<Scalar> Eigen::Rotation2D<Scalar>::inverse() const [with _Scalar = double][m[K’:
+[7.434s] [01m[K/usr/local/include/g2o/types/slam2d/se2.h:85:24:[m[K   required from here
+[7.434s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:98:39:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[KEigen::Rotation2D<double>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+[7.434s]    98 |   EIGEN_DEVICE_FUNC inline Rotation2D [01;36m[Kinverse[m[K() const { return Rotation2D(-m_angle); }
+[7.435s]       |                                       [01;36m[K^~~~~~~[m[K
+[25.879s] [ 65%] [32m[1mLinking CXX executable graphslam_node[0m
+[26.348s] gmake[2]: *** 正在删除文件“graphslam_node”
+[26.349s] gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:335: graphslam_node] 中断
+[26.351s] gmake[1]: *** [CMakeFiles/Makefile2:170: CMakeFiles/graphslam_node.dir/all] 中断
+[26.352s] gmake: *** [Makefile:146: all] 中断
+[26.362s] Invoked command in '/home/chuil/Desktop/zhongxi/build/graphslam' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/graphslam -- -j6 -l6

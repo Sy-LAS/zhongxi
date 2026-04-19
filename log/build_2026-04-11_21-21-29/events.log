@@ -1,0 +1,439 @@
+[0.000000] (-) TimerEvent: {}
+[0.000802] (-) JobUnselected: {'identifier': 'demo_py'}
+[0.001269] (-) JobUnselected: {'identifier': 'graphslam'}
+[0.002073] (-) JobUnselected: {'identifier': 'zhongxi_description'}
+[0.002494] (sensor_interfaces) JobQueued: {'identifier': 'sensor_interfaces', 'dependencies': OrderedDict()}
+[0.003018] (sensor_interfaces) JobStarted: {'identifier': 'sensor_interfaces'}
+[0.029414] (sensor_interfaces) JobProgress: {'identifier': 'sensor_interfaces', 'progress': 'cmake'}
+[0.032690] (sensor_interfaces) JobProgress: {'identifier': 'sensor_interfaces', 'progress': 'build'}
+[0.034493] (sensor_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chuil/Desktop/zhongxi/build/sensor_interfaces', '--', '-j6', '-l6'], 'cwd': '/home/chuil/Desktop/zhongxi/build/sensor_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'chuil'), ('SSH_CLIENT', '192.168.0.30 51784 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/chuil/.qoder-server/bin/16c1dec9a3994f378353c6947b77c2dcf96e7c49/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/chuil/.qoder-server/bin/16c1dec9a3994f378353c6947b77c2dcf96e7c49/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/chuil'), ('OLDPWD', '/home/chuil/Desktop/zhongxi'), ('TERM_PROGRAM_VERSION', '1.106.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-02b5ee79-e498-4d1a-8331-320ee7e5ee60.sock'), ('JETSON_L4T', '36.5.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/chuil/.qoder-server/bin/16c1dec9a3994f378353c6947b77c2dcf96e7c49/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/chuil/.qoder-server/bin/16c1dec9a3994f378353c6947b77c2dcf96e7c49/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chuil'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424125055888'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/chuil/.qoder-server/bin/16c1dec9a3994f378353c6947b77c2dcf96e7c49/bin/remote-cli:/home/chuil/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-b14c45dc1e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install/zhongxi_description:/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/graphslam:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QODER_IDE', '1'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/chuil/Desktop/zhongxi/build/sensor_interfaces'), ('SSH_CONNECTION', '192.168.0.30 51784 192.168.0.107 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/chuil/Desktop/zhongxi/install/demo_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install/zhongxi_description:/home/chuil/Desktop/zhongxi/install/graphslam:/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.098992] (-) TimerEvent: {}
+[0.200182] (-) TimerEvent: {}
+[0.260768] (sensor_interfaces) StdoutLine: {'line': b'[ 64%] Built target ydlidar_sdk\n'}
+[0.299664] (sensor_interfaces) StdoutLine: {'line': b'[ 72%] Built target sensor_interfaces_base\n'}
+[0.300467] (-) TimerEvent: {}
+[0.377472] (sensor_interfaces) StdoutLine: {'line': b'[ 88%] Built target lidar_driver\n'}
+[0.380291] (sensor_interfaces) StdoutLine: {'line': b'[ 88%] Built target camera_driver\n'}
+[0.395429] (sensor_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding CXX object CMakeFiles/control_board_interface.dir/src/stm32_comms_manager.cpp.o\x1b[0m\n'}
+[0.397163] (sensor_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding CXX object CMakeFiles/control_board_interface.dir/src/control_board_interface.cpp.o\x1b[0m\n'}
+[0.400605] (-) TimerEvent: {}
+[0.501404] (-) TimerEvent: {}
+[0.602559] (-) TimerEvent: {}
+[0.703704] (-) TimerEvent: {}
+[0.804884] (-) TimerEvent: {}
+[0.906011] (-) TimerEvent: {}
+[1.007224] (-) TimerEvent: {}
+[1.108415] (-) TimerEvent: {}
+[1.209756] (-) TimerEvent: {}
+[1.310871] (-) TimerEvent: {}
+[1.405228] (sensor_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/include/sensor_interfaces/control_board_interface.h:11\x1b[m\x1b[K,\n'}
+[1.406179] (sensor_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/control_board_interface.cpp:1\x1b[m\x1b[K:\n'}
+[1.406451] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.406662] (sensor_interfaces) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[1.406847] (sensor_interfaces) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.411064] (-) TimerEvent: {}
+[1.512242] (-) TimerEvent: {}
+[1.613677] (-) TimerEvent: {}
+[1.714907] (-) TimerEvent: {}
+[1.816159] (-) TimerEvent: {}
+[1.917515] (-) TimerEvent: {}
+[2.019128] (-) TimerEvent: {}
+[2.120404] (-) TimerEvent: {}
+[2.221630] (-) TimerEvent: {}
+[2.323003] (-) TimerEvent: {}
+[2.424210] (-) TimerEvent: {}
+[2.525352] (-) TimerEvent: {}
+[2.626543] (-) TimerEvent: {}
+[2.727794] (-) TimerEvent: {}
+[2.829122] (-) TimerEvent: {}
+[3.140101] (-) TimerEvent: {}
+[3.241314] (-) TimerEvent: {}
+[3.342480] (-) TimerEvent: {}
+[3.444104] (-) TimerEvent: {}
+[3.545266] (-) TimerEvent: {}
+[3.646437] (-) TimerEvent: {}
+[3.747874] (-) TimerEvent: {}
+[3.849058] (-) TimerEvent: {}
+[3.950184] (-) TimerEvent: {}
+[4.051338] (-) TimerEvent: {}
+[4.152507] (-) TimerEvent: {}
+[4.253654] (-) TimerEvent: {}
+[4.354806] (-) TimerEvent: {}
+[4.456019] (-) TimerEvent: {}
+[4.557175] (-) TimerEvent: {}
+[4.659350] (-) TimerEvent: {}
+[4.760565] (-) TimerEvent: {}
+[4.861743] (-) TimerEvent: {}
+[4.962888] (-) TimerEvent: {}
+[5.067729] (-) TimerEvent: {}
+[5.168961] (-) TimerEvent: {}
+[5.270143] (-) TimerEvent: {}
+[5.371800] (-) TimerEvent: {}
+[5.473000] (-) TimerEvent: {}
+[5.574162] (-) TimerEvent: {}
+[5.675363] (-) TimerEvent: {}
+[5.776556] (-) TimerEvent: {}
+[5.877778] (-) TimerEvent: {}
+[5.978955] (-) TimerEvent: {}
+[6.080178] (-) TimerEvent: {}
+[6.181423] (-) TimerEvent: {}
+[6.283123] (-) TimerEvent: {}
+[6.384313] (-) TimerEvent: {}
+[6.485486] (-) TimerEvent: {}
+[6.586626] (-) TimerEvent: {}
+[6.687781] (-) TimerEvent: {}
+[6.788974] (-) TimerEvent: {}
+[6.890144] (-) TimerEvent: {}
+[6.991333] (-) TimerEvent: {}
+[7.092519] (-) TimerEvent: {}
+[7.193704] (-) TimerEvent: {}
+[7.294846] (-) TimerEvent: {}
+[7.396073] (-) TimerEvent: {}
+[7.497238] (-) TimerEvent: {}
+[7.598394] (-) TimerEvent: {}
+[7.699572] (-) TimerEvent: {}
+[7.800757] (-) TimerEvent: {}
+[7.901923] (-) TimerEvent: {}
+[8.003089] (-) TimerEvent: {}
+[8.104318] (-) TimerEvent: {}
+[8.143270] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/stm32_comms_manager.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool sensor_interfaces::Stm32CommsManager::sendCommand(const string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.144249] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/stm32_comms_manager.cpp:84:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kcommand\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.144925] (sensor_interfaces) StderrLine: {'line': b'   84 | bool Stm32CommsManager::sendCommand(\x1b[01;35m\x1b[Kconst std::string& command\x1b[m\x1b[K) {\n'}
+[8.145177] (sensor_interfaces) StderrLine: {'line': b'      |                                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[8.145372] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/stm32_comms_manager.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kstd::string sensor_interfaces::Stm32CommsManager::readData(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.145561] (sensor_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/stm32_comms_manager.cpp:108:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktimeout_ms\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.145745] (sensor_interfaces) StderrLine: {'line': b'  108 | std::string Stm32CommsManager::readData(\x1b[01;35m\x1b[Kint timeout_ms\x1b[m\x1b[K) {\n'}
+[8.145920] (sensor_interfaces) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.204603] (-) TimerEvent: {}
+[8.307194] (-) TimerEvent: {}
+[8.408465] (-) TimerEvent: {}
+[8.509638] (-) TimerEvent: {}
+[8.610848] (-) TimerEvent: {}
+[8.712067] (-) TimerEvent: {}
+[8.813388] (-) TimerEvent: {}
+[8.914770] (-) TimerEvent: {}
+[9.015896] (-) TimerEvent: {}
+[9.117251] (-) TimerEvent: {}
+[9.218473] (-) TimerEvent: {}
+[9.319639] (-) TimerEvent: {}
+[9.420906] (-) TimerEvent: {}
+[9.522102] (-) TimerEvent: {}
+[9.623584] (-) TimerEvent: {}
+[9.724987] (-) TimerEvent: {}
+[9.826199] (-) TimerEvent: {}
+[9.927376] (-) TimerEvent: {}
+[10.028639] (-) TimerEvent: {}
+[10.129790] (-) TimerEvent: {}
+[10.231001] (-) TimerEvent: {}
+[10.332218] (-) TimerEvent: {}
+[10.433392] (-) TimerEvent: {}
+[10.534532] (-) TimerEvent: {}
+[10.635702] (-) TimerEvent: {}
+[10.736920] (-) TimerEvent: {}
+[10.838366] (-) TimerEvent: {}
+[10.939491] (-) TimerEvent: {}
+[11.040669] (-) TimerEvent: {}
+[11.141813] (-) TimerEvent: {}
+[11.243017] (-) TimerEvent: {}
+[11.344181] (-) TimerEvent: {}
+[11.445375] (-) TimerEvent: {}
+[11.546542] (-) TimerEvent: {}
+[11.647719] (-) TimerEvent: {}
+[11.748896] (-) TimerEvent: {}
+[11.850058] (-) TimerEvent: {}
+[11.951260] (-) TimerEvent: {}
+[12.052474] (-) TimerEvent: {}
+[12.153683] (-) TimerEvent: {}
+[12.254834] (-) TimerEvent: {}
+[12.356025] (-) TimerEvent: {}
+[12.457169] (-) TimerEvent: {}
+[12.558311] (-) TimerEvent: {}
+[12.659431] (-) TimerEvent: {}
+[12.760622] (-) TimerEvent: {}
+[12.861810] (-) TimerEvent: {}
+[12.963072] (-) TimerEvent: {}
+[13.064258] (-) TimerEvent: {}
+[13.165430] (-) TimerEvent: {}
+[13.266634] (-) TimerEvent: {}
+[13.367934] (-) TimerEvent: {}
+[13.469225] (-) TimerEvent: {}
+[13.570382] (-) TimerEvent: {}
+[13.671526] (-) TimerEvent: {}
+[13.772713] (-) TimerEvent: {}
+[13.873850] (-) TimerEvent: {}
+[13.974978] (-) TimerEvent: {}
+[14.076175] (-) TimerEvent: {}
+[14.177340] (-) TimerEvent: {}
+[14.278902] (-) TimerEvent: {}
+[14.974962] (-) TimerEvent: {}
+[15.076339] (-) TimerEvent: {}
+[15.177795] (-) TimerEvent: {}
+[15.279162] (-) TimerEvent: {}
+[15.380496] (-) TimerEvent: {}
+[15.481749] (-) TimerEvent: {}
+[15.582910] (-) TimerEvent: {}
+[15.684200] (-) TimerEvent: {}
+[15.785406] (-) TimerEvent: {}
+[15.886646] (-) TimerEvent: {}
+[15.988041] (-) TimerEvent: {}
+[16.089577] (-) TimerEvent: {}
+[16.190963] (-) TimerEvent: {}
+[16.292500] (-) TimerEvent: {}
+[16.393873] (-) TimerEvent: {}
+[16.495251] (-) TimerEvent: {}
+[16.596533] (-) TimerEvent: {}
+[16.697692] (-) TimerEvent: {}
+[16.798829] (-) TimerEvent: {}
+[16.900074] (-) TimerEvent: {}
+[17.001254] (-) TimerEvent: {}
+[17.102585] (-) TimerEvent: {}
+[17.203738] (-) TimerEvent: {}
+[17.304922] (-) TimerEvent: {}
+[17.406090] (-) TimerEvent: {}
+[17.507234] (-) TimerEvent: {}
+[17.608408] (-) TimerEvent: {}
+[17.709552] (-) TimerEvent: {}
+[17.810707] (-) TimerEvent: {}
+[17.911906] (-) TimerEvent: {}
+[18.013239] (-) TimerEvent: {}
+[18.114418] (-) TimerEvent: {}
+[18.215629] (-) TimerEvent: {}
+[18.316811] (-) TimerEvent: {}
+[18.418077] (-) TimerEvent: {}
+[18.519315] (-) TimerEvent: {}
+[18.620596] (-) TimerEvent: {}
+[18.721826] (-) TimerEvent: {}
+[18.823029] (-) TimerEvent: {}
+[18.924225] (-) TimerEvent: {}
+[19.025405] (-) TimerEvent: {}
+[19.126660] (-) TimerEvent: {}
+[19.227898] (-) TimerEvent: {}
+[19.329376] (-) TimerEvent: {}
+[19.430513] (-) TimerEvent: {}
+[19.531748] (-) TimerEvent: {}
+[19.632947] (-) TimerEvent: {}
+[19.734090] (-) TimerEvent: {}
+[19.835286] (-) TimerEvent: {}
+[19.936487] (-) TimerEvent: {}
+[20.037730] (-) TimerEvent: {}
+[20.139000] (-) TimerEvent: {}
+[20.240219] (-) TimerEvent: {}
+[20.341628] (-) TimerEvent: {}
+[20.442809] (-) TimerEvent: {}
+[20.544012] (-) TimerEvent: {}
+[20.645174] (-) TimerEvent: {}
+[20.746431] (-) TimerEvent: {}
+[20.848071] (-) TimerEvent: {}
+[20.949242] (-) TimerEvent: {}
+[21.050417] (-) TimerEvent: {}
+[21.151627] (-) TimerEvent: {}
+[21.252847] (-) TimerEvent: {}
+[21.354020] (-) TimerEvent: {}
+[21.455192] (-) TimerEvent: {}
+[21.556394] (-) TimerEvent: {}
+[21.657562] (-) TimerEvent: {}
+[21.758689] (-) TimerEvent: {}
+[21.859876] (-) TimerEvent: {}
+[21.961097] (-) TimerEvent: {}
+[22.062249] (-) TimerEvent: {}
+[22.163372] (-) TimerEvent: {}
+[22.264588] (-) TimerEvent: {}
+[22.365699] (-) TimerEvent: {}
+[22.466863] (-) TimerEvent: {}
+[22.568035] (-) TimerEvent: {}
+[22.669260] (-) TimerEvent: {}
+[22.770472] (-) TimerEvent: {}
+[22.872460] (-) TimerEvent: {}
+[22.973626] (-) TimerEvent: {}
+[23.074808] (-) TimerEvent: {}
+[23.176024] (-) TimerEvent: {}
+[23.277197] (-) TimerEvent: {}
+[23.378369] (-) TimerEvent: {}
+[23.479579] (-) TimerEvent: {}
+[23.580762] (-) TimerEvent: {}
+[23.681865] (-) TimerEvent: {}
+[23.783025] (-) TimerEvent: {}
+[23.884187] (-) TimerEvent: {}
+[23.985319] (-) TimerEvent: {}
+[24.086706] (-) TimerEvent: {}
+[24.187881] (-) TimerEvent: {}
+[24.289078] (-) TimerEvent: {}
+[24.390225] (-) TimerEvent: {}
+[24.491409] (-) TimerEvent: {}
+[24.592608] (-) TimerEvent: {}
+[24.693822] (-) TimerEvent: {}
+[24.795024] (-) TimerEvent: {}
+[24.896217] (-) TimerEvent: {}
+[24.997327] (-) TimerEvent: {}
+[25.098457] (-) TimerEvent: {}
+[25.199618] (-) TimerEvent: {}
+[25.300807] (-) TimerEvent: {}
+[25.402245] (-) TimerEvent: {}
+[25.503406] (-) TimerEvent: {}
+[25.604553] (-) TimerEvent: {}
+[25.705687] (-) TimerEvent: {}
+[25.806873] (-) TimerEvent: {}
+[25.908164] (-) TimerEvent: {}
+[26.009464] (-) TimerEvent: {}
+[26.110561] (-) TimerEvent: {}
+[26.211674] (-) TimerEvent: {}
+[26.312813] (-) TimerEvent: {}
+[26.413924] (-) TimerEvent: {}
+[26.515048] (-) TimerEvent: {}
+[26.616158] (-) TimerEvent: {}
+[26.717260] (-) TimerEvent: {}
+[26.818356] (-) TimerEvent: {}
+[26.919494] (-) TimerEvent: {}
+[27.020663] (-) TimerEvent: {}
+[27.121777] (-) TimerEvent: {}
+[27.222931] (-) TimerEvent: {}
+[27.324096] (-) TimerEvent: {}
+[27.425558] (-) TimerEvent: {}
+[27.526880] (-) TimerEvent: {}
+[27.629028] (-) TimerEvent: {}
+[27.730236] (-) TimerEvent: {}
+[27.831391] (-) TimerEvent: {}
+[27.932632] (-) TimerEvent: {}
+[28.034057] (-) TimerEvent: {}
+[28.135287] (-) TimerEvent: {}
+[28.236433] (-) TimerEvent: {}
+[28.337665] (-) TimerEvent: {}
+[28.438895] (-) TimerEvent: {}
+[28.540047] (-) TimerEvent: {}
+[28.641220] (-) TimerEvent: {}
+[28.742298] (-) TimerEvent: {}
+[28.843515] (-) TimerEvent: {}
+[28.944738] (-) TimerEvent: {}
+[29.045983] (-) TimerEvent: {}
+[29.147204] (-) TimerEvent: {}
+[29.248479] (-) TimerEvent: {}
+[29.349700] (-) TimerEvent: {}
+[29.450874] (-) TimerEvent: {}
+[29.552077] (-) TimerEvent: {}
+[29.653249] (-) TimerEvent: {}
+[29.754431] (-) TimerEvent: {}
+[29.855655] (-) TimerEvent: {}
+[29.956903] (-) TimerEvent: {}
+[30.058086] (-) TimerEvent: {}
+[30.159182] (-) TimerEvent: {}
+[30.260397] (-) TimerEvent: {}
+[30.361492] (-) TimerEvent: {}
+[30.462728] (-) TimerEvent: {}
+[30.564278] (-) TimerEvent: {}
+[30.665392] (-) TimerEvent: {}
+[30.766537] (-) TimerEvent: {}
+[30.868460] (-) TimerEvent: {}
+[30.969878] (-) TimerEvent: {}
+[31.071252] (-) TimerEvent: {}
+[31.172958] (-) TimerEvent: {}
+[31.274630] (-) TimerEvent: {}
+[31.376256] (-) TimerEvent: {}
+[31.477870] (-) TimerEvent: {}
+[31.579515] (-) TimerEvent: {}
+[31.681167] (-) TimerEvent: {}
+[31.782821] (-) TimerEvent: {}
+[31.884595] (-) TimerEvent: {}
+[31.986198] (-) TimerEvent: {}
+[32.087811] (-) TimerEvent: {}
+[32.189392] (-) TimerEvent: {}
+[32.290943] (-) TimerEvent: {}
+[32.392595] (-) TimerEvent: {}
+[32.494233] (-) TimerEvent: {}
+[32.595803] (-) TimerEvent: {}
+[32.697378] (-) TimerEvent: {}
+[32.798962] (-) TimerEvent: {}
+[32.900635] (-) TimerEvent: {}
+[33.002265] (-) TimerEvent: {}
+[33.103911] (-) TimerEvent: {}
+[33.205625] (-) TimerEvent: {}
+[33.307221] (-) TimerEvent: {}
+[33.409004] (-) TimerEvent: {}
+[33.510303] (-) TimerEvent: {}
+[33.611817] (-) TimerEvent: {}
+[33.713543] (-) TimerEvent: {}
+[33.815292] (-) TimerEvent: {}
+[33.917070] (-) TimerEvent: {}
+[34.018850] (-) TimerEvent: {}
+[34.120690] (-) TimerEvent: {}
+[34.222339] (-) TimerEvent: {}
+[34.323844] (-) TimerEvent: {}
+[34.425316] (-) TimerEvent: {}
+[34.526572] (-) TimerEvent: {}
+[34.627793] (-) TimerEvent: {}
+[34.728991] (-) TimerEvent: {}
+[34.830216] (-) TimerEvent: {}
+[34.931332] (-) TimerEvent: {}
+[35.032350] (-) TimerEvent: {}
+[35.133313] (-) TimerEvent: {}
+[35.234238] (-) TimerEvent: {}
+[35.335380] (-) TimerEvent: {}
+[35.436720] (-) TimerEvent: {}
+[35.537892] (-) TimerEvent: {}
+[35.639096] (-) TimerEvent: {}
+[35.685281] (sensor_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable control_board_interface\x1b[0m\n'}
+[35.739292] (-) TimerEvent: {}
+[35.840750] (-) TimerEvent: {}
+[35.942310] (-) TimerEvent: {}
+[36.044401] (-) TimerEvent: {}
+[36.145455] (-) TimerEvent: {}
+[36.246968] (-) TimerEvent: {}
+[36.350585] (-) TimerEvent: {}
+[36.453264] (-) TimerEvent: {}
+[36.554579] (-) TimerEvent: {}
+[36.655888] (-) TimerEvent: {}
+[36.757479] (-) TimerEvent: {}
+[36.860314] (-) TimerEvent: {}
+[36.961508] (-) TimerEvent: {}
+[37.063509] (-) TimerEvent: {}
+[37.164998] (-) TimerEvent: {}
+[37.266155] (-) TimerEvent: {}
+[37.367395] (-) TimerEvent: {}
+[37.468546] (-) TimerEvent: {}
+[37.569685] (-) TimerEvent: {}
+[37.670869] (-) TimerEvent: {}
+[37.772108] (-) TimerEvent: {}
+[37.873207] (-) TimerEvent: {}
+[37.928156] (sensor_interfaces) StdoutLine: {'line': b'[100%] Built target control_board_interface\n'}
+[37.973975] (-) TimerEvent: {}
+[37.986586] (sensor_interfaces) CommandEnded: {'returncode': 0}
+[37.991669] (sensor_interfaces) JobProgress: {'identifier': 'sensor_interfaces', 'progress': 'install'}
+[38.022604] (sensor_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/chuil/Desktop/zhongxi/build/sensor_interfaces'], 'cwd': '/home/chuil/Desktop/zhongxi/build/sensor_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'chuil'), ('SSH_CLIENT', '192.168.0.30 51784 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/chuil/.qoder-server/bin/16c1dec9a3994f378353c6947b77c2dcf96e7c49/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/chuil/.qoder-server/bin/16c1dec9a3994f378353c6947b77c2dcf96e7c49/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/chuil'), ('OLDPWD', '/home/chuil/Desktop/zhongxi'), ('TERM_PROGRAM_VERSION', '1.106.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-02b5ee79-e498-4d1a-8331-320ee7e5ee60.sock'), ('JETSON_L4T', '36.5.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/chuil/.qoder-server/bin/16c1dec9a3994f378353c6947b77c2dcf96e7c49/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/chuil/.qoder-server/bin/16c1dec9a3994f378353c6947b77c2dcf96e7c49/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chuil'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424125055888'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/chuil/.qoder-server/bin/16c1dec9a3994f378353c6947b77c2dcf96e7c49/bin/remote-cli:/home/chuil/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-b14c45dc1e.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install/zhongxi_description:/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/graphslam:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QODER_IDE', '1'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/chuil/Desktop/zhongxi/build/sensor_interfaces'), ('SSH_CONNECTION', '192.168.0.30 51784 192.168.0.107 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/chuil/Desktop/zhongxi/install/demo_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install/zhongxi_description:/home/chuil/Desktop/zhongxi/install/graphslam:/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[38.073626] (sensor_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[38.075091] (-) TimerEvent: {}
+[38.080939] (sensor_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[38.082118] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/lib/sensor_interfaces/camera_driver\n'}
+[38.082677] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/lib/sensor_interfaces/lidar_driver\n'}
+[38.083194] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/lib/sensor_interfaces/control_board_interface\n'}
+[38.083655] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/lib/sensor_interfaces/libydlidar_sdk.a\n'}
+[38.084270] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/lib/sensor_interfaces/libsensor_interfaces_base.a\n'}
+[38.085767] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/include//sensor_interfaces/camera_interface.h\n'}
+[38.086236] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/include//sensor_interfaces/control_board_interface.h\n'}
+[38.086633] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/include//sensor_interfaces/lidar_interface.h\n'}
+[38.087056] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/include//sensor_interfaces/sensor_interfaces.h\n'}
+[38.087439] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/include//sensor_interfaces/stm32_comms_manager.h\n'}
+[38.087792] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/include//sensor_interfaces/stm32_protocol.h\n'}
+[38.088256] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces//launch/full_system.launch.py\n'}
+[38.088677] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces//launch/sensors.launch.py\n'}
+[38.089254] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces//config/camera_params.yaml\n'}
+[38.089636] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces//config/control_params.yaml\n'}
+[38.090021] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces//config/lidar_params.yaml\n'}
+[38.090402] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces//config/ydlidar_x3pro.yaml\n'}
+[38.090810] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/ament_index/resource_index/package_run_dependencies/sensor_interfaces\n'}
+[38.091246] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/ament_index/resource_index/parent_prefix_path/sensor_interfaces\n'}
+[38.091681] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/environment/ament_prefix_path.sh\n'}
+[38.092073] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/environment/ament_prefix_path.dsv\n'}
+[38.092475] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/environment/path.sh\n'}
+[38.092869] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/environment/path.dsv\n'}
+[38.093262] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/local_setup.bash\n'}
+[38.093743] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/local_setup.sh\n'}
+[38.094119] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/local_setup.zsh\n'}
+[38.094487] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/local_setup.dsv\n'}
+[38.094797] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/package.dsv\n'}
+[38.095505] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/ament_index/resource_index/packages/sensor_interfaces\n'}
+[38.095899] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/cmake/sensor_interfacesConfig.cmake\n'}
+[38.096248] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/cmake/sensor_interfacesConfig-version.cmake\n'}
+[38.096574] (sensor_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/sensor_interfaces/share/sensor_interfaces/package.xml\n'}
+[38.102659] (sensor_interfaces) CommandEnded: {'returncode': 0}
+[38.175872] (-) TimerEvent: {}
+[38.198822] (sensor_interfaces) JobEnded: {'identifier': 'sensor_interfaces', 'rc': 0}
+[38.201612] (-) EventReactorShutdown: {}

@@ -1,0 +1,119 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found tf2: 0.25.19 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found tf2_geometry_msgs: 0.25.19 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found QGLViewer: /usr/include/QGLViewer
+-- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so   
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/chuil/Desktop/zhongxi/build/graphslam
+[  4%] [34m[1mAutomatic MOC and UIC for target map_manager_node[0m
+[  8%] [34m[1mAutomatic MOC and UIC for target graphslam_g2o[0m
+[ 12%] [34m[1mAutomatic MOC and UIC for target map_saver_node[0m
+[ 16%] [34m[1mAutomatic MOC and UIC for target graphslam_node[0m
+[ 16%] Built target map_manager_node_autogen
+[ 16%] Built target map_saver_node_autogen
+[ 16%] Built target graphslam_node_autogen
+[ 25%] [32mBuilding CXX object CMakeFiles/map_saver_node.dir/map_saver_node_autogen/mocs_compilation.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/map_saver_node.dir/map_saver_node.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/map_manager_node.dir/map_manager_node_autogen/mocs_compilation.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/map_manager_node.dir/map_manager_node.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/graphslam_node_autogen/mocs_compilation.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/node/graphslam_node.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/back_end.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/front_end.cpp.o[0m
+[ 50%] Built target graphslam_g2o_autogen
+[ 54%] [32mBuilding CXX object CMakeFiles/graphslam_g2o.dir/graphslam_g2o_autogen/mocs_compilation.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/map.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/graphslam_g2o.dir/main_window.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/utils.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/utils/laser_scan.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/graphslam_g2o.dir/slam2d_viewer.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/graphslam_g2o.dir/slam2d_g2o.cpp.o[0m
+[ 83%] [32m[1mLinking CXX executable map_saver_node[0m
+[ 83%] Built target map_saver_node
+[ 87%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/utils/transformations.cpp.o[0m
+[ 91%] [32m[1mLinking CXX executable map_manager_node[0m
+[ 91%] Built target map_manager_node
+[ 95%] [32m[1mLinking CXX executable graphslam_node[0m
+[ 95%] Built target graphslam_node
+[100%] [32m[1mLinking CXX executable graphslam_g2o[0m
+[100%] Built target graphslam_g2o
+-- Install configuration: ""
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/lib/graphslam/graphslam_g2o
+-- Set runtime path of "/home/chuil/Desktop/zhongxi/install/graphslam/lib/graphslam/graphslam_g2o" to ""
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/lib/graphslam/graphslam_node
+-- Set runtime path of "/home/chuil/Desktop/zhongxi/install/graphslam/lib/graphslam/graphslam_node" to ""
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/lib/graphslam/map_manager_node
+-- Set runtime path of "/home/chuil/Desktop/zhongxi/install/graphslam/lib/graphslam/map_manager_node" to ""
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/lib/graphslam/map_saver_node
+-- Set runtime path of "/home/chuil/Desktop/zhongxi/install/graphslam/lib/graphslam/map_saver_node" to ""
+-- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/lib/graphslam/graphslam_g2o
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam//launch
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam//launch/slam_with_robot.launch.py
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam//launch/slam_exploration.launch.py
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam//launch/slam_launch.py
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam//config
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam//config/camera.yalm
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam//config/rviz_config_with_path.rviz
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam//config/parsms.yalm
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/utils
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/utils/camera_model.h
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/utils/transformations.h
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/utils/laser_scan.h
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/back_end.h
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/utils.h
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/map.h
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/front_end.h
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/types.h
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/ament_index/resource_index/package_run_dependencies/graphslam
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/ament_index/resource_index/parent_prefix_path/graphslam
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/environment/ament_prefix_path.sh
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/environment/ament_prefix_path.dsv
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/environment/path.sh
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/environment/path.dsv
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/local_setup.bash
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/local_setup.sh
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/local_setup.zsh
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/local_setup.dsv
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/package.dsv
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/ament_index/resource_index/packages/graphslam
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/cmake/graphslamConfig.cmake
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/cmake/graphslamConfig-version.cmake
+-- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/package.xml

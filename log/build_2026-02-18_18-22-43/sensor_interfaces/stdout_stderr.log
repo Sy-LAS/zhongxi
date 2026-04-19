@@ -1,0 +1,141 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[0mCMake Deprecation Warning at /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+[0mCMake Deprecation Warning at /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/CMakeLists.txt:44 (cmake_policy):
+  The OLD behavior for policy CMP0053 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+[0m
+[0mCMake Deprecation Warning at /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/CMakeLists.txt:47 (cmake_policy):
+  The OLD behavior for policy CMP0037 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+[0m
+[0mCMake Deprecation Warning at /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/CMakeLists.txt:50 (cmake_policy):
+  The OLD behavior for policy CMP0043 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+[0m
+-- Could NOT find SWIG (missing: SWIG_EXECUTABLE SWIG_DIR) 
+[0mCMake Deprecation Warning at /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/core/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+[0mCMake Deprecation Warning at /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/samples/CMakeLists.txt:2 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+-- build test is ON.....
+[0mCMake Deprecation Warning at /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/cmake/install_package.cmake:101 (cmake_policy):
+  The OLD behavior for policy CMP0026 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+Call Stack (most recent call first):
+  /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/CMakeLists.txt:161 (install_package)
+
+[0m
+[33mCMake Warning (dev) at /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/cmake/install_package.cmake:191 (install):
+  Policy CMP0062 is not set: Disallow install() of export() result.  Run
+  "cmake --help-policy CMP0062" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  The file
+
+    /home/chuil/Desktop/zhongxi/build/sensor_interfaces/ydlidar_sdk/ydlidar_sdkTargets.cmake
+
+  was generated by the export() command.  It should not be installed with the
+  install() command.  Use the install(EXPORT) mechanism instead.  See the
+  cmake-packages(7) manual for more.
+
+Call Stack (most recent call first):
+  /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/CMakeLists.txt:161 (install_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[31mCMake Error at /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/CMakeLists.txt:186 (add_custom_target):
+  add_custom_target cannot create target "uninstall" because another target
+  with the same name already exists.  The existing target is a custom target
+  created in source directory
+  "/home/chuil/Desktop/zhongxi/src/sensor_interfaces".  See documentation for
+  policy CMP0002 for more details.
+
+[0m
+-- 
+-- +===========================================================================+
+-- |         Resulting configuration for                             |
+-- +===========================================================================+
+--  _________________________ PLATFORM _____________________________
+--  Host                        : Linux5.15.185-tegraaarch64
+--  Is the system big endian?   :  No 
+--  Word size (32/64 bit)       : 64
+--  CMake version               : 3.22.1
+--  CMake generator             : Unix Makefiles
+--  CMake build tool            : /usr/bin/gmake
+--  Compiler                    : GNU
+--  Configuration               : 
+-- 
+--  __________________________ OPTIONS _____________________________
+--  Build YDLidar-SDK as a shared library?　　 :  No 
+--  Build Examples?　　　　　　　　　　　　　　 : Yes 
+--  Build C Sharp API?　　　　　　　　　　　　 :  No 
+--  Build TEST?  			　　　 : Yes 
+-- 
+--  _________________________ INSTALL _____________________
+--  Install prefix                    : /home/chuil/Desktop/zhongxi/install/sensor_interfaces
+-- 
+--  _______________________ WRAPPERS/BINDINGS ______________________
+--  Python bindings (pyydlidar)   :  No 
+--   - dep: Swig found?       :  No [Version: ]
+--   - dep: PythonLibs found?  : Yes [Version: 3.10.12]
+-- 
+-- Configuring incomplete, errors occurred!
+See also "/home/chuil/Desktop/zhongxi/build/sensor_interfaces/CMakeFiles/CMakeOutput.log".
+gmake: *** [Makefile:308：cmake_check_build_system] 错误 1

@@ -1,0 +1,6 @@
+Invoking command in '/home/chuil/Desktop/zhongxi/build/zhongxi_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/chuil/Desktop/zhongxi/src/zhongxi_description -DCMAKE_INSTALL_PREFIX=/home/chuil/Desktop/zhongxi/install/zhongxi_description
+Invoked command in '/home/chuil/Desktop/zhongxi/build/zhongxi_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/chuil/Desktop/zhongxi/src/zhongxi_description -DCMAKE_INSTALL_PREFIX=/home/chuil/Desktop/zhongxi/install/zhongxi_description
+Invoking command in '/home/chuil/Desktop/zhongxi/build/zhongxi_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/zhongxi_description -- -j6 -l6
+Invoked command in '/home/chuil/Desktop/zhongxi/build/zhongxi_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/zhongxi_description -- -j6 -l6
+Invoking command in '/home/chuil/Desktop/zhongxi/build/zhongxi_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chuil/Desktop/zhongxi/build/zhongxi_description
+Invoked command in '/home/chuil/Desktop/zhongxi/build/zhongxi_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chuil/Desktop/zhongxi/build/zhongxi_description

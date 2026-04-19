@@ -1,0 +1,300 @@
+[0.000000] (-) TimerEvent: {}
+[0.000800] (-) JobUnselected: {'identifier': 'demo_py'}
+[0.001234] (-) JobUnselected: {'identifier': 'sensor_interfaces'}
+[0.001954] (-) JobUnselected: {'identifier': 'zhongxi_description'}
+[0.002335] (graphslam) JobQueued: {'identifier': 'graphslam', 'dependencies': OrderedDict()}
+[0.002787] (graphslam) JobStarted: {'identifier': 'graphslam'}
+[0.022889] (graphslam) JobProgress: {'identifier': 'graphslam', 'progress': 'cmake'}
+[0.025239] (graphslam) JobProgress: {'identifier': 'graphslam', 'progress': 'build'}
+[0.027073] (graphslam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chuil/Desktop/zhongxi/build/graphslam', '--', '-j6', '-l6'], 'cwd': '/home/chuil/Desktop/zhongxi/build/graphslam', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'chuil'), ('SSH_CLIENT', '192.168.0.102 58397 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/chuil'), ('OLDPWD', '/home/chuil/Desktop'), ('TERM_PROGRAM_VERSION', '1.109.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-525a352d-9623-4b37-96bb-32bbdbdb71b8.sock'), ('JETSON_L4T', '36.5.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chuil'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424125055888'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/chuil/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/chuil/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/bin/remote-cli:/home/chuil/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/bundled/scripts/noConfigScripts'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-21a56646f1eccb5d.txt'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/home/chuil/.vscode-server/data/User/workspaceStorage/e211f3a314d4166c5841746826140cad/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ed6a4f6337.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install/zhongxi_description:/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/graphslam:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/chuil/Desktop/zhongxi/build/graphslam'), ('SSH_CONNECTION', '192.168.0.102 58397 192.168.0.107 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/chuil/Desktop/zhongxi/install/demo_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install/zhongxi_description:/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/graphslam:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.099002] (-) TimerEvent: {}
+[0.173183] (graphslam) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target graphslam_g2o\x1b[0m\n'}
+[0.174989] (graphslam) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target graphslam_node\x1b[0m\n'}
+[0.175469] (graphslam) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target map_manager_node\x1b[0m\n'}
+[0.199270] (-) TimerEvent: {}
+[0.225575] (graphslam) StdoutLine: {'line': b'[ 15%] Built target map_manager_node_autogen\n'}
+[0.226406] (graphslam) StdoutLine: {'line': b'[ 15%] Built target graphslam_g2o_autogen\n'}
+[0.236356] (graphslam) StdoutLine: {'line': b'[ 15%] Built target graphslam_node_autogen\n'}
+[0.274399] (graphslam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target graphslam_node\x1b[0m\n'}
+[0.293600] (graphslam) StdoutLine: {'line': b'[ 40%] Built target graphslam_g2o\n'}
+[0.294474] (graphslam) StdoutLine: {'line': b'[ 55%] Built target map_manager_node\n'}
+[0.299347] (-) TimerEvent: {}
+[0.353739] (graphslam) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/back_end.cpp.o\x1b[0m\n'}
+[0.399666] (-) TimerEvent: {}
+[0.500732] (-) TimerEvent: {}
+[0.601929] (-) TimerEvent: {}
+[0.703060] (-) TimerEvent: {}
+[0.804186] (-) TimerEvent: {}
+[0.905340] (-) TimerEvent: {}
+[1.006482] (-) TimerEvent: {}
+[1.107678] (-) TimerEvent: {}
+[1.208818] (-) TimerEvent: {}
+[1.309978] (-) TimerEvent: {}
+[1.411103] (-) TimerEvent: {}
+[1.512218] (-) TimerEvent: {}
+[1.613374] (-) TimerEvent: {}
+[1.714565] (-) TimerEvent: {}
+[1.815709] (-) TimerEvent: {}
+[1.916888] (-) TimerEvent: {}
+[2.018090] (-) TimerEvent: {}
+[2.119287] (-) TimerEvent: {}
+[2.220504] (-) TimerEvent: {}
+[2.321712] (-) TimerEvent: {}
+[2.422933] (-) TimerEvent: {}
+[2.524136] (-) TimerEvent: {}
+[2.625378] (-) TimerEvent: {}
+[2.726608] (-) TimerEvent: {}
+[2.827910] (-) TimerEvent: {}
+[2.929053] (-) TimerEvent: {}
+[3.030169] (-) TimerEvent: {}
+[3.131289] (-) TimerEvent: {}
+[3.232444] (-) TimerEvent: {}
+[3.333598] (-) TimerEvent: {}
+[3.434743] (-) TimerEvent: {}
+[3.535869] (-) TimerEvent: {}
+[3.637065] (-) TimerEvent: {}
+[3.738246] (-) TimerEvent: {}
+[3.839352] (-) TimerEvent: {}
+[3.940443] (-) TimerEvent: {}
+[4.041678] (-) TimerEvent: {}
+[4.142830] (-) TimerEvent: {}
+[4.243960] (-) TimerEvent: {}
+[4.345099] (-) TimerEvent: {}
+[4.446231] (-) TimerEvent: {}
+[4.547390] (-) TimerEvent: {}
+[4.648650] (-) TimerEvent: {}
+[4.749856] (-) TimerEvent: {}
+[4.851020] (-) TimerEvent: {}
+[4.952222] (-) TimerEvent: {}
+[5.053395] (-) TimerEvent: {}
+[5.154607] (-) TimerEvent: {}
+[5.255811] (-) TimerEvent: {}
+[5.357036] (-) TimerEvent: {}
+[5.458193] (-) TimerEvent: {}
+[5.559395] (-) TimerEvent: {}
+[5.660529] (-) TimerEvent: {}
+[5.761731] (-) TimerEvent: {}
+[5.862945] (-) TimerEvent: {}
+[5.964133] (-) TimerEvent: {}
+[6.065337] (-) TimerEvent: {}
+[6.166495] (-) TimerEvent: {}
+[6.267657] (-) TimerEvent: {}
+[6.368809] (-) TimerEvent: {}
+[6.469946] (-) TimerEvent: {}
+[6.571098] (-) TimerEvent: {}
+[6.672305] (-) TimerEvent: {}
+[6.773615] (-) TimerEvent: {}
+[6.874801] (-) TimerEvent: {}
+[6.975959] (-) TimerEvent: {}
+[7.077081] (-) TimerEvent: {}
+[7.178218] (-) TimerEvent: {}
+[7.279378] (-) TimerEvent: {}
+[7.380544] (-) TimerEvent: {}
+[7.433796] (graphslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Geometry:41\x1b[m\x1b[K,\n'}
+[7.434747] (graphslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/g2o/core/eigen_types.h:31\x1b[m\x1b[K,\n'}
+[7.435053] (graphslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/g2o/core/jacobian_workspace.h:34\x1b[m\x1b[K,\n'}
+[7.435323] (graphslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/g2o/core/optimizable_graph.h:39\x1b[m\x1b[K,\n'}
+[7.435575] (graphslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/local/include/g2o/core/sparse_optimizer.h:33\x1b[m\x1b[K,\n'}
+[7.435815] (graphslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/back_end.h:8\x1b[m\x1b[K,\n'}
+[7.436059] (graphslam) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:1\x1b[m\x1b[K:\n'}
+[7.436288] (graphslam) StderrLine: {'line': b'/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[KEigen::Rotation2D<Scalar> Eigen::Rotation2D<Scalar>::inverse() const [with _Scalar = double]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.436527] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/local/include/g2o/types/slam2d/se2.h:85:24:\x1b[m\x1b[K   required from here\n'}
+[7.436755] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:98:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kparameter passing for argument of type \xe2\x80\x98\x1b[01m\x1b[KEigen::Rotation2D<double>\x1b[m\x1b[K\xe2\x80\x99 when C++17 is enabled changed to match C++14 \x1b]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_base\x07in GCC 10.1\x1b]8;;\x07\n'}
+[7.437064] (graphslam) StderrLine: {'line': b'   98 |   EIGEN_DEVICE_FUNC inline Rotation2D \x1b[01;36m\x1b[Kinverse\x1b[m\x1b[K() const { return Rotation2D(-m_angle); }\n'}
+[7.437306] (graphslam) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[7.480679] (-) TimerEvent: {}
+[7.581654] (-) TimerEvent: {}
+[7.682797] (-) TimerEvent: {}
+[7.783921] (-) TimerEvent: {}
+[7.885091] (-) TimerEvent: {}
+[7.986243] (-) TimerEvent: {}
+[8.087418] (-) TimerEvent: {}
+[8.188600] (-) TimerEvent: {}
+[8.289791] (-) TimerEvent: {}
+[8.390944] (-) TimerEvent: {}
+[8.492095] (-) TimerEvent: {}
+[8.593308] (-) TimerEvent: {}
+[8.694502] (-) TimerEvent: {}
+[8.795703] (-) TimerEvent: {}
+[8.896907] (-) TimerEvent: {}
+[8.998025] (-) TimerEvent: {}
+[9.099246] (-) TimerEvent: {}
+[9.200426] (-) TimerEvent: {}
+[9.301611] (-) TimerEvent: {}
+[9.402799] (-) TimerEvent: {}
+[9.503976] (-) TimerEvent: {}
+[9.605104] (-) TimerEvent: {}
+[9.706256] (-) TimerEvent: {}
+[9.807431] (-) TimerEvent: {}
+[9.908625] (-) TimerEvent: {}
+[10.009833] (-) TimerEvent: {}
+[10.111037] (-) TimerEvent: {}
+[10.212231] (-) TimerEvent: {}
+[10.313493] (-) TimerEvent: {}
+[10.414681] (-) TimerEvent: {}
+[10.515873] (-) TimerEvent: {}
+[10.617129] (-) TimerEvent: {}
+[10.718355] (-) TimerEvent: {}
+[10.819549] (-) TimerEvent: {}
+[10.920700] (-) TimerEvent: {}
+[11.021875] (-) TimerEvent: {}
+[11.123018] (-) TimerEvent: {}
+[11.224167] (-) TimerEvent: {}
+[11.325341] (-) TimerEvent: {}
+[11.426507] (-) TimerEvent: {}
+[11.527628] (-) TimerEvent: {}
+[11.628805] (-) TimerEvent: {}
+[11.729973] (-) TimerEvent: {}
+[11.831254] (-) TimerEvent: {}
+[11.932333] (-) TimerEvent: {}
+[12.033499] (-) TimerEvent: {}
+[12.134639] (-) TimerEvent: {}
+[12.235834] (-) TimerEvent: {}
+[12.336948] (-) TimerEvent: {}
+[12.438157] (-) TimerEvent: {}
+[12.539337] (-) TimerEvent: {}
+[12.640518] (-) TimerEvent: {}
+[12.741707] (-) TimerEvent: {}
+[12.842905] (-) TimerEvent: {}
+[12.944065] (-) TimerEvent: {}
+[13.045288] (-) TimerEvent: {}
+[13.146487] (-) TimerEvent: {}
+[13.247721] (-) TimerEvent: {}
+[13.349037] (-) TimerEvent: {}
+[13.450284] (-) TimerEvent: {}
+[13.551509] (-) TimerEvent: {}
+[13.652731] (-) TimerEvent: {}
+[13.753902] (-) TimerEvent: {}
+[13.855041] (-) TimerEvent: {}
+[13.956204] (-) TimerEvent: {}
+[14.057458] (-) TimerEvent: {}
+[14.158620] (-) TimerEvent: {}
+[14.259772] (-) TimerEvent: {}
+[14.360967] (-) TimerEvent: {}
+[14.462182] (-) TimerEvent: {}
+[14.563391] (-) TimerEvent: {}
+[14.664575] (-) TimerEvent: {}
+[14.765810] (-) TimerEvent: {}
+[14.866994] (-) TimerEvent: {}
+[14.968180] (-) TimerEvent: {}
+[15.069439] (-) TimerEvent: {}
+[15.170650] (-) TimerEvent: {}
+[15.271842] (-) TimerEvent: {}
+[15.373061] (-) TimerEvent: {}
+[15.474233] (-) TimerEvent: {}
+[15.575457] (-) TimerEvent: {}
+[15.676623] (-) TimerEvent: {}
+[15.777834] (-) TimerEvent: {}
+[15.879005] (-) TimerEvent: {}
+[15.980173] (-) TimerEvent: {}
+[16.081415] (-) TimerEvent: {}
+[16.182559] (-) TimerEvent: {}
+[16.283664] (-) TimerEvent: {}
+[16.384793] (-) TimerEvent: {}
+[16.486290] (-) TimerEvent: {}
+[16.587516] (-) TimerEvent: {}
+[16.688675] (-) TimerEvent: {}
+[16.789870] (-) TimerEvent: {}
+[16.891135] (-) TimerEvent: {}
+[16.992337] (-) TimerEvent: {}
+[17.093578] (-) TimerEvent: {}
+[17.194752] (-) TimerEvent: {}
+[17.295939] (-) TimerEvent: {}
+[17.397161] (-) TimerEvent: {}
+[17.498373] (-) TimerEvent: {}
+[17.599527] (-) TimerEvent: {}
+[17.700642] (-) TimerEvent: {}
+[17.801809] (-) TimerEvent: {}
+[17.902973] (-) TimerEvent: {}
+[18.004171] (-) TimerEvent: {}
+[18.105449] (-) TimerEvent: {}
+[18.206636] (-) TimerEvent: {}
+[18.307763] (-) TimerEvent: {}
+[18.408980] (-) TimerEvent: {}
+[18.510058] (-) TimerEvent: {}
+[18.611233] (-) TimerEvent: {}
+[18.712383] (-) TimerEvent: {}
+[18.813591] (-) TimerEvent: {}
+[18.914708] (-) TimerEvent: {}
+[19.015828] (-) TimerEvent: {}
+[19.117039] (-) TimerEvent: {}
+[19.218185] (-) TimerEvent: {}
+[19.319326] (-) TimerEvent: {}
+[19.420473] (-) TimerEvent: {}
+[19.521653] (-) TimerEvent: {}
+[19.622769] (-) TimerEvent: {}
+[19.723893] (-) TimerEvent: {}
+[19.825053] (-) TimerEvent: {}
+[19.926139] (-) TimerEvent: {}
+[20.027278] (-) TimerEvent: {}
+[20.128429] (-) TimerEvent: {}
+[20.229630] (-) TimerEvent: {}
+[20.330845] (-) TimerEvent: {}
+[20.432036] (-) TimerEvent: {}
+[20.533212] (-) TimerEvent: {}
+[20.634368] (-) TimerEvent: {}
+[20.735541] (-) TimerEvent: {}
+[20.836705] (-) TimerEvent: {}
+[20.937914] (-) TimerEvent: {}
+[21.039000] (-) TimerEvent: {}
+[21.140058] (-) TimerEvent: {}
+[21.241259] (-) TimerEvent: {}
+[21.342423] (-) TimerEvent: {}
+[21.443604] (-) TimerEvent: {}
+[21.544761] (-) TimerEvent: {}
+[21.645942] (-) TimerEvent: {}
+[21.747069] (-) TimerEvent: {}
+[21.848214] (-) TimerEvent: {}
+[21.949497] (-) TimerEvent: {}
+[22.050668] (-) TimerEvent: {}
+[22.151793] (-) TimerEvent: {}
+[22.252971] (-) TimerEvent: {}
+[22.354069] (-) TimerEvent: {}
+[22.455204] (-) TimerEvent: {}
+[22.556383] (-) TimerEvent: {}
+[22.657608] (-) TimerEvent: {}
+[22.758820] (-) TimerEvent: {}
+[22.859936] (-) TimerEvent: {}
+[22.961122] (-) TimerEvent: {}
+[23.062273] (-) TimerEvent: {}
+[23.163459] (-) TimerEvent: {}
+[23.264613] (-) TimerEvent: {}
+[23.365743] (-) TimerEvent: {}
+[23.466901] (-) TimerEvent: {}
+[23.568051] (-) TimerEvent: {}
+[23.669196] (-) TimerEvent: {}
+[23.770323] (-) TimerEvent: {}
+[23.871489] (-) TimerEvent: {}
+[23.972582] (-) TimerEvent: {}
+[24.074164] (-) TimerEvent: {}
+[24.176218] (-) TimerEvent: {}
+[24.277422] (-) TimerEvent: {}
+[24.378566] (-) TimerEvent: {}
+[24.479725] (-) TimerEvent: {}
+[24.580892] (-) TimerEvent: {}
+[24.682010] (-) TimerEvent: {}
+[24.783164] (-) TimerEvent: {}
+[24.884315] (-) TimerEvent: {}
+[24.985539] (-) TimerEvent: {}
+[25.086720] (-) TimerEvent: {}
+[25.187910] (-) TimerEvent: {}
+[25.289086] (-) TimerEvent: {}
+[25.390272] (-) TimerEvent: {}
+[25.491453] (-) TimerEvent: {}
+[25.592641] (-) TimerEvent: {}
+[25.693861] (-) TimerEvent: {}
+[25.795084] (-) TimerEvent: {}
+[25.881511] (graphslam) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX executable graphslam_node\x1b[0m\n'}
+[25.895294] (-) TimerEvent: {}
+[25.997165] (-) TimerEvent: {}
+[26.099693] (-) TimerEvent: {}
+[26.201889] (-) TimerEvent: {}
+[26.303446] (-) TimerEvent: {}
+[26.350552] (graphslam) StderrLine: {'line': b'gmake[2]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe5\x88\xa0\xe9\x99\xa4\xe6\x96\x87\xe4\xbb\xb6\xe2\x80\x9cgraphslam_node\xe2\x80\x9d\n'}
+[26.352028] (graphslam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:335: graphslam_node] \xe4\xb8\xad\xe6\x96\xad\n'}
+[26.353448] (graphslam) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:170: CMakeFiles/graphslam_node.dir/all] \xe4\xb8\xad\xe6\x96\xad\n'}
+[26.354593] (graphslam) StderrLine: {'line': b'gmake: *** [Makefile:146: all] \xe4\xb8\xad\xe6\x96\xad\n'}
+[26.364016] (graphslam) CommandEnded: {'returncode': -2}
+[26.403478] (-) TimerEvent: {}
+[26.416266] (graphslam) JobEnded: {'identifier': 'graphslam', 'rc': 'SIGINT'}
+[26.428683] (-) EventReactorShutdown: {}

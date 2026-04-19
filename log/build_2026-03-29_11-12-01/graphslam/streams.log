@@ -1,0 +1,100 @@
+[0.027s] Invoking command in '/home/chuil/Desktop/zhongxi/build/graphslam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake /home/chuil/Desktop/zhongxi/src/graphslam -DCMAKE_INSTALL_PREFIX=/home/chuil/Desktop/zhongxi/install/graphslam
+[0.358s] -- The C compiler identification is GNU 11.4.0
+[0.531s] -- The CXX compiler identification is GNU 11.4.0
+[0.565s] -- Detecting C compiler ABI info
+[0.755s] -- Detecting C compiler ABI info - done
+[0.775s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.775s] -- Detecting C compile features
+[0.776s] -- Detecting C compile features - done
+[0.791s] -- Detecting CXX compiler ABI info
+[0.998s] -- Detecting CXX compiler ABI info - done
+[1.015s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.016s] -- Detecting CXX compile features
+[1.018s] -- Detecting CXX compile features - done
+[1.032s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.443s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.724s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[1.871s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.886s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.912s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.950s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.006s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.145s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.154s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.395s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.468s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.574s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.599s] -- Looking for pthread.h
+[2.808s] -- Looking for pthread.h - found
+[2.810s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.020s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.021s] -- Found Threads: TRUE  
+[3.367s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.466s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.505s] -- Found tf2: 0.25.19 (/opt/ros/humble/share/tf2/cmake)
+[3.536s] -- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)
+[3.795s] -- Found tf2_geometry_msgs: 0.25.19 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[3.830s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.834s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.834s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.905s] -- Found QGLViewer: /usr/include/QGLViewer
+[3.924s] -- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so   
+[4.153s] -- Configuring done
+[4.550s] -- Generating done
+[4.585s] -- Build files have been written to: /home/chuil/Desktop/zhongxi/build/graphslam
+[4.643s] Invoked command in '/home/chuil/Desktop/zhongxi/build/graphslam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake /home/chuil/Desktop/zhongxi/src/graphslam -DCMAKE_INSTALL_PREFIX=/home/chuil/Desktop/zhongxi/install/graphslam
+[4.651s] Invoking command in '/home/chuil/Desktop/zhongxi/build/graphslam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/graphslam -- -j6 -l6
+[4.796s] [  8%] [34m[1mAutomatic MOC and UIC for target graphslam_node[0m
+[4.796s] [  8%] [34m[1mAutomatic MOC and UIC for target graphslam_g2o[0m
+[4.797s] [ 16%] [34m[1mAutomatic MOC and UIC for target map_manager_node[0m
+[4.798s] [ 16%] [34m[1mAutomatic MOC and UIC for target map_saver_node[0m
+[4.923s] [ 16%] Built target graphslam_node_autogen
+[4.923s] [ 16%] Built target map_manager_node_autogen
+[4.933s] [ 16%] Built target map_saver_node_autogen
+[4.983s] [ 25%] [32mBuilding CXX object CMakeFiles/map_manager_node.dir/map_manager_node.cpp.o[0m
+[4.984s] [ 25%] [32mBuilding CXX object CMakeFiles/map_manager_node.dir/map_manager_node_autogen/mocs_compilation.cpp.o[0m
+[4.984s] [ 33%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/graphslam_node_autogen/mocs_compilation.cpp.o[0m
+[4.985s] [ 33%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/node/graphslam_node.cpp.o[0m
+[5.013s] [ 37%] [32mBuilding CXX object CMakeFiles/map_saver_node.dir/map_saver_node_autogen/mocs_compilation.cpp.o[0m
+[5.070s] [ 41%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/back_end.cpp.o[0m
+[5.087s] [ 45%] [32mBuilding CXX object CMakeFiles/map_saver_node.dir/map_saver_node.cpp.o[0m
+[5.134s] [ 50%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/front_end.cpp.o[0m
+[5.362s] [ 50%] Built target graphslam_g2o_autogen
+[5.416s] [ 54%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/map.cpp.o[0m
+[5.923s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/map_manager_node.cpp:7[m[K:
+[5.923s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+[5.923s]    35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+[5.923s]       |  [01;35m[K^~~~~~~[m[K
+[11.297s] [ 58%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/utils.cpp.o[0m
+[14.474s] In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:41[m[K,
+[14.475s]                  from [01m[K/usr/local/include/g2o/core/eigen_types.h:31[m[K,
+[14.475s]                  from [01m[K/usr/local/include/g2o/core/jacobian_workspace.h:34[m[K,
+[14.475s]                  from [01m[K/usr/local/include/g2o/core/optimizable_graph.h:39[m[K,
+[14.475s]                  from [01m[K/usr/local/include/g2o/core/sparse_optimizer.h:33[m[K,
+[14.475s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/back_end.h:8[m[K,
+[14.476s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:1[m[K:
+[14.476s] /usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h: In instantiation of ‘[01m[KEigen::Rotation2D<Scalar> Eigen::Rotation2D<Scalar>::inverse() const [with _Scalar = double][m[K’:
+[14.476s] [01m[K/usr/local/include/g2o/types/slam2d/se2.h:85:24:[m[K   required from here
+[14.483s] [01m[K/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:98:39:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[KEigen::Rotation2D<double>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+[14.483s]    98 |   EIGEN_DEVICE_FUNC inline Rotation2D [01;36m[Kinverse[m[K() const { return Rotation2D(-m_angle); }
+[14.483s]       |                                       [01;36m[K^~~~~~~[m[K
+[15.211s] [ 62%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/utils/laser_scan.cpp.o[0m
+[18.541s] [ 66%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/utils/transformations.cpp.o[0m
+[20.951s] [ 70%] [32mBuilding CXX object CMakeFiles/graphslam_g2o.dir/graphslam_g2o_autogen/mocs_compilation.cpp.o[0m
+[26.233s] [ 75%] [32mBuilding CXX object CMakeFiles/graphslam_g2o.dir/main_window.cpp.o[0m
+[27.792s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/main_window.cpp:33:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: 没有那个文件或目录
+[27.792s]    33 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
+[27.793s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[27.793s] compilation terminated.
+[27.812s] gmake[2]: *** [CMakeFiles/graphslam_g2o.dir/build.make:90：CMakeFiles/graphslam_g2o.dir/main_window.cpp.o] 错误 1
+[27.812s] gmake[2]: *** 正在等待未完成的任务....
+[31.971s] gmake[1]: *** [CMakeFiles/Makefile2:147：CMakeFiles/graphslam_g2o.dir/all] 错误 2
+[31.971s] gmake[1]: *** 正在等待未完成的任务....
+[45.706s] [ 79%] [32m[1mLinking CXX executable map_saver_node[0m
+[48.003s] [ 79%] Built target map_saver_node
+[49.183s] [ 83%] [32m[1mLinking CXX executable map_manager_node[0m
+[49.282s] [ 87%] [32m[1mLinking CXX executable graphslam_node[0m
+[51.508s] [ 87%] Built target map_manager_node
+[52.959s] [ 87%] Built target graphslam_node
+[52.965s] gmake: *** [Makefile:146：all] 错误 2
+[52.971s] Invoked command in '/home/chuil/Desktop/zhongxi/build/graphslam' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/graphslam -- -j6 -l6
