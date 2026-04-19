@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Enhanced URDF with Gazebo tags for Ignition Gazebo 6.16.0 -->
+<robot name="zhongxi_description">
+  
+  <!-- Base Link -->
+  <link name="base_link">
+    <inertial>
+      <origin xyz="3.2559E-07 -0.0014829 -0.034409" rpy="0 0 0" />
+      <mass value="2.1947" />
+      <inertia
+        ixx="0.0036797" ixy="-1.7403E-09" ixz="-1.2977E-09"
+        iyy="0.0064143" iyz="-1.0658E-10" izz="0.0083734" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://zhongxi_description/meshes/base_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://zhongxi_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Laser Link -->
+  <link name="laser_link">
+    <inertial>
+      <origin xyz="0.0027419 3.7921E-05 0.0015518" rpy="0 0 0" />
+      <mass value="0.092202" />
+      <inertia
+        ixx="2.5005E-05" ixy="1.7158E-07" ixz="1.8006E-06"
+        iyy="3.5759E-05" iyz="-3.316E-08" izz="5.6292E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://zhongxi_description/meshes/laser_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://zhongxi_description/meshes/laser_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Camera Link -->
+  <link name="camera_link">
+    <inertial>
+      <origin xyz="-0.0063732 -5.0113E-06 -0.0014012" rpy="0 0 0" />
+      <mass value="0.030127" />
+      <inertia
+        ixx="7.8571E-06" ixy="7.293E-12" ixz="9.885E-09"
+        iyy="3.6895E-06" iyz="5.3112E-10" izz="5.329E-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://zhongxi_description/meshes/camera_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://zhongxi_description/meshes/camera_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Joints -->
+  <joint name="laser_joint" type="fixed">
+    <origin xyz="0.0549999999999995 0 0.117" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="laser_link" />
+    <axis xyz="0 0 0" />
+  </joint>
+
+  <joint name="camera_joint" type="fixed">
+    <origin xyz="0.1655 0 0.074" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="camera_link" />
+    <axis xyz="0 0 0" />
+  </joint>
+
+  <!-- Gazebo Specific Tags -->
+  
+  <!-- Base Link Gazebo Properties -->
+  <gazebo reference="base_link">
+    <mu1>0.8</mu1>
+    <mu2>0.8</mu2>
+    <kp>1000000.0</kp>
+    <kd>100.0</kd>
+    <minDepth>0.001</minDepth>
+    <maxVel>1.0</maxVel>
+    <material>Gazebo/Grey</material>
+  </gazebo>
+
+  <!-- Laser Sensor Plugin -->
+  <gazebo reference="laser_link">
+    <sensor name="laser_sensor" type="ray">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>true</visualize>
+      <update_rate>40</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>720</samples>
+            <resolution>1</resolution>
+            <min_angle>-1.570796</min_angle>
+            <max_angle>1.570796</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.10</min>
+          <max>30.0</max>
+          <resolution>0.01</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="laser_controller" filename="libgazebo_ros_ray_sensor.so">
+        <ros>
+          <namespace>/</namespace>
+          <remapping>~/out:=scan</remapping>
+        </ros>
+        <output_type>sensor_msgs/LaserScan</output_type>
+        <frame_name>laser_link</frame_name>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <!-- Camera Sensor Plugin -->
+  <gazebo reference="camera_link">
+    <sensor name="camera_sensor" type="camera">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>true</visualize>
+      <update_rate>30</update_rate>
+      <camera>
+        <horizontal_fov>1.047</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.05</near>
+          <far>300</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+      <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+        <ros>
+          <namespace>/</namespace>
+        </ros>
+        <camera_name>camera</camera_name>
+        <frame_name>camera_link</frame_name>
+        <hack_baseline>0.07</hack_baseline>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <!-- Ground Truth Plugin -->
+  <gazebo>
+    <plugin name="ground_truth" filename="libgazebo_ros_p3d.so">
+      <ros>
+        <namespace>/</namespace>
+      </ros>
+      <frame_name>world</frame_name>
+      <body_name>base_link</body_name>
+      <topic_name>ground_truth</topic_name>
+      <gaussian_noise>0.01</gaussian_noise>
+      <update_rate>100.0</update_rate>
+    </plugin>
+  </gazebo>
+
+</robot>
