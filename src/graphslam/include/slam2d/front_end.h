@@ -73,6 +73,15 @@ protected:
                         const Pose2D& initial_pose) override;
 
 private:
+    // ICP相关辅助函数
+    std::vector<std::pair<Point2D, Point2D>> 
+        findClosestPoints(const LaserScan& current_scan, 
+                         const LaserScan& prev_scan, 
+                         const Pose2D& initial_pose, 
+                         const Pose2D& transform);
+    Pose2D computeTransform(const std::vector<std::pair<Point2D, Point2D>>& correspondences);
+    Pose2D composePoses(const Pose2D& p1, const Pose2D& p2);
+
     LaserScan last_scan_;
     Pose2D last_pose_;
     int max_iterations_;
@@ -96,6 +105,9 @@ protected:
                         const Pose2D& initial_pose) override;
 
 private:
+    // 特征提取相关函数
+    std::vector<Point2D> extractFeatures(const LaserScan& scan);
+
     std::vector<Point2D> last_features_;
     Pose2D last_pose_;
     double feature_extraction_threshold_;

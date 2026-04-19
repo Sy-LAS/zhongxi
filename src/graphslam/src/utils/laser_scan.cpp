@@ -1,5 +1,5 @@
-#include "utils/laser_scan.h"
-#include "utils/transformations.h"
+#include "slam2d/utils/laser_scan.h"
+#include "slam2d/utils/transformations.h"
 #include <algorithm>
 #include <cmath>
 

@@ -4,6 +4,9 @@
 #include <vector>
 #include <memory>
 #include <functional>
+#include <unordered_map>
+#include <g2o/core/sparse_optimizer.h>
+#include <g2o/types/slam2d/vertex_se2.h>
 #include "types.h"
 #include "map.h"
 
@@ -78,8 +81,9 @@ public:
     std::vector<Pose2D> getOptimizedTrajectory() const override;
 
 private:
-    void* optimizer_;  // g2o优化器指针（在实现中具体定义）
+    g2o::SparseOptimizer* optimizer_;  // g2o优化器指针
     int current_vertex_id_;
+    std::unordered_map<int, g2o::VertexSE2*> pose_vertices_;  // 顶点映射表
 };
 
 using BackEndPtr = std::shared_ptr<BackEnd>;

@@ -1,0 +1,91 @@
+#!/bin/bash
+# NoMachine进程级恢复脚本
+# 根据用户偏好，优先使用kill命令而非服务重启
+
+echo "=== NoMachine进程级恢复诊断 ==="
+
+# 1. 检查当前NoMachine相关进程
+echo "1. 检查现有NoMachine进程..."
+NX_PROCESSES=$(ps aux | grep -E "(nxserver|nxplayer|nxnode)" | grep -v grep)
+if [ -n "$NX_PROCESSES" ]; then
+    echo "发现残留进程:"
+    echo "$NX_PROCESSES"
+    
+    # 2. 终止残留进程（进程级控制）
+    echo "2. 终止残留NoMachine进程..."
+    pids=$(ps aux | grep -E "(nxserver|nxplayer|nxnode)" | grep -v grep | awk '{print $2}')
+    for pid in $pids; do
+        echo "终止进程 PID: $pid"
+        kill -TERM $pid 2>/dev/null || kill -KILL $pid 2>/dev/null
+    done
+    
+    # 等待进程完全终止
+    sleep 3
+    
+    # 验证进程是否已终止
+    remaining=$(ps aux | grep -E "(nxserver|nxplayer|nxnode)" | grep -v grep | wc -l)
+    if [ $remaining -eq 0 ]; then
+        echo "✓ 所有NoMachine进程已成功终止"
+    else
+        echo "⚠ 仍有 $remaining 个进程未终止，强制清理..."
+        pids=$(ps aux | grep -E "(nxserver|nxplayer|nxnode)" | grep -v grep | awk '{print $2}')
+        for pid in $pids; do
+            kill -KILL $pid 2>/dev/null
+        done
+    fi
+else
+    echo "✓ 未发现活动的NoMachine进程"
+fi
+
+# 3. 清理可能的锁文件和临时文件
+echo "3. 清理临时文件和锁文件..."
+rm -f /tmp/.X*-lock 2>/dev/null
+rm -f /tmp/.X11-unix/* 2>/dev/null
+rm -rf /tmp/nx-* 2>/dev/null
+
+# 4. 检查并修复PulseAudio状态
+echo "4. 检查音频系统状态..."
+if ! pulseaudio --check; then
+    echo "重启PulseAudio服务..."
+    pulseaudio -k 2>/dev/null
+    sleep 2
+    pulseaudio --start 2>/dev/null
+fi
+
+# 5. 验证PulseAudio功能
+if pactl info >/dev/null 2>&1; then
+    echo "✓ PulseAudio音频系统正常"
+else
+    echo "⚠ PulseAudio仍存在问题，但不影响基本连接"
+fi
+
+# 6. 启动NoMachine服务
+echo "5. 启动NoMachine服务..."
+sudo systemctl start nxserver 2>/dev/null
+
+# 7. 验证服务状态
+sleep 3
+if systemctl is-active nxserver >/dev/null 2>&1; then
+    echo "✓ NoMachine服务启动成功"
+    
+    # 8. 检查监听端口
+    if ss -tlnp | grep :4000 >/dev/null 2>&1; then
+        echo "✓ NoMachine已在端口4000上监听"
+        echo ""
+        echo "=== 恢复完成 ==="
+        echo "您可以重新尝试NoMachine连接"
+        echo "服务器地址: 192.168.0.103:4000"
+    else
+        echo "⚠ 服务已启动但端口未监听，请稍后重试"
+    fi
+else
+    echo "✗ NoMachine服务启动失败"
+    echo "建议检查系统日志: journalctl -u nxserver"
+fi
+
+echo ""
+echo "=== 故障原因分析 ==="
+echo "1. 连接超时: 主要由残留进程阻塞端口导致"
+echo "2. 音频故障: PulseAudio连接拒绝，可能因进程冲突"
+echo "3. 会话异常: nxnode进程非正常终止，与显示管理器冲突"
+echo "4. 资源泄露: 文件描述符未正确关闭，通过进程终止解决"

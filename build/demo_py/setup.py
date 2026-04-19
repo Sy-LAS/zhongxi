@@ -1,1 +1,0 @@
-/home/sylas/zhongxi/src/demo_py/setup.py

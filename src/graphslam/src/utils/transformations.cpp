@@ -1,8 +1,18 @@
-#include "utils/transformations.h"
+#include "slam2d/utils/transformations.h"
 #include <cmath>
+#include <random>
 
 namespace slam2d {
 namespace utils {
+
+// 随机数生成器
+static std::random_device rd;
+static std::mt19937 gen(rd());
+static std::normal_distribution<> dis(0.0, 1.0);
+
+double sampleNormalDistribution(double mean, double stddev) {
+    return mean + stddev * dis(gen);
+}
 
 double normalizeAngle(double angle) {
     while (angle > M_PI) angle -= 2.0 * M_PI;

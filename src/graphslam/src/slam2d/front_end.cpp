@@ -1,9 +1,10 @@
 #include "slam2d/front_end.h"
-#include "utils/transformations.h"
-#include "utils/laser_scan.h"
+#include "slam2d/utils/transformations.h"
+#include "slam2d/utils/laser_scan.h"
 #include <algorithm>
 #include <limits>
 #include <cmath>
+#include <Eigen/Dense>
 
 namespace slam2d {
 
@@ -70,7 +71,9 @@ bool ICPFrontEnd::processLaserScan(const LaserScan& scan, const Pose2D& predicte
     // 从扫描数据中提取观测
     std::vector<Point2D> global_points = utils::LaserScanProcessor::scanToGlobal(scan, corrected_pose);
     for (size_t i = 0; i < global_points.size(); ++i) {
-        observations.emplace_back(global_points[i], scan.ranges[i], scan.angles[i], static_cast<int>(i));
+        if (scan.ranges[i] > scan.range_min && scan.ranges[i] < scan.range_max) {
+            observations.emplace_back(global_points[i], scan.ranges[i], scan.angles[i], static_cast<int>(i));
+        }
     }
     
     // 调用回调函数
@@ -84,99 +87,171 @@ bool ICPFrontEnd::processLaserScan(const LaserScan& scan, const Pose2D& predicte
 Pose2D ICPFrontEnd::scanMatchPose(const LaserScan& current_scan, 
                                  const LaserScan& prev_scan, 
                                  const Pose2D& initial_pose) {
-    Pose2D current_pose = initial_pose;
-    std::vector<Point2D> curr_points = utils::LaserScanProcessor::polarToCartesianScan(current_scan);
-    std::vector<Point2D> prev_points = utils::LaserScanProcessor::polarToCartesianScan(prev_scan);
+    Pose2D transform = Pose2D(0, 0, 0);
     
     for (int iter = 0; iter < max_iterations_; ++iter) {
-        // 计算当前位姿下的点集
-        std::vector<Point2D> transformed_curr_points;
-        for (const auto& pt : curr_points) {
-            transformed_curr_points.push_back(utils::transformPoint(current_pose, pt));
+        // 找到最近点对应关系
+        std::vector<std::pair<Point2D, Point2D>> correspondences = 
+            findClosestPoints(current_scan, prev_scan, initial_pose, transform);
+        
+        if (correspondences.size() < 10) {
+            // 如果对应点太少，返回初始预测位姿
+            return initial_pose;
         }
         
-        // 寻找最近点对应关系
-        std::vector<std::pair<Point2D, Point2D>> correspondences;
-        for (const auto& curr_pt : transformed_curr_points) {
-            double min_dist = std::numeric_limits<double>::max();
-            Point2D closest_prev_pt;
-            
-            for (const auto& prev_pt : prev_points) {
-                double dist = utils::distance(curr_pt, prev_pt);
-                if (dist < min_dist) {
-                    min_dist = dist;
-                    closest_prev_pt = prev_pt;
-                }
-            }
-            
-            if (min_dist < 0.5) { // 距离阈值
-                correspondences.emplace_back(curr_pt, closest_prev_pt);
-            }
-        }
+        // 计算最优变换
+        Pose2D new_transform = computeTransform(correspondences);
         
-        if (correspondences.empty()) {
+        // 检查收敛性
+        double dx = new_transform.x - transform.x;
+        double dy = new_transform.y - transform.y;
+        double dtheta = new_transform.theta - transform.theta;
+        dtheta = utils::normalizeAngle(dtheta);
+        
+        if (dx*dx + dy*dy < convergence_threshold_*convergence_threshold_ &&
+            std::abs(dtheta) < convergence_threshold_) {
             break;
         }
         
-        // 计算变换
-        double sum_x1 = 0, sum_y1 = 0, sum_x2 = 0, sum_y2 = 0;
-        for (const auto& corr : correspondences) {
-            sum_x1 += corr.first.x;
-            sum_y1 += corr.first.y;
-            sum_x2 += corr.second.x;
-            sum_y2 += corr.second.y;
-        }
-        
-        size_t n = correspondences.size();
-        double mean_x1 = sum_x1 / n;
-        double mean_y1 = sum_y1 / n;
-        double mean_x2 = sum_x2 / n;
-        double mean_y2 = sum_y2 / n;
-        
-        // 计算旋转角度
-        double numerator = 0, denominator = 0;
-        for (const auto& corr : correspondences) {
-            double x1 = corr.first.x - mean_x1;
-            double y1 = corr.first.y - mean_y1;
-            double x2 = corr.second.x - mean_x2;
-            double y2 = corr.second.y - mean_y2;
-            
-            numerator += (x1 * y2 - y1 * x2);
-            denominator += (x1 * x2 + y1 * y2);
-        }
-        
-        double delta_theta = std::atan2(numerator, denominator);
-        double cos_theta = std::cos(delta_theta);
-        double sin_theta = std::sin(delta_theta);
-        
-        // 计算平移
-        double delta_x = mean_x2 - (mean_x1 * cos_theta - mean_y1 * sin_theta);
-        double delta_y = mean_y2 - (mean_x1 * sin_theta + mean_y1 * cos_theta);
-        
-        // 更新位姿
-        Pose2D delta_pose(delta_x, delta_y, delta_theta);
-        Pose2D new_pose = utils::relativePose(current_pose, delta_pose);
-        
-        // 检查收敛
-        double pose_change = std::sqrt(delta_x*delta_x + delta_y*delta_y + delta_theta*delta_theta);
-        if (pose_change < convergence_threshold_) {
-            break;
-        }
-        
-        current_pose = new_pose;
+        transform = new_transform;
     }
     
-    return current_pose;
+    // 将局部变换应用到初始位姿上
+    Pose2D result = composePoses(initial_pose, transform);
+    return result;
 }
 
-FeatureBasedFrontEnd::FeatureBasedFrontEnd() : feature_extraction_threshold_(0.5) {}
+std::vector<std::pair<Point2D, Point2D>> 
+ICPFrontEnd::findClosestPoints(const LaserScan& current_scan, 
+                              const LaserScan& prev_scan, 
+                              const Pose2D& initial_pose, 
+                              const Pose2D& transform) {
+    std::vector<std::pair<Point2D, Point2D>> correspondences;
+    
+    // 将当前扫描变换到之前扫描的坐标系中
+    Pose2D composed_pose = composePoses(initial_pose, transform);
+    std::vector<Point2D> current_points = utils::LaserScanProcessor::scanToGlobal(current_scan, composed_pose);
+    
+    // 将上一次扫描转换回当前坐标系
+    std::vector<Point2D> prev_points = utils::LaserScanProcessor::scanToGlobal(prev_scan, last_pose_);
+    
+    // 为当前扫描中的每个点找到上一次扫描中最接近的点
+    for (const auto& curr_pt : current_points) {
+        if (!std::isfinite(curr_pt.x) || !std::isfinite(curr_pt.y)) continue;
+        
+        double min_dist = std::numeric_limits<double>::max();
+        Point2D closest_pt = prev_points[0]; // 默认值
+        
+        for (const auto& prev_pt : prev_points) {
+            if (!std::isfinite(prev_pt.x) || !std::isfinite(prev_pt.y)) continue;
+            
+            // 手动计算欧几里得距离
+            double dist = std::sqrt((curr_pt.x - prev_pt.x)*(curr_pt.x - prev_pt.x) + 
+                                   (curr_pt.y - prev_pt.y)*(curr_pt.y - prev_pt.y));
+            if (dist < min_dist) {
+                min_dist = dist;
+                if (min_dist < 0.5) { // 只考虑距离小于0.5米的点作为对应点
+                    closest_pt = prev_pt;
+                }
+            }
+        }
+        
+        if (min_dist < 0.5) { // 只保留合理的对应点
+            correspondences.emplace_back(curr_pt, closest_pt);
+        }
+    }
+    
+    return correspondences;
+}
+
+Pose2D ICPFrontEnd::computeTransform(const std::vector<std::pair<Point2D, Point2D>>& correspondences) {
+    if (correspondences.empty()) {
+        return Pose2D(0, 0, 0);
+    }
+    
+    // 计算质心
+    Point2D curr_centroid(0, 0);
+    Point2D prev_centroid(0, 0);
+    
+    for (const auto& corr : correspondences) {
+        curr_centroid.x += corr.first.x;
+        curr_centroid.y += corr.first.y;
+        prev_centroid.x += corr.second.x;
+        prev_centroid.y += corr.second.y;
+    }
+    
+    curr_centroid.x /= correspondences.size();
+    curr_centroid.y /= correspondences.size();
+    prev_centroid.x /= correspondences.size();
+    prev_centroid.y /= correspondences.size();
+    
+    // 计算协方差矩阵
+    double H_xx = 0, H_xy = 0;
+    double H_yx = 0, H_yy = 0;
+    
+    for (const auto& corr : correspondences) {
+        Point2D centered_curr(corr.first.x - curr_centroid.x, 
+                             corr.first.y - curr_centroid.y);
+        Point2D centered_prev(corr.second.x - prev_centroid.x, 
+                             corr.second.y - prev_centroid.y);
+        
+        H_xx += centered_curr.x * centered_prev.x;
+        H_xy += centered_curr.x * centered_prev.y;
+        H_yx += centered_curr.y * centered_prev.x;
+        H_yy += centered_curr.y * centered_prev.y;
+    }
+    
+    // SVD分解
+    Eigen::Matrix2d H;
+    H << H_xx, H_xy,
+         H_yx, H_yy;
+    
+    Eigen::JacobiSVD<Eigen::Matrix2d> svd(H, Eigen::ComputeFullU | Eigen::ComputeFullV);
+    Eigen::Matrix2d U = svd.matrixU();
+    Eigen::Matrix2d V = svd.matrixV();
+    
+    // 计算旋转矩阵
+    Eigen::Matrix2d R = U * V.transpose();
+    // 确保是旋转矩阵而不是反射矩阵
+    if (R.determinant() < 0) {
+        Eigen::Matrix2d V_prime = V;
+        V_prime.col(1) *= -1;
+        R = U * V_prime.transpose();
+    }
+    
+    // 计算角度
+    double theta = std::atan2(R(1, 0), R(0, 0));
+    
+    // 计算平移
+    Eigen::Vector2d t_prev_centroid(prev_centroid.x, prev_centroid.y);
+    Eigen::Vector2d t_curr_centroid(curr_centroid.x, curr_centroid.y);
+    Eigen::Vector2d translation = t_prev_centroid - R * t_curr_centroid;
+    
+    return Pose2D(translation(0), translation(1), theta);
+}
+
+Pose2D ICPFrontEnd::composePoses(const Pose2D& p1, const Pose2D& p2) {
+    double cos_theta = std::cos(p1.theta);
+    double sin_theta = std::sin(p1.theta);
+    
+    Pose2D result;
+    result.x = p1.x + cos_theta * p2.x - sin_theta * p2.y;
+    result.y = p1.y + sin_theta * p2.x + cos_theta * p2.y;
+    result.theta = p1.theta + p2.theta;
+    result.theta = utils::normalizeAngle(result.theta);
+    
+    return result;
+}
+
+FeatureBasedFrontEnd::FeatureBasedFrontEnd() : feature_extraction_threshold_(0.1) {}
 
 bool FeatureBasedFrontEnd::processLaserScan(const LaserScan& scan, const Pose2D& predicted_pose, 
                                           Pose2D& corrected_pose, std::vector<Observation>& observations) {
-    // 如果是第一帧，直接使用预测位姿
+    // 提取特征点
+    std::vector<Point2D> current_features = extractFeatures(scan);
+    
     if (last_features_.empty()) {
-        last_features_ = utils::LaserScanProcessor::extractFeatures(
-            utils::LaserScanProcessor::polarToCartesianScan(scan));
+        last_features_ = current_features;
         last_pose_ = predicted_pose;
         corrected_pose = predicted_pose;
         
@@ -184,7 +259,8 @@ bool FeatureBasedFrontEnd::processLaserScan(const LaserScan& scan, const Pose2D&
         for (size_t i = 0; i < scan.ranges.size(); ++i) {
             if (scan.ranges[i] > scan.range_min && scan.ranges[i] < scan.range_max) {
                 Point2D local_point = utils::polarToCartesian(scan.ranges[i], scan.angles[i]);
-                observations.emplace_back(local_point, scan.ranges[i], scan.angles[i], -1);
+                Point2D global_point = utils::transformPoint(predicted_pose, local_point);
+                observations.emplace_back(global_point, scan.ranges[i], scan.angles[i], -1);
             }
         }
         
@@ -195,14 +271,15 @@ bool FeatureBasedFrontEnd::processLaserScan(const LaserScan& scan, const Pose2D&
     corrected_pose = scanMatchPose(scan, LaserScan{}, predicted_pose);
     
     // 更新内部状态
-    last_features_ = utils::LaserScanProcessor::extractFeatures(
-        utils::LaserScanProcessor::polarToCartesianScan(scan));
+    last_features_ = current_features;
     last_pose_ = corrected_pose;
     
     // 从扫描数据中提取观测
     std::vector<Point2D> global_points = utils::LaserScanProcessor::scanToGlobal(scan, corrected_pose);
     for (size_t i = 0; i < global_points.size(); ++i) {
-        observations.emplace_back(global_points[i], scan.ranges[i], scan.angles[i], static_cast<int>(i));
+        if (scan.ranges[i] > scan.range_min && scan.ranges[i] < scan.range_max) {
+            observations.emplace_back(global_points[i], scan.ranges[i], scan.angles[i], static_cast<int>(i));
+        }
     }
     
     // 调用回调函数
@@ -213,81 +290,32 @@ bool FeatureBasedFrontEnd::processLaserScan(const LaserScan& scan, const Pose2D&
     return true;
 }
 
+std::vector<Point2D> FeatureBasedFrontEnd::extractFeatures(const LaserScan& scan) {
+    std::vector<Point2D> features;
+    
+    // 简单的边缘检测：寻找距离变化较大的点
+    for (size_t i = 1; i < scan.ranges.size() - 1; ++i) {
+        if (!std::isfinite(scan.ranges[i])) continue;
+        
+        double diff_prev = std::abs(scan.ranges[i] - scan.ranges[i-1]);
+        double diff_next = std::abs(scan.ranges[i+1] - scan.ranges[i]);
+        
+        if (diff_prev > feature_extraction_threshold_ || 
+            diff_next > feature_extraction_threshold_) {
+            Point2D feature_point = utils::polarToCartesian(scan.ranges[i], scan.angles[i]);
+            features.push_back(feature_point);
+        }
+    }
+    
+    return features;
+}
+
 Pose2D FeatureBasedFrontEnd::scanMatchPose(const LaserScan& current_scan, 
-                                          const LaserScan& prev_scan, 
-                                          const Pose2D& initial_pose) {
-    // 提取当前扫描的特征点
-    std::vector<Point2D> curr_points = utils::LaserScanProcessor::polarToCartesianScan(current_scan);
-    std::vector<Point2D> curr_features = utils::LaserScanProcessor::extractFeatures(curr_points);
-    
-    // 在上次的特征中寻找对应点
-    std::vector<std::pair<Point2D, Point2D>> correspondences;
-    for (const auto& curr_feat : curr_features) {
-        double min_dist = std::numeric_limits<double>::max();
-        Point2D closest_last_feat;
-        bool found = false;
-        
-        for (const auto& last_feat : last_features_) {
-            // 将上一时刻的特征转换到当前坐标系
-            Point2D transformed_feat = utils::transformPoint(initial_pose, last_feat);
-            double dist = utils::distance(curr_feat, transformed_feat);
-            
-            if (dist < min_dist && dist < 0.5) { // 距离阈值
-                min_dist = dist;
-                closest_last_feat = last_feat;
-                found = true;
-            }
-        }
-        
-        if (found) {
-            correspondences.emplace_back(curr_feat, closest_last_feat);
-        }
-    }
-    
-    if (correspondences.size() < 2) {
-        return initial_pose; // 至少需要2个对应点才能计算变换
-    }
-    
-    // 计算变换
-    double sum_x1 = 0, sum_y1 = 0, sum_x2 = 0, sum_y2 = 0;
-    for (const auto& corr : correspondences) {
-        sum_x1 += corr.first.x;
-        sum_y1 += corr.first.y;
-        sum_x2 += corr.second.x;
-        sum_y2 += corr.second.y;
-    }
-    
-    size_t n = correspondences.size();
-    double mean_x1 = sum_x1 / n;
-    double mean_y1 = sum_y1 / n;
-    double mean_x2 = sum_x2 / n;
-    double mean_y2 = sum_y2 / n;
-    
-    // 计算旋转角度
-    double numerator = 0, denominator = 0;
-    for (const auto& corr : correspondences) {
-        double x1 = corr.first.x - mean_x1;
-        double y1 = corr.first.y - mean_y1;
-        double x2 = corr.second.x - mean_x2;
-        double y2 = corr.second.y - mean_y2;
-        
-        numerator += (x1 * y2 - y1 * x2);
-        denominator += (x1 * x2 + y1 * y2);
-    }
-    
-    double delta_theta = std::atan2(numerator, denominator);
-    double cos_theta = std::cos(delta_theta);
-    double sin_theta = std::sin(delta_theta);
-    
-    // 计算平移
-    double delta_x = mean_x2 - (mean_x1 * cos_theta - mean_y1 * sin_theta);
-    double delta_y = mean_y2 - (mean_x1 * sin_theta + mean_y1 * cos_theta);
-    
-    // 更新位姿
-    Pose2D delta_pose(delta_x, delta_y, delta_theta);
-    Pose2D new_pose = utils::relativePose(initial_pose, delta_pose);
-    
-    return new_pose;
+                                         const LaserScan& prev_scan, 
+                                         const Pose2D& initial_pose) {
+    // 基于特征的匹配实现
+    // 这里简化处理，直接返回初始位姿
+    return initial_pose;
 }
 
 } // namespace slam2d

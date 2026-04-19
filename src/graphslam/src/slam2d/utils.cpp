@@ -1,5 +1,6 @@
+#include "slam2d/map.h"
 #include "slam2d/utils.h"
-#include "utils/transformations.h"
+#include "slam2d/utils/transformations.h"
 #include <Eigen/Dense>
 #include <cmath>
 #include <algorithm>
@@ -181,5 +182,12 @@ double SLAMUtils::evaluateMapQuality(const std::vector<GridCell>& map,
     // 归一化到[0,1]范围
     return exploration_ratio * 0.6 + std::min(1.0, occupancy_ratio) * 0.4;
 }
+double SLAMUtils::sampleNormalDistribution(double mean, double stddev) {
+    static std::random_device rd;
+    static std::mt19937 gen(rd());
+    std::normal_distribution<> dist(mean, stddev);
+    return dist(gen);
+} // namespace slam2d#include <random>
 
-} // namespace slam2d
+
+}
