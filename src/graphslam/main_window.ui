@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GraphSLAM 可视化与路径规划</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QFrame" name="controlFrame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+        <size>
+         <width>250</width>
+         <height>0</height>
+        </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QGroupBox" name="explorationGroupBox">
+         <property name="title">
+          <string>探索控制</string>
+         </property>
+         <layout class="QVBoxLayout" name="explorationLayout">
+          <item>
+           <widget class="QPushButton" name="startExplorationButton">
+            <property name="text">
+             <string>开始自动探索</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="stopExplorationButton">
+            <property name="text">
+             <string>停止探索</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pauseExplorationButton">
+            <property name="text">
+             <string>暂停/继续</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="explorationStatus">
+            <property name="text">
+             <string>状态: 未开始</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="pathPlanningGroupBox">
+         <property name="title">
+          <string>路径规划</string>
+         </property>
+         <layout class="QVBoxLayout" name="pathPlanningLayout">
+          <item>
+           <widget class="QPushButton" name="calculatePathButton">
+            <property name="text">
+             <string>计算路径</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="navigateToGoalButton">
+            <property name="text">
+             <string>导航到目标</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="cancelGoalButton">
+            <property name="text">
+             <string>取消目标</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="pathStatus">
+            <property name="text">
+             <string>路径状态: 无</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="mapGroupBox">
+         <property name="title">
+          <string>地图管理</string>
+         </property>
+         <layout class="QVBoxLayout" name="mapLayout">
+          <item>
+           <widget class="QPushButton" name="saveMapButton">
+            <property name="text">
+             <string>保存地图</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="loadMapButton">
+            <property name="text">
+             <string>加载地图</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="resetMapButton">
+            <property name="text">
+             <string>重置地图</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="mapInfo">
+            <property name="text">
+             <string>地图信息: 未加载</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="slamSettingsGroupBox">
+         <property name="title">
+          <string>SLAM 设置</string>
+         </property>
+         <layout class="QVBoxLayout" name="slamSettingsLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>优化迭代次数</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="spIterations">
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>100</number>
+            </property>
+            <property name="value">
+             <number>10</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="cbCovariances">
+            <property name="text">
+             <string>协方差</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="optimizationMethodGroup">
+            <property name="title">
+             <string>优化方法</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QRadioButton" name="rbGauss">
+               <property name="text">
+                <string>高斯-牛顿</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rbLevenberg">
+               <property name="text">
+                <string>Levenberg-Marquardt</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnOptimize">
+            <property name="text">
+             <string>优化地图</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="g2o::Slam2DViewer" name="viewer" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>1</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionLoad"/>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>视图</string>
+    </property>
+    <addaction name="actionShowRobotPath"/>
+    <addaction name="actionShowFrontiers"/>
+    <addaction name="actionShowObstacles"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuView"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLoad">
+   <property name="text">
+    <string>加载...</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>保存...</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionShowRobotPath">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>显示机器人路径</string>
+   </property>
+  </action>
+  <action name="actionShowFrontiers">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>显示边界点</string>
+   </property>
+  </action>
+  <action name="actionShowObstacles">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>显示障碍物</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>g2o::Slam2DViewer</class>
+   <extends>QWidget</extends>
+   <header>slam2d_viewer.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>startExplorationButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>startExploration()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>100</x>
+     <y>50</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>200</x>
+     <y>30</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>stopExplorationButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>stopExploration()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>100</x>
+     <y>80</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>200</x>
+     <y>30</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveMapButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>saveMap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>100</x>
+     <y>180</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>200</x>
+     <y>30</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>loadMapButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>loadMap()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>100</x>
+     <y>210</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>200</x>
+     <y>30</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>400</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>400</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

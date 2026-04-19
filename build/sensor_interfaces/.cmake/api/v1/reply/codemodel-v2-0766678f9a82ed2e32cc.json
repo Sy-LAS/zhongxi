@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-6ab2f25e7ac0ca7f3647.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "sensor_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "camera_driver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-camera_driver-b77b71fce8184eb6c03c.json",
+					"name" : "camera_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "control_board_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-control_board_interface-a9cc7d66dbefb3344776.json",
+					"name" : "control_board_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lidar_driver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lidar_driver-20c3fb4b74f93f2726bc.json",
+					"name" : "lidar_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sensor_interfaces_base::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensor_interfaces_base-1b51ad1c534f4a505985.json",
+					"name" : "sensor_interfaces_base",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sensor_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sensor_interfaces_uninstall-414507cc97d942d24321.json",
+					"name" : "sensor_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-0f35d45f355da641486c.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ydlidar_sdk::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ydlidar_sdk-202bd5f6a330e1ad1202.json",
+					"name" : "ydlidar_sdk",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/chuil/Desktop/zhongxi/build/sensor_interfaces",
+		"source" : "/home/chuil/Desktop/zhongxi/src/sensor_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

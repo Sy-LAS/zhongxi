@@ -1,0 +1,95 @@
+[0.034s] Invoking command in '/home/chuil/Desktop/zhongxi/build/graphslam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake /home/chuil/Desktop/zhongxi/src/graphslam --no-warn-unused-cli -DCMAKE_INSTALL_PREFIX=/home/chuil/Desktop/zhongxi/install/graphslam
+[0.057s] Not searching for unused variables given on the command line.
+[0.081s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.430s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.481s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.656s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.680s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.712s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.759s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.810s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.008s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.017s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.341s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.620s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.717s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.779s] -- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)
+[1.793s] -- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.120s] -- Found QGLViewer: /usr/include/QGLViewer
+[2.354s] -- Configuring done
+[2.628s] -- Generating done
+[2.646s] -- Build files have been written to: /home/chuil/Desktop/zhongxi/build/graphslam
+[2.691s] Invoked command in '/home/chuil/Desktop/zhongxi/build/graphslam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake /home/chuil/Desktop/zhongxi/src/graphslam --no-warn-unused-cli -DCMAKE_INSTALL_PREFIX=/home/chuil/Desktop/zhongxi/install/graphslam
+[2.697s] Invoking command in '/home/chuil/Desktop/zhongxi/build/graphslam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/graphslam -- -j6 -l6
+[2.836s] [  6%] [34m[1mAutomatic MOC and UIC for target graphslam_g2o[0m
+[2.841s] [ 12%] [34m[1mAutomatic MOC and UIC for target graphslam_node[0m
+[2.893s] [ 12%] Built target graphslam_node_autogen
+[2.893s] [ 12%] Built target graphslam_g2o_autogen
+[2.937s] [35m[1mConsolidate compiler generated dependencies of target graphslam_node[0m
+[3.031s] [ 25%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/back_end.cpp.o[0m
+[3.031s] [ 25%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/front_end.cpp.o[0m
+[4.251s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:12:10:[m[K [01;31m[Kfatal error: [m[Kg2o/types/slam2d/edge_se2_odometry.h: 没有那个文件或目录
+[4.251s]    12 | #include [01;31m[K<g2o/types/slam2d/edge_se2_odometry.h>[m[K
+[4.251s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.251s] compilation terminated.
+[4.262s] gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:104：CMakeFiles/graphslam_node.dir/src/slam2d/back_end.cpp.o] 错误 1
+[4.262s] gmake[2]: *** 正在等待未完成的任务....
+[7.547s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:[m[K In member function ‘[01m[Kvirtual slam2d::Pose2D slam2d::ICPFrontEnd::scanMatchPose(const slam2d::LaserScan&, const slam2d::LaserScan&, const slam2d::Pose2D&)[m[K’:
+[7.547s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:95:13:[m[K [01;31m[Kerror: [m[K‘[01m[KfindClosestPoints[m[K’ was not declared in this scope
+[7.548s]    95 |             [01;31m[KfindClosestPoints[m[K(current_scan, prev_scan, initial_pose, transform);
+[7.548s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[7.589s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:103:32:[m[K [01;31m[Kerror: [m[K‘[01m[KcomputeTransform[m[K’ was not declared in this scope
+[7.590s]   103 |         Pose2D new_transform = [01;31m[KcomputeTransform[m[K(correspondences);
+[7.590s]       |                                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[7.625s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:120:21:[m[K [01;31m[Kerror: [m[K‘[01m[KcomposePoses[m[K’ was not declared in this scope
+[7.625s]   120 |     Pose2D result = [01;31m[KcomposePoses[m[K(initial_pose, transform);
+[7.625s]       |                     [01;31m[K^~~~~~~~~~~~[m[K
+[7.625s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:[m[K At global scope:
+[7.626s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:125:1:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kstd::vector<std::pair<slam2d::Point2D, slam2d::Point2D> > slam2d::ICPFrontEnd::findClosestPoints(const slam2d::LaserScan&, const slam2d::LaserScan&, const slam2d::Pose2D&, const slam2d::Pose2D&)[m[K’
+[7.626s]   125 | [01;31m[KICPFrontEnd[m[K::findClosestPoints(const LaserScan& current_scan,
+[7.626s]       | [01;31m[K^~~~~~~~~~~[m[K
+[7.626s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:125:1:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kstd::vector<std::pair<slam2d::Point2D, slam2d::Point2D> > slam2d::ICPFrontEnd::findClosestPoints(const slam2d::LaserScan&, const slam2d::LaserScan&, const slam2d::Pose2D&, const slam2d::Pose2D&)[m[K’
+[7.626s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:1[m[K:
+[7.626s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/front_end.h:60:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass slam2d::ICPFrontEnd[m[K’ defined here
+[7.627s]    60 | class [01;36m[KICPFrontEnd[m[K : public FrontEnd {
+[7.627s]       |       [01;36m[K^~~~~~~~~~~[m[K
+[7.627s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:165:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kslam2d::Pose2D slam2d::ICPFrontEnd::computeTransform(const std::vector<std::pair<slam2d::Point2D, slam2d::Point2D> >&)[m[K’
+[7.627s]   165 | Pose2D [01;31m[KICPFrontEnd[m[K::computeTransform(const std::vector<std::pair<Point2D, Point2D>>& correspondences) {
+[7.627s]       |        [01;31m[K^~~~~~~~~~~[m[K
+[7.627s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:165:8:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kslam2d::Pose2D slam2d::ICPFrontEnd::computeTransform(const std::vector<std::pair<slam2d::Point2D, slam2d::Point2D> >&)[m[K’
+[7.628s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:1[m[K:
+[7.628s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/front_end.h:60:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass slam2d::ICPFrontEnd[m[K’ defined here
+[7.628s]    60 | class [01;36m[KICPFrontEnd[m[K : public FrontEnd {
+[7.628s]       |       [01;36m[K^~~~~~~~~~~[m[K
+[7.628s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:231:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kslam2d::Pose2D slam2d::ICPFrontEnd::composePoses(const slam2d::Pose2D&, const slam2d::Pose2D&)[m[K’
+[7.628s]   231 | Pose2D [01;31m[KICPFrontEnd[m[K::composePoses(const Pose2D& p1, const Pose2D& p2) {
+[7.628s]       |        [01;31m[K^~~~~~~~~~~[m[K
+[7.629s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:231:8:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kslam2d::Pose2D slam2d::ICPFrontEnd::composePoses(const slam2d::Pose2D&, const slam2d::Pose2D&)[m[K’
+[7.629s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:1[m[K:
+[7.629s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/front_end.h:60:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass slam2d::ICPFrontEnd[m[K’ defined here
+[7.629s]    60 | class [01;36m[KICPFrontEnd[m[K : public FrontEnd {
+[7.629s]       |       [01;36m[K^~~~~~~~~~~[m[K
+[7.663s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:[m[K In member function ‘[01m[Kvirtual bool slam2d::FeatureBasedFrontEnd::processLaserScan(const slam2d::LaserScan&, const slam2d::Pose2D&, slam2d::Pose2D&, std::vector<slam2d::Observation>&)[m[K’:
+[7.663s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:249:45:[m[K [01;31m[Kerror: [m[K‘[01m[KextractFeatures[m[K’ was not declared in this scope
+[7.664s]   249 |     std::vector<Point2D> current_features = [01;31m[KextractFeatures[m[K(scan);
+[7.664s]       |                                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[7.664s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:260:62:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst slam2d::Pose2D&[m[K’ from expression of type ‘[01m[Kslam2d::Point2D[m[K’
+[7.664s]   260 |                 Point2D global_point = utils::transformPoint([01;31m[Klocal_point[m[K, predicted_pose);
+[7.664s]       |                                                              [01;31m[K^~~~~~~~~~~[m[K
+[7.665s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:2[m[K:
+[7.665s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/utils/transformations.h:49:38:[m[K [01;36m[Knote: [m[Kin passing argument 1 of ‘[01m[Kslam2d::Point2D slam2d::utils::transformPoint(const slam2d::Pose2D&, const slam2d::Point2D&)[m[K’
+[7.665s]    49 | Point2D transformPoint([01;36m[Kconst Pose2D& pose[m[K, const Point2D& point);
+[7.665s]       |                        [01;36m[K~~~~~~~~~~~~~~^~~~[m[K
+[7.666s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:[m[K At global scope:
+[7.666s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:291:22:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kstd::vector<slam2d::Point2D> slam2d::FeatureBasedFrontEnd::extractFeatures(const slam2d::LaserScan&)[m[K’
+[7.666s]   291 | std::vector<Point2D> [01;31m[KFeatureBasedFrontEnd[m[K::extractFeatures(const LaserScan& scan) {
+[7.666s]       |                      [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[7.666s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:291:22:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kstd::vector<slam2d::Point2D> slam2d::FeatureBasedFrontEnd::extractFeatures(const slam2d::LaserScan&)[m[K’
+[7.666s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:1[m[K:
+[7.667s] [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/front_end.h:83:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass slam2d::FeatureBasedFrontEnd[m[K’ defined here
+[7.667s]    83 | class [01;36m[KFeatureBasedFrontEnd[m[K : public FrontEnd {
+[7.667s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[8.124s] gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:118：CMakeFiles/graphslam_node.dir/src/slam2d/front_end.cpp.o] 错误 1
+[8.125s] gmake[1]: *** [CMakeFiles/Makefile2:167：CMakeFiles/graphslam_node.dir/all] 错误 2
+[8.125s] gmake: *** [Makefile:146：all] 错误 2
+[8.133s] Invoked command in '/home/chuil/Desktop/zhongxi/build/graphslam' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/graphslam -- -j6 -l6

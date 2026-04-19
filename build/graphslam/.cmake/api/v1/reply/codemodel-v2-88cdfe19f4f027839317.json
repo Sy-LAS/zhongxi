@@ -1,0 +1,142 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-3e8885fdac77bd659df7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "graphslam",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "graphslam_g2o::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-graphslam_g2o-b22e5ecb1526846a2838.json",
+					"name" : "graphslam_g2o",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "graphslam_g2o_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-graphslam_g2o_autogen-9b021f9b03e401f7bb36.json",
+					"name" : "graphslam_g2o_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "graphslam_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-graphslam_node-7df00721bf5b3ab05843.json",
+					"name" : "graphslam_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "graphslam_node_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-graphslam_node_autogen-19de37035320325bb5c5.json",
+					"name" : "graphslam_node_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "graphslam_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-graphslam_uninstall-7bf293366c30a0dfc2bc.json",
+					"name" : "graphslam_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_manager_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_manager_node-d843cbcc8925febfbee9.json",
+					"name" : "map_manager_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_manager_node_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_manager_node_autogen-096ce2bcbc554676e65e.json",
+					"name" : "map_manager_node_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_saver_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_saver_node-b43dffcc23115131a612.json",
+					"name" : "map_saver_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_saver_node_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_saver_node_autogen-d261ad6aa2103f2e936a.json",
+					"name" : "map_saver_node_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-acd7b4bf27b1d50a0d21.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/chuil/Desktop/zhongxi/build/graphslam",
+		"source" : "/home/chuil/Desktop/zhongxi/src/graphslam"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

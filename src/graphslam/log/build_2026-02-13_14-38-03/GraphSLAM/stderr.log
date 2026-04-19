@@ -1,0 +1,122 @@
+WARNING: Package name "GraphSLAM" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+In file included from [01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/build/GraphSLAM/graphslam_g2o_autogen/include/ui_base_main_window.h:30[m[K,
+                 from [01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/build/GraphSLAM/graphslam_g2o_autogen/EWIEGA46WW/../../../../main_window.h:22[m[K,
+                 from [01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/build/GraphSLAM/graphslam_g2o_autogen/EWIEGA46WW/moc_main_window.cpp:10[m[K,
+                 from [01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/build/GraphSLAM/graphslam_g2o_autogen/mocs_compilation.cpp:2[m[K:
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/slam2d_viewer.h:23:10:[m[K [01;31m[Kfatal error: [m[Kqglviewer.h: 没有那个文件或目录
+   23 | #include [01;31m[K"qglviewer.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/graphslam_g2o.dir/build.make:76：CMakeFiles/graphslam_g2o.dir/graphslam_g2o_autogen/mocs_compilation.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+In file included from [01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/build/GraphSLAM/graphslam_g2o_autogen/include/ui_base_main_window.h:30[m[K,
+                 from [01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/main_window.h:22[m[K,
+                 from [01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/main_window.cpp:19[m[K:
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/slam2d_viewer.h:23:10:[m[K [01;31m[Kfatal error: [m[Kqglviewer.h: 没有那个文件或目录
+   23 | #include [01;31m[K"qglviewer.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/graphslam_g2o.dir/build.make:90：CMakeFiles/graphslam_g2o.dir/main_window.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:141：CMakeFiles/graphslam_g2o.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+In file included from [01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/slam2d/map.cpp:2[m[K:
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:115:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kmean[m[K’ was not declared in this scope
+  115 |     std::normal_distribution<> dist([01;31m[Kmean[m[K, stddev);
+      |                                     [01;31m[K^~~~[m[K
+In file included from [01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/slam2d/utils.cpp:1[m[K:
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils.h:87:56:[m[K [01;31m[Kerror: [m[K‘[01m[KGridCell[m[K’ was not declared in this scope
+   87 |     static double evaluateMapQuality(const std::vector<[01;31m[KGridCell[m[K>& map,
+      |                                                        [01;31m[K^~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils.h:87:64:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   87 |     static double evaluateMapQuality(const std::vector<GridCell[01;31m[K>[m[K& map,
+      |                                                                [01;31m[K^[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils.h:87:64:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:115:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kstddev[m[K’ was not declared in this scope
+  115 |     std::normal_distribution<> dist(mean, [01;31m[Kstddev[m[K);
+      |                                           [01;31m[K^~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:116:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+  116 |     [01;31m[Kreturn[m[K dist(gen);
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:120:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  120 | [01;31m[K}[m[K // namespace slam2d
+      | [01;31m[K^[m[K
+In file included from [01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/slam2d/front_end.cpp:2[m[K:
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:115:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kmean[m[K’ was not declared in this scope
+  115 |     std::normal_distribution<> dist([01;31m[Kmean[m[K, stddev);
+      |                                     [01;31m[K^~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:115:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kstddev[m[K’ was not declared in this scope
+  115 |     std::normal_distribution<> dist(mean, [01;31m[Kstddev[m[K);
+      |                                           [01;31m[K^~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:116:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+  116 |     [01;31m[Kreturn[m[K dist(gen);
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:120:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  120 | [01;31m[K}[m[K // namespace slam2d
+      | [01;31m[K^[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/slam2d/front_end.cpp:[m[K In member function ‘[01m[Kslam2d::Pose2D slam2d::FrontEnd::predictPose(const slam2d::Pose2D&, const slam2d::Pose2D&)[m[K’:
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/slam2d/front_end.cpp:22:39:[m[K [01;31m[Kerror: [m[K‘[01m[KsampleNormalDistribution[m[K’ is not a member of ‘[01m[Kslam2d::utils[m[K’
+   22 |     double delta_rot1 = rot1 + utils::[01;31m[KsampleNormalDistribution[m[K(
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/slam2d/front_end.cpp:25:41:[m[K [01;31m[Kerror: [m[K‘[01m[KsampleNormalDistribution[m[K’ is not a member of ‘[01m[Kslam2d::utils[m[K’
+   25 |     double delta_trans = trans + utils::[01;31m[KsampleNormalDistribution[m[K(
+      |                                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/slam2d/front_end.cpp:29:39:[m[K [01;31m[Kerror: [m[K‘[01m[KsampleNormalDistribution[m[K’ is not a member of ‘[01m[Kslam2d::utils[m[K’
+   29 |     double delta_rot2 = rot2 + utils::[01;31m[KsampleNormalDistribution[m[K(
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/slam2d/utils.cpp:2[m[K:
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:115:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kmean[m[K’ was not declared in this scope
+  115 |     std::normal_distribution<> dist([01;31m[Kmean[m[K, stddev);
+      |                                     [01;31m[K^~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:115:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kstddev[m[K’ was not declared in this scope
+  115 |     std::normal_distribution<> dist(mean, [01;31m[Kstddev[m[K);
+      |                                           [01;31m[K^~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:116:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+  116 |     [01;31m[Kreturn[m[K dist(gen);
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:120:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  120 | [01;31m[K}[m[K // namespace slam2d
+      | [01;31m[K^[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/slam2d/utils.cpp:159:8:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kdouble slam2d::SLAMUtils::evaluateMapQuality(const std::vector<slam2d::GridCell>&, int, int)[m[K’
+  159 | double [01;31m[KSLAMUtils[m[K::evaluateMapQuality(const std::vector<GridCell>& map,
+      |        [01;31m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/slam2d/utils.cpp:1[m[K:
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils.h:87:19:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kstatic double slam2d::SLAMUtils::evaluateMapQuality(const int&, int, int)[m[K’
+   87 |     static double [01;36m[KevaluateMapQuality[m[K(const std::vector<GridCell>& map,
+      |                   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils.h:9:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass slam2d::SLAMUtils[m[K’ defined here
+    9 | class [01;36m[KSLAMUtils[m[K {
+      |       [01;36m[K^~~~~~~~~[m[K
+In file included from [01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/utils/transformations.cpp:1[m[K:
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:115:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kmean[m[K’ was not declared in this scope
+  115 |     std::normal_distribution<> dist([01;31m[Kmean[m[K, stddev);
+      |                                     [01;31m[K^~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:115:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kstddev[m[K’ was not declared in this scope
+  115 |     std::normal_distribution<> dist(mean, [01;31m[Kstddev[m[K);
+      |                                           [01;31m[K^~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:116:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+  116 |     [01;31m[Kreturn[m[K dist(gen);
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:120:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  120 | [01;31m[K}[m[K // namespace slam2d
+      | [01;31m[K^[m[K
+In file included from [01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/src/utils/laser_scan.cpp:2[m[K:
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:115:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kmean[m[K’ was not declared in this scope
+  115 |     std::normal_distribution<> dist([01;31m[Kmean[m[K, stddev);
+      |                                     [01;31m[K^~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:115:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kstddev[m[K’ was not declared in this scope
+  115 |     std::normal_distribution<> dist(mean, [01;31m[Kstddev[m[K);
+      |                                           [01;31m[K^~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:116:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+  116 |     [01;31m[Kreturn[m[K dist(gen);
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM/include/slam2d/utils/transformations.h:120:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  120 | [01;31m[K}[m[K // namespace slam2d
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:132：CMakeFiles/graphslam_node.dir/src/slam2d/map.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:118：CMakeFiles/graphslam_node.dir/src/slam2d/front_end.cpp.o] 错误 1
+gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:160：CMakeFiles/graphslam_node.dir/src/utils/laser_scan.cpp.o] 错误 1
+gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:146：CMakeFiles/graphslam_node.dir/src/slam2d/utils.cpp.o] 错误 1
+gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:174：CMakeFiles/graphslam_node.dir/src/utils/transformations.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:167：CMakeFiles/graphslam_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

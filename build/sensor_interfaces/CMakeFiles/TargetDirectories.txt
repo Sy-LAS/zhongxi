@@ -1,0 +1,14 @@
+/home/chuil/Desktop/zhongxi/build/sensor_interfaces/CMakeFiles/uninstall.dir
+/home/chuil/Desktop/zhongxi/build/sensor_interfaces/CMakeFiles/sensor_interfaces_uninstall.dir
+/home/chuil/Desktop/zhongxi/build/sensor_interfaces/CMakeFiles/ydlidar_sdk.dir
+/home/chuil/Desktop/zhongxi/build/sensor_interfaces/CMakeFiles/sensor_interfaces_base.dir
+/home/chuil/Desktop/zhongxi/build/sensor_interfaces/CMakeFiles/camera_driver.dir
+/home/chuil/Desktop/zhongxi/build/sensor_interfaces/CMakeFiles/lidar_driver.dir
+/home/chuil/Desktop/zhongxi/build/sensor_interfaces/CMakeFiles/control_board_interface.dir
+/home/chuil/Desktop/zhongxi/build/sensor_interfaces/CMakeFiles/test.dir
+/home/chuil/Desktop/zhongxi/build/sensor_interfaces/CMakeFiles/edit_cache.dir
+/home/chuil/Desktop/zhongxi/build/sensor_interfaces/CMakeFiles/rebuild_cache.dir
+/home/chuil/Desktop/zhongxi/build/sensor_interfaces/CMakeFiles/list_install_components.dir
+/home/chuil/Desktop/zhongxi/build/sensor_interfaces/CMakeFiles/install.dir
+/home/chuil/Desktop/zhongxi/build/sensor_interfaces/CMakeFiles/install/local.dir
+/home/chuil/Desktop/zhongxi/build/sensor_interfaces/CMakeFiles/install/strip.dir

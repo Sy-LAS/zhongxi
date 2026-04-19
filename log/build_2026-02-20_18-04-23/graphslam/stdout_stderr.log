@@ -1,0 +1,70 @@
+[ 15%] [34m[1mAutomatic MOC and UIC for target map_manager_node[0m
+[ 15%] [34m[1mAutomatic MOC and UIC for target graphslam_node[0m
+[ 15%] [34m[1mAutomatic MOC and UIC for target graphslam_g2o[0m
+[ 15%] Built target map_manager_node_autogen
+[ 15%] Built target graphslam_node_autogen
+[ 15%] Built target graphslam_g2o_autogen
+[35m[1mConsolidate compiler generated dependencies of target graphslam_node[0m
+[ 40%] Built target graphslam_g2o
+[ 55%] Built target map_manager_node
+[ 65%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/front_end.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/back_end.cpp.o[0m
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:[m[K In member function ‘[01m[Kstd::vector<std::pair<slam2d::Point2D, slam2d::Point2D> > slam2d::ICPFrontEnd::findClosestPoints(const slam2d::LaserScan&, const slam2d::LaserScan&, const slam2d::Pose2D&, const slam2d::Pose2D&)[m[K’:
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:148:34:[m[K [01;31m[Kerror: [m[K‘[01m[KeuclideanDistance[m[K’ is not a member of ‘[01m[Kslam2d::utils[m[K’
+  148 |             double dist = utils::[01;31m[KeuclideanDistance[m[K(curr_pt, prev_pt);
+      |                                  [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:118：CMakeFiles/graphslam_node.dir/src/slam2d/front_end.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:[m[K In constructor ‘[01m[Kslam2d::G2OBackend::G2OBackend()[m[K’:
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:23:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kmake_unique[m[K’ is not a member of ‘[01m[Kg2o[m[K’
+   23 |     auto linearSolver = g2o::[01;31m[Kmake_unique[m[K<g2o::LinearSolverEigen<g2o::BlockSolver_2_2::PoseMatrixType>>();
+      |                              [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:23:30:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/back_end.h:5[m[K,
+                 from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::make_unique[m[K’
+  973 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::make_unique[m[K’
+  961 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:23:70:[m[K [01;31m[Kerror: [m[K‘[01m[KBlockSolver_2_2[m[K’ is not a member of ‘[01m[Kg2o[m[K’; did you mean ‘[01m[KBlockSolver_3_2[m[K’?
+   23 |     auto linearSolver = g2o::make_unique<g2o::LinearSolverEigen<g2o::[01;31m[KBlockSolver_2_2[m[K::PoseMatrixType>>();
+      |                                                                      [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                                                      [32m[KBlockSolver_3_2[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:23:101:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   23 |     auto linearSolver = g2o::make_unique<g2o::LinearSolverEigen<g2o::BlockSolver_2_2::PoseMatrixType[01;31m[K>>[m[K();
+      |                                                                                                     [01;31m[K^~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:24:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kmake_unique[m[K’ is not a member of ‘[01m[Kg2o[m[K’
+   24 |     auto blockSolver = g2o::[01;31m[Kmake_unique[m[K<g2o::BlockSolver_2_2>(std::move(linearSolver));
+      |                             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:24:29:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+                 from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/back_end.h:5[m[K,
+                 from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:973:5:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::make_unique[m[K’
+  973 |     [01;36m[Kmake_unique[m[K(_Args&&...) = delete;
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/11/bits/unique_ptr.h:961:5:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::make_unique[m[K’
+  961 |     [01;36m[Kmake_unique[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:24:46:[m[K [01;31m[Kerror: [m[K‘[01m[KBlockSolver_2_2[m[K’ is not a member of ‘[01m[Kg2o[m[K’; did you mean ‘[01m[KBlockSolver_3_2[m[K’?
+   24 |     auto blockSolver = g2o::make_unique<g2o::[01;31m[KBlockSolver_2_2[m[K>(std::move(linearSolver));
+      |                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                              [32m[KBlockSolver_3_2[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:41[m[K,
+                 from [01m[K/usr/local/include/g2o/core/eigen_types.h:31[m[K,
+                 from [01m[K/usr/local/include/g2o/core/jacobian_workspace.h:34[m[K,
+                 from [01m[K/usr/local/include/g2o/core/optimizable_graph.h:39[m[K,
+                 from [01m[K/usr/local/include/g2o/core/sparse_optimizer.h:33[m[K,
+                 from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/back_end.h:8[m[K,
+                 from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:1[m[K:
+/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h: In instantiation of ‘[01m[KEigen::Rotation2D<Scalar> Eigen::Rotation2D<Scalar>::inverse() const [with _Scalar = double][m[K’:
+[01m[K/usr/local/include/g2o/types/slam2d/se2.h:85:24:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:98:39:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[KEigen::Rotation2D<double>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+   98 |   EIGEN_DEVICE_FUNC inline Rotation2D [01;36m[Kinverse[m[K() const { return Rotation2D(-m_angle); }
+      |                                       [01;36m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:104：CMakeFiles/graphslam_node.dir/src/slam2d/back_end.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:170：CMakeFiles/graphslam_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

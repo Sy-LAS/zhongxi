@@ -1,0 +1,4 @@
+[0.028s] Invoking command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake /home/chuil/Desktop/zhongxi/src/sensor_interfaces --log-level=INFO -DCMAKE_INSTALL_PREFIX=/home/chuil/Desktop/zhongxi/install/sensor_interfaces
+[0.047s] [0mCMake Error: Invalid level specified for --log-level[0m
+[0.047s] [0mCMake Error: Run 'cmake --help' for all supported options.[0m
+[0.053s] Invoked command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake /home/chuil/Desktop/zhongxi/src/sensor_interfaces --log-level=INFO -DCMAKE_INSTALL_PREFIX=/home/chuil/Desktop/zhongxi/install/sensor_interfaces

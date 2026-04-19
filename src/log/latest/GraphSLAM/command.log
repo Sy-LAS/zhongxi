@@ -1,0 +1,2 @@
+Invoking command in '/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/build/GraphSLAM': /usr/bin/cmake /home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM -DCMAKE_INSTALL_PREFIX=/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/install/GraphSLAM
+Invoked command in '/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/build/GraphSLAM' returned '1': /usr/bin/cmake /home/chuil/Desktop/zhongxi/zhongxi_2_5/src/GraphSLAM -DCMAKE_INSTALL_PREFIX=/home/chuil/Desktop/zhongxi/zhongxi_2_5/src/install/GraphSLAM

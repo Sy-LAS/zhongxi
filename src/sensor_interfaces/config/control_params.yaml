@@ -1,7 +1,14 @@
 sensor_interfaces:
   ros__parameters:
+<<<<<<< HEAD
     serial_port: '/dev/ttyTHS1'
     baud_rate: 115200
     wheel_separation: 0.3  # 米
     wheel_radius: 0.03     # 米 (原为0.05米)
+=======
+    serial_port: '/dev/ttyUSB0'
+    baud_rate: 115200
+    wheel_separation: 0.3  # 米
+    wheel_radius: 0.05     # 米
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
     publish_rate: 50.0     # Hz

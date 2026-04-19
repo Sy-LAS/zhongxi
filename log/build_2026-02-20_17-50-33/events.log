@@ -1,0 +1,186 @@
+[0.000000] (-) TimerEvent: {}
+[0.000801] (-) JobUnselected: {'identifier': 'demo_py'}
+[0.001225] (-) JobUnselected: {'identifier': 'sensor_interfaces'}
+[0.001961] (-) JobUnselected: {'identifier': 'zhongxi_description'}
+[0.002352] (graphslam) JobQueued: {'identifier': 'graphslam', 'dependencies': OrderedDict()}
+[0.002823] (graphslam) JobStarted: {'identifier': 'graphslam'}
+[0.031188] (graphslam) JobProgress: {'identifier': 'graphslam', 'progress': 'cmake'}
+[0.034217] (graphslam) Command: {'cmd': ['/usr/bin/cmake', '/home/chuil/Desktop/zhongxi/src/graphslam', '--no-warn-unused-cli', '-DCMAKE_INSTALL_PREFIX=/home/chuil/Desktop/zhongxi/install/graphslam'], 'cwd': '/home/chuil/Desktop/zhongxi/build/graphslam', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'chuil'), ('SSH_CLIENT', '192.168.0.102 58397 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/chuil'), ('OLDPWD', '/home/chuil/Desktop'), ('TERM_PROGRAM_VERSION', '1.109.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-32e64a56-fd39-4388-97e1-0b2924ceee1a.sock'), ('JETSON_L4T', '36.5.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chuil'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424125055888'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/chuil/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/chuil/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/bin/remote-cli:/home/chuil/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/bundled/scripts/noConfigScripts'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-21a56646f1eccb5d.txt'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/home/chuil/.vscode-server/data/User/workspaceStorage/e211f3a314d4166c5841746826140cad/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ed6a4f6337.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install/zhongxi_description:/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/graphslam:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/chuil/Desktop/zhongxi/build/graphslam'), ('SSH_CONNECTION', '192.168.0.102 58397 192.168.0.107 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/chuil/Desktop/zhongxi/install/demo_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install/zhongxi_description:/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/graphslam:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.059129] (graphslam) StdoutLine: {'line': b'Not searching for unused variables given on the command line.\n'}
+[0.082991] (graphslam) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.098983] (-) TimerEvent: {}
+[0.199805] (-) TimerEvent: {}
+[0.300819] (-) TimerEvent: {}
+[0.401920] (-) TimerEvent: {}
+[0.432776] (graphslam) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.483715] (graphslam) StdoutLine: {'line': b'-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.502147] (-) TimerEvent: {}
+[0.603216] (-) TimerEvent: {}
+[0.657935] (graphslam) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.682195] (graphslam) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.703359] (-) TimerEvent: {}
+[0.714286] (graphslam) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.761428] (graphslam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.803646] (-) TimerEvent: {}
+[0.811289] (graphslam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.903946] (-) TimerEvent: {}
+[1.005079] (-) TimerEvent: {}
+[1.010006] (graphslam) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.019448] (graphslam) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.105357] (-) TimerEvent: {}
+[1.206520] (-) TimerEvent: {}
+[1.307691] (-) TimerEvent: {}
+[1.343214] (graphslam) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.407979] (-) TimerEvent: {}
+[1.509125] (-) TimerEvent: {}
+[1.610283] (-) TimerEvent: {}
+[1.621836] (graphslam) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.710499] (-) TimerEvent: {}
+[1.719568] (graphslam) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.781497] (graphslam) StdoutLine: {'line': b'-- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.795360] (graphslam) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.810728] (-) TimerEvent: {}
+[1.911726] (-) TimerEvent: {}
+[2.012835] (-) TimerEvent: {}
+[2.113875] (-) TimerEvent: {}
+[2.122461] (graphslam) StdoutLine: {'line': b'-- Found QGLViewer: /usr/include/QGLViewer\n'}
+[2.214128] (-) TimerEvent: {}
+[2.315252] (-) TimerEvent: {}
+[2.356312] (graphslam) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.415523] (-) TimerEvent: {}
+[2.516661] (-) TimerEvent: {}
+[2.617876] (-) TimerEvent: {}
+[2.630506] (graphslam) StdoutLine: {'line': b'-- Generating done\n'}
+[2.648245] (graphslam) StdoutLine: {'line': b'-- Build files have been written to: /home/chuil/Desktop/zhongxi/build/graphslam\n'}
+[2.693051] (graphslam) CommandEnded: {'returncode': 0}
+[2.696911] (graphslam) JobProgress: {'identifier': 'graphslam', 'progress': 'build'}
+[2.697716] (graphslam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chuil/Desktop/zhongxi/build/graphslam', '--', '-j6', '-l6'], 'cwd': '/home/chuil/Desktop/zhongxi/build/graphslam', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'chuil'), ('SSH_CLIENT', '192.168.0.102 58397 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/chuil'), ('OLDPWD', '/home/chuil/Desktop'), ('TERM_PROGRAM_VERSION', '1.109.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-32e64a56-fd39-4388-97e1-0b2924ceee1a.sock'), ('JETSON_L4T', '36.5.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chuil'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424125055888'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/chuil/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/chuil/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/bin/remote-cli:/home/chuil/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/bundled/scripts/noConfigScripts'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-21a56646f1eccb5d.txt'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/home/chuil/.vscode-server/data/User/workspaceStorage/e211f3a314d4166c5841746826140cad/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ed6a4f6337.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install/zhongxi_description:/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/graphslam:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/chuil/Desktop/zhongxi/build/graphslam'), ('SSH_CONNECTION', '192.168.0.102 58397 192.168.0.107 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/chuil/Desktop/zhongxi/install/demo_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install/zhongxi_description:/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/graphslam:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[2.718031] (-) TimerEvent: {}
+[2.819503] (-) TimerEvent: {}
+[2.838628] (graphslam) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target graphslam_g2o\x1b[0m\n'}
+[2.842608] (graphslam) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target graphslam_node\x1b[0m\n'}
+[2.894916] (graphslam) StdoutLine: {'line': b'[ 12%] Built target graphslam_node_autogen\n'}
+[2.895733] (graphslam) StdoutLine: {'line': b'[ 12%] Built target graphslam_g2o_autogen\n'}
+[2.919635] (-) TimerEvent: {}
+[2.939603] (graphslam) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target graphslam_node\x1b[0m\n'}
+[3.019910] (-) TimerEvent: {}
+[3.033378] (graphslam) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/back_end.cpp.o\x1b[0m\n'}
+[3.034176] (graphslam) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/front_end.cpp.o\x1b[0m\n'}
+[3.120193] (-) TimerEvent: {}
+[3.221390] (-) TimerEvent: {}
+[3.322572] (-) TimerEvent: {}
+[3.423742] (-) TimerEvent: {}
+[3.524912] (-) TimerEvent: {}
+[3.626082] (-) TimerEvent: {}
+[3.727253] (-) TimerEvent: {}
+[3.828378] (-) TimerEvent: {}
+[3.929496] (-) TimerEvent: {}
+[4.030641] (-) TimerEvent: {}
+[4.131834] (-) TimerEvent: {}
+[4.233086] (-) TimerEvent: {}
+[4.253023] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:12:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kg2o/types/slam2d/edge_se2_odometry.h: \xe6\xb2\xa1\xe6\x9c\x89\xe9\x82\xa3\xe4\xb8\xaa\xe6\x96\x87\xe4\xbb\xb6\xe6\x88\x96\xe7\x9b\xae\xe5\xbd\x95\n'}
+[4.253881] (graphslam) StderrLine: {'line': b'   12 | #include \x1b[01;31m\x1b[K<g2o/types/slam2d/edge_se2_odometry.h>\x1b[m\x1b[K\n'}
+[4.254090] (graphslam) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.254254] (graphslam) StderrLine: {'line': b'compilation terminated.\n'}
+[4.264356] (graphslam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:104\xef\xbc\x9aCMakeFiles/graphslam_node.dir/src/slam2d/back_end.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[4.265039] (graphslam) StderrLine: {'line': b'gmake[2]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[4.333362] (-) TimerEvent: {}
+[4.434680] (-) TimerEvent: {}
+[4.535819] (-) TimerEvent: {}
+[4.636999] (-) TimerEvent: {}
+[4.738181] (-) TimerEvent: {}
+[4.839347] (-) TimerEvent: {}
+[4.940587] (-) TimerEvent: {}
+[5.041854] (-) TimerEvent: {}
+[5.143126] (-) TimerEvent: {}
+[5.244254] (-) TimerEvent: {}
+[5.345421] (-) TimerEvent: {}
+[5.446615] (-) TimerEvent: {}
+[5.547807] (-) TimerEvent: {}
+[5.649004] (-) TimerEvent: {}
+[5.750212] (-) TimerEvent: {}
+[5.851353] (-) TimerEvent: {}
+[5.952571] (-) TimerEvent: {}
+[6.053814] (-) TimerEvent: {}
+[6.155021] (-) TimerEvent: {}
+[6.256176] (-) TimerEvent: {}
+[6.357341] (-) TimerEvent: {}
+[6.458523] (-) TimerEvent: {}
+[6.559918] (-) TimerEvent: {}
+[6.661158] (-) TimerEvent: {}
+[6.762469] (-) TimerEvent: {}
+[6.863664] (-) TimerEvent: {}
+[6.964879] (-) TimerEvent: {}
+[7.066081] (-) TimerEvent: {}
+[7.167304] (-) TimerEvent: {}
+[7.268574] (-) TimerEvent: {}
+[7.369813] (-) TimerEvent: {}
+[7.471001] (-) TimerEvent: {}
+[7.549358] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual slam2d::Pose2D slam2d::ICPFrontEnd::scanMatchPose(const slam2d::LaserScan&, const slam2d::LaserScan&, const slam2d::Pose2D&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.550164] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:95:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KfindClosestPoints\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.550433] (graphslam) StderrLine: {'line': b'   95 |             \x1b[01;31m\x1b[KfindClosestPoints\x1b[m\x1b[K(current_scan, prev_scan, initial_pose, transform);\n'}
+[7.550633] (graphslam) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.571166] (-) TimerEvent: {}
+[7.591437] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:103:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcomputeTransform\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.592263] (graphslam) StderrLine: {'line': b'  103 |         Pose2D new_transform = \x1b[01;31m\x1b[KcomputeTransform\x1b[m\x1b[K(correspondences);\n'}
+[7.592496] (graphslam) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.626778] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:120:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcomposePoses\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.627654] (graphslam) StderrLine: {'line': b'  120 |     Pose2D result = \x1b[01;31m\x1b[KcomposePoses\x1b[m\x1b[K(initial_pose, transform);\n'}
+[7.628085] (graphslam) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.628263] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:\x1b[m\x1b[K At global scope:\n'}
+[7.628451] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:125:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::pair<slam2d::Point2D, slam2d::Point2D> > slam2d::ICPFrontEnd::findClosestPoints(const slam2d::LaserScan&, const slam2d::LaserScan&, const slam2d::Pose2D&, const slam2d::Pose2D&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.628681] (graphslam) StderrLine: {'line': b'  125 | \x1b[01;31m\x1b[KICPFrontEnd\x1b[m\x1b[K::findClosestPoints(const LaserScan& current_scan,\n'}
+[7.628831] (graphslam) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.628976] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:125:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::pair<slam2d::Point2D, slam2d::Point2D> > slam2d::ICPFrontEnd::findClosestPoints(const slam2d::LaserScan&, const slam2d::LaserScan&, const slam2d::Pose2D&, const slam2d::Pose2D&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.629124] (graphslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:1\x1b[m\x1b[K:\n'}
+[7.629272] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/front_end.h:60:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass slam2d::ICPFrontEnd\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[7.629418] (graphslam) StderrLine: {'line': b'   60 | class \x1b[01;36m\x1b[KICPFrontEnd\x1b[m\x1b[K : public FrontEnd {\n'}
+[7.629560] (graphslam) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.629703] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:165:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kslam2d::Pose2D slam2d::ICPFrontEnd::computeTransform(const std::vector<std::pair<slam2d::Point2D, slam2d::Point2D> >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.629859] (graphslam) StderrLine: {'line': b'  165 | Pose2D \x1b[01;31m\x1b[KICPFrontEnd\x1b[m\x1b[K::computeTransform(const std::vector<std::pair<Point2D, Point2D>>& correspondences) {\n'}
+[7.630004] (graphslam) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.630142] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:165:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Kslam2d::Pose2D slam2d::ICPFrontEnd::computeTransform(const std::vector<std::pair<slam2d::Point2D, slam2d::Point2D> >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.630346] (graphslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:1\x1b[m\x1b[K:\n'}
+[7.630492] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/front_end.h:60:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass slam2d::ICPFrontEnd\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[7.630643] (graphslam) StderrLine: {'line': b'   60 | class \x1b[01;36m\x1b[KICPFrontEnd\x1b[m\x1b[K : public FrontEnd {\n'}
+[7.630809] (graphslam) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.630948] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:231:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kslam2d::Pose2D slam2d::ICPFrontEnd::composePoses(const slam2d::Pose2D&, const slam2d::Pose2D&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.631092] (graphslam) StderrLine: {'line': b'  231 | Pose2D \x1b[01;31m\x1b[KICPFrontEnd\x1b[m\x1b[K::composePoses(const Pose2D& p1, const Pose2D& p2) {\n'}
+[7.631236] (graphslam) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.631374] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:231:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Kslam2d::Pose2D slam2d::ICPFrontEnd::composePoses(const slam2d::Pose2D&, const slam2d::Pose2D&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.631533] (graphslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:1\x1b[m\x1b[K:\n'}
+[7.631669] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/front_end.h:60:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass slam2d::ICPFrontEnd\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[7.631806] (graphslam) StderrLine: {'line': b'   60 | class \x1b[01;36m\x1b[KICPFrontEnd\x1b[m\x1b[K : public FrontEnd {\n'}
+[7.631945] (graphslam) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.665464] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual bool slam2d::FeatureBasedFrontEnd::processLaserScan(const slam2d::LaserScan&, const slam2d::Pose2D&, slam2d::Pose2D&, std::vector<slam2d::Observation>&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.666199] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:249:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KextractFeatures\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.666378] (graphslam) StderrLine: {'line': b'  249 |     std::vector<Point2D> current_features = \x1b[01;31m\x1b[KextractFeatures\x1b[m\x1b[K(scan);\n'}
+[7.666532] (graphslam) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.666770] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:260:62:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid initialization of reference of type \xe2\x80\x98\x1b[01m\x1b[Kconst slam2d::Pose2D&\x1b[m\x1b[K\xe2\x80\x99 from expression of type \xe2\x80\x98\x1b[01m\x1b[Kslam2d::Point2D\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.667007] (graphslam) StderrLine: {'line': b'  260 |                 Point2D global_point = utils::transformPoint(\x1b[01;31m\x1b[Klocal_point\x1b[m\x1b[K, predicted_pose);\n'}
+[7.667205] (graphslam) StderrLine: {'line': b'      |                                                              \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.667367] (graphslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:2\x1b[m\x1b[K:\n'}
+[7.667508] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/utils/transformations.h:49:38:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin passing argument 1 of \xe2\x80\x98\x1b[01m\x1b[Kslam2d::Point2D slam2d::utils::transformPoint(const slam2d::Pose2D&, const slam2d::Point2D&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.667659] (graphslam) StderrLine: {'line': b'   49 | Point2D transformPoint(\x1b[01;36m\x1b[Kconst Pose2D& pose\x1b[m\x1b[K, const Point2D& point);\n'}
+[7.667804] (graphslam) StderrLine: {'line': b'      |                        \x1b[01;36m\x1b[K~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[7.668289] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:\x1b[m\x1b[K At global scope:\n'}
+[7.668609] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:291:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<slam2d::Point2D> slam2d::FeatureBasedFrontEnd::extractFeatures(const slam2d::LaserScan&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.668796] (graphslam) StderrLine: {'line': b'  291 | std::vector<Point2D> \x1b[01;31m\x1b[KFeatureBasedFrontEnd\x1b[m\x1b[K::extractFeatures(const LaserScan& scan) {\n'}
+[7.668958] (graphslam) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.669116] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:291:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<slam2d::Point2D> slam2d::FeatureBasedFrontEnd::extractFeatures(const slam2d::LaserScan&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.669270] (graphslam) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/front_end.cpp:1\x1b[m\x1b[K:\n'}
+[7.669416] (graphslam) StderrLine: {'line': b'\x1b[01m\x1b[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/front_end.h:83:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass slam2d::FeatureBasedFrontEnd\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[7.669559] (graphslam) StderrLine: {'line': b'   83 | class \x1b[01;36m\x1b[KFeatureBasedFrontEnd\x1b[m\x1b[K : public FrontEnd {\n'}
+[7.669703] (graphslam) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.671193] (-) TimerEvent: {}
+[7.772002] (-) TimerEvent: {}
+[7.873344] (-) TimerEvent: {}
+[7.974488] (-) TimerEvent: {}
+[8.075661] (-) TimerEvent: {}
+[8.126591] (graphslam) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:118\xef\xbc\x9aCMakeFiles/graphslam_node.dir/src/slam2d/front_end.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[8.127482] (graphslam) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:167\xef\xbc\x9aCMakeFiles/graphslam_node.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[8.128079] (graphslam) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[8.135337] (graphslam) CommandEnded: {'returncode': 2}
+[8.175801] (-) TimerEvent: {}
+[8.185079] (graphslam) JobEnded: {'identifier': 'graphslam', 'rc': 2}
+[8.198001] (-) EventReactorShutdown: {}

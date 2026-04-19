@@ -1,0 +1,4 @@
+source;share/GraphSLAM/local_setup.bash
+source;share/GraphSLAM/local_setup.dsv
+source;share/GraphSLAM/local_setup.sh
+source;share/GraphSLAM/local_setup.zsh

@@ -1,0 +1,54 @@
+[0.789s] Invoking command in '/home/chuil/Desktop/zhongxi/build/zhongxi_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/zhongxi_description -- -j6 -l6
+[0.892s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.285s] -- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)
+[1.350s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.358s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.373s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.409s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.441s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.562s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.564s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.636s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.643s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.924s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.562s] -- Configuring done
+[2.587s] -- Generating done
+[2.596s] -- Build files have been written to: /home/chuil/Desktop/zhongxi/build/zhongxi_description
+[2.722s] Invoked command in '/home/chuil/Desktop/zhongxi/build/zhongxi_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/zhongxi_description -- -j6 -l6
+[2.756s] Invoking command in '/home/chuil/Desktop/zhongxi/build/zhongxi_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --install /home/chuil/Desktop/zhongxi/build/zhongxi_description
+[2.784s] -- Install configuration: ""
+[2.785s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//config
+[2.785s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//config/joint_names_zhongxi_description.yaml
+[2.786s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//launch
+[2.786s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//launch/simple_view.launch.py
+[2.786s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//launch/view_robot.launch.py
+[2.786s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//launch/gazebo_sim.launch.py
+[2.787s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//launch/ign_gazebo.launch.py
+[2.788s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//launch/gazebo.launch
+[2.789s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//launch/display.launch
+[2.789s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//meshes
+[2.789s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//meshes/base_link.STL
+[2.793s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//meshes/camera_link.STL
+[2.794s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//meshes/laser_link.STL
+[2.797s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//urdf
+[2.797s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//urdf/zhongxi_description_enhanced.sdf
+[2.797s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//urdf/zhongxi_description_enhanced.urdf
+[2.798s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//urdf/zhongxi_description.sdf
+[2.800s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//urdf/zhongxi_description.csv
+[2.815s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//urdf/zhongxi_description.urdf
+[2.816s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/ament_index/resource_index/package_run_dependencies/zhongxi_description
+[2.816s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/ament_index/resource_index/parent_prefix_path/zhongxi_description
+[2.816s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/environment/ament_prefix_path.sh
+[2.816s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/environment/ament_prefix_path.dsv
+[2.819s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/environment/path.sh
+[2.819s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/environment/path.dsv
+[2.819s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/local_setup.bash
+[2.819s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/local_setup.sh
+[2.820s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/local_setup.zsh
+[2.820s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/local_setup.dsv
+[2.820s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/package.dsv
+[2.820s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/ament_index/resource_index/packages/zhongxi_description
+[2.820s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/cmake/zhongxi_descriptionConfig.cmake
+[2.820s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/cmake/zhongxi_descriptionConfig-version.cmake
+[2.821s] -- Installing: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/package.xml
+[2.832s] Invoked command in '/home/chuil/Desktop/zhongxi/build/zhongxi_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --install /home/chuil/Desktop/zhongxi/build/zhongxi_description

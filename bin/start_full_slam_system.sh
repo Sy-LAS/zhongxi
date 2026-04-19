@@ -3,7 +3,10 @@
 
 echo "=== 启动完整SLAM系统 ==="
 
+<<<<<<< HEAD
 # 进入项目目录
+=======
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
 cd /home/chuil/Desktop/zhongxi
 
 # 检查并source环境
@@ -15,6 +18,7 @@ else
     exit 1
 fi
 
+<<<<<<< HEAD
 # 设置ROS_DOMAIN_ID以避免与其他ROS2系统冲突
 export ROS_DOMAIN_ID=24
 
@@ -97,3 +101,22 @@ trap "echo '停止所有进程...'; kill $SENSOR_PID $SLAM_PID $ROBOT_STATE_PUB_
 
 # 等待后台进程
 wait
+=======
+echo "启动完整SLAM系统..."
+echo "参数:"
+echo "  - use_sim_time:=false"
+echo "  - enable_camera:=true"
+echo "  - enable_lidar:=true"
+echo "  - enable_slam:=true"
+echo "  - enable_robot_state_publisher:=true"
+
+# 启动完整系统
+ros2 launch sensor_interfaces full_system.launch.py \
+    use_sim_time:=false \
+    enable_camera:=true \
+    enable_lidar:=true \
+    enable_slam:=true \
+    enable_robot_state_publisher:=true
+
+echo "系统已停止"
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90

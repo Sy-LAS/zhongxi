@@ -1,0 +1,12 @@
+Consolidate compiler generated dependencies of target lidar_driver
+Consolidate compiler generated dependencies of target camera_driver
+[ 16%] Building CXX object CMakeFiles/control_board_interface.dir/src/control_board_interface.cpp.o
+[ 83%] Built target camera_driver
+[ 83%] Built target lidar_driver
+/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/control_board_interface.cpp:5:10: fatal error: tf2_geometry_msgs/tf2_geometry_msgs.h: 没有那个文件或目录
+    5 | #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/control_board_interface.dir/build.make:76：CMakeFiles/control_board_interface.dir/src/control_board_interface.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:193：CMakeFiles/control_board_interface.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

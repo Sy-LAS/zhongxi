@@ -15,7 +15,10 @@ namespace sensor_interfaces {
 struct Stm32Protocol {
     // 协议分隔符
     static constexpr char START_BYTE = '#';
+<<<<<<< HEAD
     static constexpr char STATUS_START_BYTE = '$';  // 状态反馈以$开头
+=======
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
     static constexpr char END_BYTE = '!';
     static constexpr char SEPARATOR = ',';
 
@@ -32,6 +35,7 @@ struct Stm32Protocol {
 
     /**
      * @brief 构建移动命令字符串
+<<<<<<< HEAD
      * @param linear_x 线速度x方向 (vx)
      * @param angular_z 角速度z方向 (omega)
      * @param linear_y 线速度y方向 (vy)，默认为0
@@ -42,6 +46,16 @@ struct Stm32Protocol {
         char buffer[100];
         snprintf(buffer, sizeof(buffer), "%c%.3f%c%.3f%c%.3f%c", 
                  START_BYTE, linear_x, SEPARATOR, angular_z, SEPARATOR, linear_y, END_BYTE);
+=======
+     * @param linear_x 线速度x方向
+     * @param angular_z 角速度z方向
+     * @return 格式化的命令字符串
+     */
+    static std::string buildMoveCommand(double linear_x, double angular_z) {
+        char buffer[100];
+        snprintf(buffer, sizeof(buffer), "%c%.3f%c%.3f%c", 
+                 START_BYTE, linear_x, SEPARATOR, angular_z, END_BYTE);
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
         return std::string(buffer);
     }
 
@@ -112,6 +126,7 @@ struct Stm32Protocol {
     static std::vector<double> parseResponse(const std::string& data) {
         std::vector<double> result;
         
+<<<<<<< HEAD
         if (data.empty()) {
             return std::vector<double>();
         }
@@ -121,6 +136,9 @@ struct Stm32Protocol {
         char last_char = data[data.length()-1];
         
         if ((first_char != START_BYTE && first_char != STATUS_START_BYTE) || last_char != END_BYTE) {
+=======
+        if (data.empty() || data[0] != START_BYTE || data[data.length()-1] != END_BYTE) {
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
             // 尝试解析没有协议头的数据（向后兼容）
             return parseSimpleData(data);
         }

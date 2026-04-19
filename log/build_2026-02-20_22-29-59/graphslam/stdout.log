@@ -1,0 +1,81 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found tf2_geometry_msgs: 0.25.18 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Found QGLViewer: /usr/include/QGLViewer
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/chuil/Desktop/zhongxi/build/graphslam
+[ 16%] [34m[1mAutomatic MOC and UIC for target graphslam_node[0m
+[ 16%] [34m[1mAutomatic MOC and UIC for target graphslam_g2o[0m
+[ 16%] [34m[1mAutomatic MOC and UIC for target map_saver_node[0m
+[ 16%] [34m[1mAutomatic MOC and UIC for target map_manager_node[0m
+[ 16%] Built target map_saver_node_autogen
+[ 16%] Built target graphslam_g2o_autogen
+[ 16%] Built target graphslam_node_autogen
+[ 16%] Built target map_manager_node_autogen
+[35m[1mConsolidate compiler generated dependencies of target map_saver_node[0m
+[35m[1mConsolidate compiler generated dependencies of target map_manager_node[0m
+[35m[1mConsolidate compiler generated dependencies of target graphslam_g2o[0m
+[35m[1mConsolidate compiler generated dependencies of target graphslam_node[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/map_saver_node.dir/map_saver_node.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/map_manager_node.dir/map_manager_node.cpp.o[0m
+[ 45%] Built target graphslam_g2o
+[ 54%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/node/graphslam_node.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/front_end.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/slam2d/back_end.cpp.o[0m
+[ 62%] [32m[1mLinking CXX executable map_saver_node[0m
+[ 66%] Built target map_saver_node
+[ 70%] [32m[1mLinking CXX executable map_manager_node[0m
+[ 75%] [32m[1mLinking CXX executable graphslam_node[0m
+[ 79%] Built target map_manager_node
+[100%] Built target graphslam_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/lib/graphslam/graphslam_g2o
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/lib/graphslam/graphslam_node
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/lib/graphslam/map_manager_node
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/lib/graphslam/map_saver_node
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/lib/graphslam/graphslam_g2o
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam//launch/slam_launch.py
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam//launch/slam_with_robot.launch.py
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam//config/camera.yalm
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam//config/parsms.yalm
+-- Symlinking: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam//config/rviz_config_with_path.rviz
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/back_end.h
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/front_end.h
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/map.h
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/types.h
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/utils.h
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/utils/camera_model.h
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/utils/laser_scan.h
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/utils/transformations.h
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/share/ament_index/resource_index/package_run_dependencies/graphslam
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/share/ament_index/resource_index/parent_prefix_path/graphslam
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/environment/path.sh
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/environment/path.dsv
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/local_setup.bash
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/local_setup.sh
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/local_setup.zsh
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/local_setup.dsv
+-- Symlinking: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/package.dsv
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/share/ament_index/resource_index/packages/graphslam
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/cmake/graphslamConfig.cmake
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/cmake/graphslamConfig-version.cmake
+-- Up-to-date symlink: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/package.xml

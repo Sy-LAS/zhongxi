@@ -1,0 +1,14 @@
+[33mCMake Warning at CMakeLists.txt:66 (message):
+  serial library not found, implementing serial communication with standard
+  methods
+
+[0m
+[01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/control_board_interface.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/imu.hpp: 没有那个文件或目录
+    4 | #include [01;31m[K<sensor_msgs/msg/imu.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/control_board_interface.dir/build.make:76：CMakeFiles/control_board_interface.dir/src/control_board_interface.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:193：CMakeFiles/control_board_interface.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.408
+gmake: *** [Makefile:146：all] 错误 2

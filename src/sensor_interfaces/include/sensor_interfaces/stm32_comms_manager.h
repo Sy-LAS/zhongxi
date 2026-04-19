@@ -23,7 +23,11 @@ public:
      * @param port 串口设备路径
      * @param baud_rate 波特率
      */
+<<<<<<< HEAD
     Stm32CommsManager(const std::string& port = "/dev/ttyTHS1", int baud_rate = 115200);
+=======
+    Stm32CommsManager(const std::string& port = "/dev/ttyUSB0", int baud_rate = 115200);
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
     
     /**
      * @brief 析构函数

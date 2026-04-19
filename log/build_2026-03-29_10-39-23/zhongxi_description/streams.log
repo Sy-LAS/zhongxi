@@ -1,0 +1,39 @@
+[0.796s] Invoking command in '/home/chuil/Desktop/zhongxi/build/zhongxi_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/zhongxi_description -- -j6 -l6
+[0.966s] Invoked command in '/home/chuil/Desktop/zhongxi/build/zhongxi_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/zhongxi_description -- -j6 -l6
+[1.028s] Invoking command in '/home/chuil/Desktop/zhongxi/build/zhongxi_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --install /home/chuil/Desktop/zhongxi/build/zhongxi_description
+[1.048s] -- Install configuration: ""
+[1.048s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//config
+[1.048s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//config/joint_names_zhongxi_description.yaml
+[1.049s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//launch
+[1.049s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//launch/simple_view.launch.py
+[1.049s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//launch/view_robot.launch.py
+[1.049s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//launch/gazebo_sim.launch.py
+[1.050s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//launch/ign_gazebo.launch.py
+[1.050s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//launch/gazebo.launch
+[1.050s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//launch/display.launch
+[1.050s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//meshes
+[1.050s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//meshes/base_link.STL
+[1.051s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//meshes/camera_link.STL
+[1.051s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//meshes/laser_link.STL
+[1.051s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//urdf
+[1.051s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//urdf/zhongxi_description_enhanced.sdf
+[1.052s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//urdf/zhongxi_description_enhanced.urdf
+[1.052s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//urdf/zhongxi_description.sdf
+[1.052s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//urdf/zhongxi_description.csv
+[1.052s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description//urdf/zhongxi_description.urdf
+[1.052s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/ament_index/resource_index/package_run_dependencies/zhongxi_description
+[1.052s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/ament_index/resource_index/parent_prefix_path/zhongxi_description
+[1.053s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/environment/ament_prefix_path.sh
+[1.053s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/environment/ament_prefix_path.dsv
+[1.053s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/environment/path.sh
+[1.053s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/environment/path.dsv
+[1.053s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/local_setup.bash
+[1.054s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/local_setup.sh
+[1.054s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/local_setup.zsh
+[1.054s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/local_setup.dsv
+[1.054s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/package.dsv
+[1.060s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/ament_index/resource_index/packages/zhongxi_description
+[1.061s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/cmake/zhongxi_descriptionConfig.cmake
+[1.062s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/cmake/zhongxi_descriptionConfig-version.cmake
+[1.062s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/zhongxi_description/share/zhongxi_description/package.xml
+[1.071s] Invoked command in '/home/chuil/Desktop/zhongxi/build/zhongxi_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --install /home/chuil/Desktop/zhongxi/build/zhongxi_description

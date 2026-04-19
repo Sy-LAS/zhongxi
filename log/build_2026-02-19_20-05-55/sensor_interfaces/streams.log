@@ -1,0 +1,127 @@
+[0.032s] Invoking command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/sensor_interfaces -- -j6 -l6
+[0.203s] [ 66%] Built target ydlidar_sdk
+[0.207s] [ 75%] Built target sensor_interfaces_base
+[0.239s] [35m[1mConsolidate compiler generated dependencies of target lidar_driver[0m
+[0.276s] [ 91%] Built target control_board_interface
+[0.277s] [ 91%] Built target camera_driver
+[0.286s] [ 95%] [32mBuilding CXX object CMakeFiles/lidar_driver.dir/src/lidar_driver.cpp.o[0m
+[0.896s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:146:1:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K`[m[K’ in program
+[0.896s]   146 | [01;31m[K`[m[K``
+[0.896s]       | [01;31m[K^[m[K
+[0.897s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:146:2:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K`[m[K’ in program
+[0.897s]   146 | `[01;31m[K`[m[K`
+[0.897s]       |  [01;31m[K^[m[K
+[0.897s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:146:3:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K`[m[K’ in program
+[0.897s]   146 | ``[01;31m[K`[m[K
+[0.897s]       |   [01;31m[K^[m[K
+[0.897s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:149:1:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K`[m[K’ in program
+[0.898s]   149 | [01;31m[K`[m[K``cpp
+[0.898s]       | [01;31m[K^[m[K
+[0.898s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:149:2:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K`[m[K’ in program
+[0.898s]   149 | `[01;31m[K`[m[K`cpp
+[0.898s]       |  [01;31m[K^[m[K
+[0.898s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:149:3:[m[K [01;31m[Kerror: [m[Kstray ‘[01m[K`[m[K’ in program
+[0.898s]   149 | ``[01;31m[K`[m[Kcpp
+[0.899s]       |   [01;31m[K^[m[K
+[7.240s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/v8stdint.h:142[m[K,
+[7.241s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:2[m[K,
+[7.241s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.h:44[m[K,
+[7.241s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:3[m[K:
+[7.241s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:[m[K In function ‘[01m[Kbool ydlidar::core::base::fileExists(const string&)[m[K’:
+[7.241s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ino[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.242s]   183 |   struct stat info = {0[01;35m[K}[m[K;
+[7.242s]       |                        [01;35m[K^[m[K
+[7.242s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mode[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.242s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_nlink[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.242s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_uid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.242s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_gid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.243s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_rdev[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.243s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad1[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.243s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.243s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.244s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__pad2[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.244s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_blocks[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.244s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_atim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.245s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_mtim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.245s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::st_ctim[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.245s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/ydlidar.h:183:24:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Kstat::__glibc_reserved[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[7.245s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.h:44[m[K,
+[7.246s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:3[m[K:
+[7.246s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:[m[K In member function ‘[01m[Kvirtual bool ydlidar::core::common::ChannelDevice::setDTR(bool)[m[K’:
+[7.246s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ChannelDevice.h:111:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Klevel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.246s]   111 |   virtual bool setDTR([01;35m[Kbool level = true[m[K) {
+[7.247s]       |                       [01;35m[K~~~~~^~~~~~~~~~~~[m[K
+[7.247s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.h:46[m[K,
+[7.247s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:3[m[K:
+[7.248s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/thread.h:[m[K In static member function ‘[01m[Kstatic ydlidar::core::base::Thread ydlidar::core::base::Thread::createThread(thread_proc_t, void*)[m[K’:
+[7.248s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/base/thread.h:46:57:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcast-function-type-Wcast-function-type]8;;[m[K]
+[7.248s]    46 |     pthread_create((pthread_t *)&thread_._handle, NULL, [01;35m[K(void *(*)(void *))proc[m[K,
+[7.248s]       |                                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.391s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:[m[K At global scope:
+[7.392s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:148:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K/[m[K’ token
+[7.392s]   148 | [01;31m[K/[m[Khome/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp
+[7.392s]       | [01;31m[K^[m[K
+[7.394s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:[m[K In member function ‘[01m[Kbool sensor_interfaces::LidarDriver::check_sensor_health()[m[K’:
+[7.394s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:168:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kdevice_health[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[Kdevice_health[m[K’?
+[7.395s]   168 |         ydlidar::[01;31m[Kdevice_health[m[K health;
+[7.395s]       |                  [01;31m[K^~~~~~~~~~~~~[m[K
+[7.395s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.h:47[m[K,
+[7.395s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:3[m[K:
+[7.396s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_protocol.h:229:8:[m[K [01;36m[Knote: [m[K‘[01m[Kdevice_health[m[K’ declared here
+[7.396s]   229 | struct [01;36m[Kdevice_health[m[K {
+[7.396s]       |        [01;36m[K^~~~~~~~~~~~~[m[K
+[7.416s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:169:33:[m[K [01;31m[Kerror: [m[K‘[01m[Khealth[m[K’ was not declared in this scope; did you mean ‘[01m[Krealpath[m[K’?
+[7.416s]   169 |         return laser->getHealth([01;31m[Khealth[m[K) == RESULT_OK;
+[7.417s]       |                                 [01;31m[K^~~~~~[m[K
+[7.417s]       |                                 [32m[Krealpath[m[K
+[7.417s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:[m[K At global scope:
+[7.417s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:172:10:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kbool sensor_interfaces::LidarDriver::check_sensor_health()[m[K’
+[7.418s]   172 |     bool [01;31m[KLidarDriver[m[K::check_sensor_health()
+[7.418s]       |          [01;31m[K^~~~~~~~~~~[m[K
+[7.418s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:161:10:[m[K [01;36m[Knote: [m[K‘[01m[Kbool sensor_interfaces::LidarDriver::check_sensor_health()[m[K’ previously defined here
+[7.419s]   161 |     bool [01;36m[KLidarDriver[m[K::check_sensor_health()
+[7.419s]       |          [01;36m[K^~~~~~~~~~~[m[K
+[7.419s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:[m[K In member function ‘[01m[Kbool sensor_interfaces::LidarDriver::initialize_sensor()[m[K’:
+[7.420s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:198:36:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kint[m[K’ to ‘[01m[Ksampling_rate&[m[K’
+[7.420s]   198 |         if (laser->setSamplingRate([01;31m[Ksample_rate_[m[K) != RESULT_OK) {
+[7.420s]       |                                    [01;31m[K^~~~~~~~~~~~[m[K
+[7.420s]       |                                    [01;31m[K|[m[K
+[7.420s]       |                                    [01;31m[Kint[m[K
+[7.421s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:3[m[K:
+[7.421s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.h:327:51:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvirtual result_t ydlidar::YDlidarDriver::setSamplingRate(sampling_rate&, uint32_t)[m[K’
+[7.421s]   327 |   virtual result_t setSamplingRate([01;36m[Ksampling_rate &rate[m[K,
+[7.422s]       |                                    [01;36m[K~~~~~~~~~~~~~~~^~~~[m[K
+[7.422s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:203:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kdevice_health[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[Kdevice_health[m[K’?
+[7.422s]   203 |         ydlidar::[01;31m[Kdevice_health[m[K health;
+[7.422s]       |                  [01;31m[K^~~~~~~~~~~~~[m[K
+[7.423s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.h:47[m[K,
+[7.423s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:3[m[K:
+[7.423s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_protocol.h:229:8:[m[K [01;36m[Knote: [m[K‘[01m[Kdevice_health[m[K’ declared here
+[7.423s]   229 | struct [01;36m[Kdevice_health[m[K {
+[7.424s]       |        [01;36m[K^~~~~~~~~~~~~[m[K
+[7.440s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:204:30:[m[K [01;31m[Kerror: [m[K‘[01m[Khealth[m[K’ was not declared in this scope; did you mean ‘[01m[Krealpath[m[K’?
+[7.440s]   204 |         if (laser->getHealth([01;31m[Khealth[m[K) != RESULT_OK) {
+[7.440s]       |                              [01;31m[K^~~~~~[m[K
+[7.441s]       |                              [32m[Krealpath[m[K
+[7.443s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:211:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kdevice_info[m[K’ is not a member of ‘[01m[Kydlidar[m[K’; did you mean ‘[01m[Kdevice_info[m[K’?
+[7.443s]   211 |         ydlidar::[01;31m[Kdevice_info[m[K info;
+[7.443s]       |                  [01;31m[K^~~~~~~~~~~[m[K
+[7.443s] In file included from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/src/ydlidar_driver.h:47[m[K,
+[7.444s]                  from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:3[m[K:
+[7.444s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/sdk/core/common/ydlidar_protocol.h:221:8:[m[K [01;36m[Knote: [m[K‘[01m[Kdevice_info[m[K’ declared here
+[7.444s]   221 | struct [01;36m[Kdevice_info[m[K {
+[7.444s]       |        [01;36m[K^~~~~~~~~~~[m[K
+[7.459s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:212:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kinfo[m[K’ was not declared in this scope
+[7.459s]   212 |         if (laser->getDeviceInfo([01;31m[Kinfo[m[K) != RESULT_OK) {
+[7.459s]       |                                  [01;31m[K^~~~[m[K
+[7.475s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:[m[K In member function ‘[01m[Kvoid sensor_interfaces::LidarDriver::publish_scan()[m[K’:
+[7.476s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:278:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct node_info[m[K’ has no member named ‘[01m[Kdist[m[K’
+[7.476s]   278 |                     float distance = static_cast<float>(nodes[i].[01;31m[Kdist[m[K) / 1000.0f;
+[7.476s]       |                                                                  [01;31m[K^~~~[m[K
+[7.477s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:282:80:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct node_info[m[K’ has no member named ‘[01m[Kquality[m[K’
+[7.477s]   282 |                         scan_msg->intensities[i] = static_cast<float>(nodes[i].[01;31m[Kquality[m[K) / 2.0f;
+[7.477s]       |                                                                                [01;31m[K^~~~~~~[m[K
+[10.174s] gmake[2]: *** [CMakeFiles/lidar_driver.dir/build.make:76：CMakeFiles/lidar_driver.dir/src/lidar_driver.cpp.o] 错误 1
+[10.175s] gmake[1]: *** [CMakeFiles/Makefile2:224：CMakeFiles/lidar_driver.dir/all] 错误 2
+[10.176s] gmake: *** [Makefile:146：all] 错误 2
+[10.190s] Invoked command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/sensor_interfaces -- -j6 -l6

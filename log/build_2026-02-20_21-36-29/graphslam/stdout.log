@@ -1,0 +1,14 @@
+[  8%] [34m[1mAutomatic MOC and UIC for target graphslam_g2o[0m
+[  8%] [34m[1mAutomatic MOC and UIC for target map_manager_node[0m
+[ 12%] [34m[1mAutomatic MOC and UIC for target graphslam_node[0m
+[ 16%] [34m[1mAutomatic MOC and UIC for target map_saver_node[0m
+[ 16%] Built target graphslam_node_autogen
+[ 16%] Built target graphslam_g2o_autogen
+[ 16%] Built target map_manager_node_autogen
+[ 16%] Built target map_saver_node_autogen
+[35m[1mConsolidate compiler generated dependencies of target map_saver_node[0m
+[35m[1mConsolidate compiler generated dependencies of target graphslam_node[0m
+[ 37%] Built target graphslam_g2o
+[ 50%] Built target map_manager_node
+[ 54%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/node/graphslam_node.cpp.o[0m
+[ 66%] Built target map_saver_node

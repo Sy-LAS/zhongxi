@@ -1,0 +1,14 @@
+[0.025s] Invoking command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/sensor_interfaces -- -j6 -l6
+[0.134s] Consolidate compiler generated dependencies of target lidar_driver
+[0.136s] Consolidate compiler generated dependencies of target camera_driver
+[0.147s] [ 16%] Building CXX object CMakeFiles/control_board_interface.dir/src/control_board_interface.cpp.o
+[0.173s] [ 83%] Built target camera_driver
+[0.173s] [ 83%] Built target lidar_driver
+[0.729s] /home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/control_board_interface.cpp:5:10: fatal error: tf2_geometry_msgs/tf2_geometry_msgs.h: 没有那个文件或目录
+[0.730s]     5 | #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
+[0.730s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0.730s] compilation terminated.
+[0.739s] gmake[2]: *** [CMakeFiles/control_board_interface.dir/build.make:76：CMakeFiles/control_board_interface.dir/src/control_board_interface.cpp.o] 错误 1
+[0.739s] gmake[1]: *** [CMakeFiles/Makefile2:193：CMakeFiles/control_board_interface.dir/all] 错误 2
+[0.740s] gmake: *** [Makefile:146：all] 错误 2
+[0.750s] Invoked command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/sensor_interfaces -- -j6 -l6

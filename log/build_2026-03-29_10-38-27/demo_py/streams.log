@@ -1,0 +1,21 @@
+[2.120s] Invoking command in '/home/chuil/Desktop/zhongxi/src/demo_py': PYTHONPATH=/home/chuil/Desktop/zhongxi/build/demo_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chuil/Desktop/zhongxi/install/demo_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/demo_py build --build-base /home/chuil/Desktop/zhongxi/build/demo_py/build install --record /home/chuil/Desktop/zhongxi/build/demo_py/install.log --single-version-externally-managed install_data
+[2.807s] running egg_info
+[2.809s] writing ../../build/demo_py/demo_py.egg-info/PKG-INFO
+[2.810s] writing dependency_links to ../../build/demo_py/demo_py.egg-info/dependency_links.txt
+[2.811s] writing entry points to ../../build/demo_py/demo_py.egg-info/entry_points.txt
+[2.812s] writing requirements to ../../build/demo_py/demo_py.egg-info/requires.txt
+[2.812s] writing top-level names to ../../build/demo_py/demo_py.egg-info/top_level.txt
+[2.821s] reading manifest file '../../build/demo_py/demo_py.egg-info/SOURCES.txt'
+[2.837s] writing manifest file '../../build/demo_py/demo_py.egg-info/SOURCES.txt'
+[2.838s] running build
+[2.838s] running build_py
+[2.838s] running install
+[2.838s] running install_lib
+[2.839s] running install_data
+[2.839s] running install_egg_info
+[2.842s] removing '/home/chuil/Desktop/zhongxi/install/demo_py/lib/python3.10/site-packages/demo_py-0.0.1-py3.10.egg-info' (and everything under it)
+[2.842s] Copying ../../build/demo_py/demo_py.egg-info to /home/chuil/Desktop/zhongxi/install/demo_py/lib/python3.10/site-packages/demo_py-0.0.1-py3.10.egg-info
+[2.846s] running install_scripts
+[2.916s] Installing talker script to /home/chuil/Desktop/zhongxi/install/demo_py/lib/demo_py
+[2.919s] writing list of installed files to '/home/chuil/Desktop/zhongxi/build/demo_py/install.log'
+[3.099s] Invoked command in '/home/chuil/Desktop/zhongxi/src/demo_py' returned '0': PYTHONPATH=/home/chuil/Desktop/zhongxi/build/demo_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chuil/Desktop/zhongxi/install/demo_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/demo_py build --build-base /home/chuil/Desktop/zhongxi/build/demo_py/build install --record /home/chuil/Desktop/zhongxi/build/demo_py/install.log --single-version-externally-managed install_data

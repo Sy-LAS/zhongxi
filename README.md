@@ -2,7 +2,11 @@
 
 该项目是名为“踵息”的Graph SLAM（Simultaneous Localization and Mapping，即时定位与地图构建）探索系统。本项目旨在展示全栈的自主导航、传感器融合和路径规划的能力。
 
+<<<<<<< HEAD
 软件、硬件、设计纯单人实现项目
+=======
+软件、硬件、设计纯单人实现
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
 开发日志见yuanmo
 
 ## 硬件配置
@@ -85,4 +89,8 @@ algorithm文件夹中以overview.md为概览，较详细介绍核心算法实现
 8. 前沿探索算法 (Frontier Exploration Algorithm)
 9. 最短路径覆盖算法 (Shortest Path Coverage Algorithm)
 10. 基于距离的回环检测 (Distance-based Loop Detection)
+<<<<<<< HEAD
 11. 滑动窗口轨迹平滑 (Sliding Window Trajectory Smoothing)
+=======
+11. 滑动窗口轨迹平滑 (Sliding Window Trajectory Smoothing)
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90

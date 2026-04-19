@@ -32,7 +32,11 @@ namespace sensor_interfaces
         this->get_parameter_or("serial_port", serial_port, std::string("/dev/ttyUSB0"));
         this->get_parameter_or("baud_rate", baud_rate, 115200);
         this->get_parameter_or("wheel_separation", wheel_separation_, 0.3);
+<<<<<<< HEAD
         this->get_parameter_or("wheel_radius", wheel_radius_, 0.03);
+=======
+        this->get_parameter_or("wheel_radius", wheel_radius_, 0.05);
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
         this->get_parameter_or("publish_rate", publish_rate_, 50.0);
         this->get_parameter_or("encoder_resolution", encoder_resolution_, 400.0); // JGA25-370电机编码器分辨率
 
@@ -79,10 +83,17 @@ namespace sensor_interfaces
 
     void ControlBoardInterface::declare_parameters()
     {
+<<<<<<< HEAD
         this->declare_parameter<std::string>("serial_port", "/dev/ttyTHS1");
         this->declare_parameter<int>("baud_rate", 115200);
         this->declare_parameter<double>("wheel_separation", 0.3);
         this->declare_parameter<double>("wheel_radius", 0.03);
+=======
+        this->declare_parameter<std::string>("serial_port", "/dev/ttyUSB0");
+        this->declare_parameter<int>("baud_rate", 115200);
+        this->declare_parameter<double>("wheel_separation", 0.3);
+        this->declare_parameter<double>("wheel_radius", 0.05);
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
         this->declare_parameter<double>("encoder_resolution", 400.0);
         this->declare_parameter<double>("publish_rate", 50.0);
     }
@@ -119,12 +130,20 @@ namespace sensor_interfaces
     {
         // 将速度命令发送到控制板
         double linear_x = msg->linear.x;
+<<<<<<< HEAD
         double linear_y = msg->linear.y;  // 麦克纳姆轮支持y方向移动
         double angular_z = msg->angular.z;
 
         if (comms_manager_ && comms_manager_->isConnected()) {
             // 使用协议构建命令字符串（3参数格式：vx, omega, vy）
             std::string cmd = Stm32Protocol::buildMoveCommand(linear_x, angular_z, linear_y);
+=======
+        double angular_z = msg->angular.z;
+
+        if (comms_manager_ && comms_manager_->isConnected()) {
+            // 使用协议构建命令字符串
+            std::string cmd = Stm32Protocol::buildMoveCommand(linear_x, angular_z);
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
 
             if (comms_manager_->sendCommand(cmd)) {
                 RCLCPP_DEBUG(this->get_logger(), "发送速度命令: %s", cmd.c_str());

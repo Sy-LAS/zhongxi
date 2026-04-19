@@ -1,0 +1,39 @@
+
+AutoUic subprocess error
+------------------------
+The uic process failed to compile
+  "SRC:/main_window.ui"
+into
+  "BIN:/graphslam_g2o_autogen/include/ui_main_window.h"
+included by
+  "SRC:/main_window.h"
+
+Command
+-------
+/usr/lib/qt5/bin/uic -o /home/chuil/Desktop/zhongxi/build/graphslam/graphslam_g2o_autogen/include/ui_main_window.h /home/chuil/Desktop/zhongxi/src/graphslam/main_window.ui
+
+Output
+------
+uic: Error in line 240, column 34 : Opening and ending tag mismatch.
+File '/home/chuil/Desktop/zhongxi/src/graphslam/main_window.ui' is not valid
+
+gmake[2]: *** [CMakeFiles/graphslam_g2o_autogen.dir/build.make:71：CMakeFiles/graphslam_g2o_autogen] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:251：CMakeFiles/graphslam_g2o_autogen.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+In file included from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/map_manager_node.cpp:7[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:41[m[K,
+                 from [01m[K/usr/local/include/g2o/core/eigen_types.h:31[m[K,
+                 from [01m[K/usr/local/include/g2o/core/jacobian_workspace.h:34[m[K,
+                 from [01m[K/usr/local/include/g2o/core/optimizable_graph.h:39[m[K,
+                 from [01m[K/usr/local/include/g2o/core/sparse_optimizer.h:33[m[K,
+                 from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/back_end.h:8[m[K,
+                 from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:1[m[K:
+/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h: In instantiation of ‘[01m[KEigen::Rotation2D<Scalar> Eigen::Rotation2D<Scalar>::inverse() const [with _Scalar = double][m[K’:
+[01m[K/usr/local/include/g2o/types/slam2d/se2.h:85:24:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:98:39:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[KEigen::Rotation2D<double>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+   98 |   EIGEN_DEVICE_FUNC inline Rotation2D [01;36m[Kinverse[m[K() const { return Rotation2D(-m_angle); }
+      |                                       [01;36m[K^~~~~~~[m[K
+gmake: *** [Makefile:146：all] 错误 2

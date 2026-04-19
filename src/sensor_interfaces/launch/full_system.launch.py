@@ -13,7 +13,11 @@ def generate_launch_description():
 
     # 声明启动参数
     use_sim_time = LaunchConfiguration('use_sim_time', default='false')
+<<<<<<< HEAD
     serial_port = LaunchConfiguration('serial_port', default='/dev/ttyTHS1')
+=======
+    serial_port = LaunchConfiguration('serial_port', default='/dev/ttyUSB0')
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
     baud_rate = LaunchConfiguration('baud_rate', default='115200')
 
     # 摄像头节点
@@ -63,7 +67,11 @@ def generate_launch_description():
             {'serial_port': serial_port},
             {'baud_rate': baud_rate},
             {'wheel_separation': 0.3},
+<<<<<<< HEAD
             {'wheel_radius': 0.03},
+=======
+            {'wheel_radius': 0.05},
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
             {'encoder_resolution': 400.0},
             {'publish_rate': 50.0},
             {'use_sim_time': use_sim_time}
@@ -105,8 +113,13 @@ def generate_launch_description():
 
     ld.add_action(DeclareLaunchArgument(
         'serial_port',
+<<<<<<< HEAD
         default_value='/dev/ttyTHS1',
         description='串口设备路径 (UART1硬件串口)'
+=======
+        default_value='/dev/ttyUSB0',
+        description='串口设备路径'
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
     ))
 
     ld.add_action(DeclareLaunchArgument(

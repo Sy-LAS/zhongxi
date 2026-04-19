@@ -1,0 +1,6 @@
+[ 30%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ydlidar_driver.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ETLidarDriver.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/CYdLidar.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ydlidar_sdk.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/core/serial/serial.cpp.o[0m
+[ 60%] [32m[1mLinking CXX executable camera_driver[0m

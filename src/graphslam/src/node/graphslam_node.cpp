@@ -2,9 +2,13 @@
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/laser_scan.hpp"
 #include "nav_msgs/msg/odometry.hpp"
+<<<<<<< HEAD
 #include "nav_msgs/msg/path.hpp"
 #include "geometry_msgs/msg/transform_stamped.hpp"
 #include "geometry_msgs/msg/pose_stamped.hpp"
+=======
+#include "geometry_msgs/msg/transform_stamped.hpp"
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
 #include "tf2_ros/transform_broadcaster.h"
 #include "tf2/LinearMath/Quaternion.h"
 
@@ -28,12 +32,15 @@ public:
 
         // 发布地图到odom的TF变换
         map_to_odom_pub_ = this->create_publisher<geometry_msgs::msg::TransformStamped>("/map_odom", 10);
+<<<<<<< HEAD
         
         // 发布机器人实际路径（用于可视化）
         path_pub_ = this->create_publisher<nav_msgs::msg::Path>("/graphslam_path", 10);
         
         // 初始化路径消息
         robot_path_.header.frame_id = "map";
+=======
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
 
         RCLCPP_INFO(this->get_logger(), "GraphSLAM node initialized");
     }
@@ -58,9 +65,12 @@ private:
         
         // TODO: 将里程计数据集成到SLAM算法中
         process_odom_data(msg);
+<<<<<<< HEAD
         
         // 更新并发布路径
         update_and_publish_path(msg);
+=======
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
     }
 
     void process_laser_data(const sensor_msgs::msg::LaserScan::SharedPtr msg)
@@ -76,6 +86,7 @@ private:
         // 可能需要存储里程计信息以供SLAM算法使用
         last_odom_pose_ = msg->pose.pose;
     }
+<<<<<<< HEAD
     
     void update_and_publish_path(const nav_msgs::msg::Odometry::SharedPtr odom_msg)
     {
@@ -109,6 +120,8 @@ private:
         robot_path_.header.stamp = this->now();
         path_pub_->publish(robot_path_);
     }
+=======
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
 
     void publish_tf_transform(const builtin_interfaces::msg::Time& stamp, const std::string& frame_id)
     {
@@ -132,14 +145,20 @@ private:
     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr laser_subscription_;
     rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_subscription_;
     rclcpp::Publisher<geometry_msgs::msg::TransformStamped>::SharedPtr map_to_odom_pub_;
+<<<<<<< HEAD
     rclcpp::Publisher<nav_msgs::msg::Path>::SharedPtr path_pub_;
+=======
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
     std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
     
     // 存储最后的里程计位置
     geometry_msgs::msg::Pose last_odom_pose_;
+<<<<<<< HEAD
     
     // 存储机器人路径
     nav_msgs::msg::Path robot_path_;
+=======
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
 };
 
 int main(int argc, char * argv[])

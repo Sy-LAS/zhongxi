@@ -66,7 +66,11 @@ def generate_launch_description():
         package='sensor_interfaces',
         executable='control_board_interface',
         name='control_board_interface',
+<<<<<<< HEAD
         parameters=[{'serial_port': '/dev/ttyTHS1', 'baud_rate': 115200}]  # STM32F407 - UART1硬件串口 (Pin 8/10)
+=======
+        parameters=[{'serial_port': '/dev/ttyUSB1'}]  # STM32F407VET6 控制板
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
     )
 
     return LaunchDescription([

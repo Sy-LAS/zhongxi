@@ -1,0 +1,176 @@
+[0.000000] (-) TimerEvent: {}
+[0.000826] (-) JobUnselected: {'identifier': 'demo_py'}
+[0.001327] (-) JobUnselected: {'identifier': 'graphslam'}
+[0.002206] (-) JobUnselected: {'identifier': 'zhongxi_description'}
+[0.002313] (sensor_interfaces) JobQueued: {'identifier': 'sensor_interfaces', 'dependencies': OrderedDict()}
+[0.002756] (sensor_interfaces) JobStarted: {'identifier': 'sensor_interfaces'}
+[0.030517] (sensor_interfaces) JobProgress: {'identifier': 'sensor_interfaces', 'progress': 'cmake'}
+[0.032985] (sensor_interfaces) JobProgress: {'identifier': 'sensor_interfaces', 'progress': 'build'}
+[0.034994] (sensor_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chuil/Desktop/zhongxi/build/sensor_interfaces', '--', '-j6', '-l6'], 'cwd': '/home/chuil/Desktop/zhongxi/build/sensor_interfaces', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'chuil'), ('SSH_CLIENT', '192.168.0.102 61636 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/chuil'), ('OLDPWD', '/home/chuil/Desktop'), ('TERM_PROGRAM_VERSION', '1.109.3'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-e92a40f1-2408-437e-b680-7d9b4fe5c8d5.sock'), ('JETSON_L4T', '36.5.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'chuil'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1424125055888'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/chuil/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/chuil/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/chuil/.vscode-server/cli/servers/Stable-b6a47e94e326b5c209d118cf0f994d6065585705/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/bundled/scripts/noConfigScripts'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/chuil/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-21a56646f1eccb5d.txt'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/home/chuil/.vscode-server/data/User/workspaceStorage/e211f3a314d4166c5841746826140cad/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-ed6a4f6337.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/zhongxi_description:/home/chuil/Desktop/zhongxi/install/graphslam:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/chuil/Desktop/zhongxi/build/sensor_interfaces'), ('SSH_CONNECTION', '192.168.0.102 61636 192.168.0.107 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/chuil/Desktop/zhongxi/install/demo_py/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/chuil/Desktop/zhongxi/install/sensor_interfaces:/home/chuil/Desktop/zhongxi/install/zhongxi_description:/home/chuil/Desktop/zhongxi/install/graphslam:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005')]), 'shell': False}
+[0.099156] (-) TimerEvent: {}
+[0.137002] (sensor_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199528] (-) TimerEvent: {}
+[0.301269] (-) TimerEvent: {}
+[0.402350] (-) TimerEvent: {}
+[0.489636] (sensor_interfaces) StdoutLine: {'line': b'-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.502442] (-) TimerEvent: {}
+[0.557853] (sensor_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.564183] (sensor_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.578027] (sensor_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.599932] (sensor_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.602819] (-) TimerEvent: {}
+[0.628489] (sensor_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.701105] (sensor_interfaces) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.702923] (-) TimerEvent: {}
+[0.706452] (sensor_interfaces) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.803274] (-) TimerEvent: {}
+[0.904528] (-) TimerEvent: {}
+[0.965098] (sensor_interfaces) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.004786] (-) TimerEvent: {}
+[1.073914] (sensor_interfaces) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.105069] (-) TimerEvent: {}
+[1.133474] (sensor_interfaces) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[1.144213] (sensor_interfaces) StdoutLine: {'line': b'-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[1.191559] (sensor_interfaces) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.205159] (-) TimerEvent: {}
+[1.226347] (sensor_interfaces) StdoutLine: {'line': b'-- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)\n'}
+[1.233008] (sensor_interfaces) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.305492] (-) TimerEvent: {}
+[1.391842] (sensor_interfaces) StdoutLine: {'line': b'-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[1.405773] (-) TimerEvent: {}
+[1.480918] (sensor_interfaces) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro\xe6\xbf\x80\xe5\x85\x89\xe9\x9b\xb7\xe8\xbe\xbe/ROS2-\xe6\xba\x90\xe7\xa0\x81/\xe6\xba\x90\xe7\xa0\x81/YDLidar-SDK-master/CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[1.481852] (sensor_interfaces) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[1.482109] (sensor_interfaces) StderrLine: {'line': b'  CMake.\n'}
+[1.482343] (sensor_interfaces) StderrLine: {'line': b'\n'}
+[1.482530] (sensor_interfaces) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[1.482705] (sensor_interfaces) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[1.482870] (sensor_interfaces) StderrLine: {'line': b'\n'}
+[1.483033] (sensor_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[1.483465] (sensor_interfaces) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro\xe6\xbf\x80\xe5\x85\x89\xe9\x9b\xb7\xe8\xbe\xbe/ROS2-\xe6\xba\x90\xe7\xa0\x81/\xe6\xba\x90\xe7\xa0\x81/YDLidar-SDK-master/CMakeLists.txt:44 (cmake_policy):\n'}
+[1.483829] (sensor_interfaces) StderrLine: {'line': b'  The OLD behavior for policy CMP0053 will be removed from a future version\n'}
+[1.483997] (sensor_interfaces) StderrLine: {'line': b'  of CMake.\n'}
+[1.484157] (sensor_interfaces) StderrLine: {'line': b'\n'}
+[1.484315] (sensor_interfaces) StderrLine: {'line': b'  The cmake-policies(7) manual explains that the OLD behaviors of all\n'}
+[1.484473] (sensor_interfaces) StderrLine: {'line': b'  policies are deprecated and that a policy should be set to OLD only under\n'}
+[1.484625] (sensor_interfaces) StderrLine: {'line': b'  specific short-term circumstances.  Projects should be ported to the NEW\n'}
+[1.484783] (sensor_interfaces) StderrLine: {'line': b'  behavior and not rely on setting a policy to OLD.\n'}
+[1.484937] (sensor_interfaces) StderrLine: {'line': b'\n'}
+[1.485090] (sensor_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[1.485247] (sensor_interfaces) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro\xe6\xbf\x80\xe5\x85\x89\xe9\x9b\xb7\xe8\xbe\xbe/ROS2-\xe6\xba\x90\xe7\xa0\x81/\xe6\xba\x90\xe7\xa0\x81/YDLidar-SDK-master/CMakeLists.txt:47 (cmake_policy):\n'}
+[1.485407] (sensor_interfaces) StderrLine: {'line': b'  The OLD behavior for policy CMP0037 will be removed from a future version\n'}
+[1.485562] (sensor_interfaces) StderrLine: {'line': b'  of CMake.\n'}
+[1.485713] (sensor_interfaces) StderrLine: {'line': b'\n'}
+[1.485867] (sensor_interfaces) StderrLine: {'line': b'  The cmake-policies(7) manual explains that the OLD behaviors of all\n'}
+[1.486052] (sensor_interfaces) StderrLine: {'line': b'  policies are deprecated and that a policy should be set to OLD only under\n'}
+[1.486241] (sensor_interfaces) StderrLine: {'line': b'  specific short-term circumstances.  Projects should be ported to the NEW\n'}
+[1.486412] (sensor_interfaces) StderrLine: {'line': b'  behavior and not rely on setting a policy to OLD.\n'}
+[1.486604] (sensor_interfaces) StderrLine: {'line': b'\n'}
+[1.486770] (sensor_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[1.486929] (sensor_interfaces) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro\xe6\xbf\x80\xe5\x85\x89\xe9\x9b\xb7\xe8\xbe\xbe/ROS2-\xe6\xba\x90\xe7\xa0\x81/\xe6\xba\x90\xe7\xa0\x81/YDLidar-SDK-master/CMakeLists.txt:50 (cmake_policy):\n'}
+[1.487089] (sensor_interfaces) StderrLine: {'line': b'  The OLD behavior for policy CMP0043 will be removed from a future version\n'}
+[1.487247] (sensor_interfaces) StderrLine: {'line': b'  of CMake.\n'}
+[1.487404] (sensor_interfaces) StderrLine: {'line': b'\n'}
+[1.487557] (sensor_interfaces) StderrLine: {'line': b'  The cmake-policies(7) manual explains that the OLD behaviors of all\n'}
+[1.487710] (sensor_interfaces) StderrLine: {'line': b'  policies are deprecated and that a policy should be set to OLD only under\n'}
+[1.487864] (sensor_interfaces) StderrLine: {'line': b'  specific short-term circumstances.  Projects should be ported to the NEW\n'}
+[1.488038] (sensor_interfaces) StderrLine: {'line': b'  behavior and not rely on setting a policy to OLD.\n'}
+[1.488222] (sensor_interfaces) StderrLine: {'line': b'\n'}
+[1.488390] (sensor_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[1.492370] (sensor_interfaces) StdoutLine: {'line': b'-- Could NOT find SWIG (missing: SWIG_EXECUTABLE SWIG_DIR) \n'}
+[1.505989] (-) TimerEvent: {}
+[1.550646] (sensor_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python (found version "3.10.12") \n'}
+[1.575339] (sensor_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found version "3.10.12") \n'}
+[1.602482] (sensor_interfaces) StdoutLine: {'line': b'-- Found GTest: /usr/lib/aarch64-linux-gnu/cmake/GTest/GTestConfig.cmake (found version "1.11.0")  \n'}
+[1.606325] (-) TimerEvent: {}
+[1.609821] (sensor_interfaces) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro\xe6\xbf\x80\xe5\x85\x89\xe9\x9b\xb7\xe8\xbe\xbe/ROS2-\xe6\xba\x90\xe7\xa0\x81/\xe6\xba\x90\xe7\xa0\x81/YDLidar-SDK-master/core/CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[1.611006] (sensor_interfaces) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[1.611599] (sensor_interfaces) StderrLine: {'line': b'  CMake.\n'}
+[1.611959] (sensor_interfaces) StderrLine: {'line': b'\n'}
+[1.612246] (sensor_interfaces) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[1.612519] (sensor_interfaces) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[1.612845] (sensor_interfaces) StderrLine: {'line': b'\n'}
+[1.613029] (sensor_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[1.640987] (sensor_interfaces) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro\xe6\xbf\x80\xe5\x85\x89\xe9\x9b\xb7\xe8\xbe\xbe/ROS2-\xe6\xba\x90\xe7\xa0\x81/\xe6\xba\x90\xe7\xa0\x81/YDLidar-SDK-master/samples/CMakeLists.txt:2 (cmake_minimum_required):\n'}
+[1.641823] (sensor_interfaces) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[1.642085] (sensor_interfaces) StderrLine: {'line': b'  CMake.\n'}
+[1.642344] (sensor_interfaces) StderrLine: {'line': b'\n'}
+[1.642538] (sensor_interfaces) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[1.642719] (sensor_interfaces) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[1.642915] (sensor_interfaces) StderrLine: {'line': b'\n'}
+[1.643084] (sensor_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[1.646829] (sensor_interfaces) StdoutLine: {'line': b'-- build test is ON.....\n'}
+[1.650198] (sensor_interfaces) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro\xe6\xbf\x80\xe5\x85\x89\xe9\x9b\xb7\xe8\xbe\xbe/ROS2-\xe6\xba\x90\xe7\xa0\x81/\xe6\xba\x90\xe7\xa0\x81/YDLidar-SDK-master/cmake/install_package.cmake:101 (cmake_policy):\n'}
+[1.650783] (sensor_interfaces) StderrLine: {'line': b'  The OLD behavior for policy CMP0026 will be removed from a future version\n'}
+[1.651044] (sensor_interfaces) StderrLine: {'line': b'  of CMake.\n'}
+[1.651253] (sensor_interfaces) StderrLine: {'line': b'\n'}
+[1.651433] (sensor_interfaces) StderrLine: {'line': b'  The cmake-policies(7) manual explains that the OLD behaviors of all\n'}
+[1.651615] (sensor_interfaces) StderrLine: {'line': b'  policies are deprecated and that a policy should be set to OLD only under\n'}
+[1.651785] (sensor_interfaces) StderrLine: {'line': b'  specific short-term circumstances.  Projects should be ported to the NEW\n'}
+[1.651954] (sensor_interfaces) StderrLine: {'line': b'  behavior and not rely on setting a policy to OLD.\n'}
+[1.652121] (sensor_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.652285] (sensor_interfaces) StderrLine: {'line': b'  /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro\xe6\xbf\x80\xe5\x85\x89\xe9\x9b\xb7\xe8\xbe\xbe/ROS2-\xe6\xba\x90\xe7\xa0\x81/\xe6\xba\x90\xe7\xa0\x81/YDLidar-SDK-master/CMakeLists.txt:161 (install_package)\n'}
+[1.652458] (sensor_interfaces) StderrLine: {'line': b'\n'}
+[1.652619] (sensor_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[1.666224] (sensor_interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro\xe6\xbf\x80\xe5\x85\x89\xe9\x9b\xb7\xe8\xbe\xbe/ROS2-\xe6\xba\x90\xe7\xa0\x81/\xe6\xba\x90\xe7\xa0\x81/YDLidar-SDK-master/cmake/install_package.cmake:191 (install):\n'}
+[1.666943] (sensor_interfaces) StderrLine: {'line': b'  Policy CMP0062 is not set: Disallow install() of export() result.  Run\n'}
+[1.667157] (sensor_interfaces) StderrLine: {'line': b'  "cmake --help-policy CMP0062" for policy details.  Use the cmake_policy\n'}
+[1.667336] (sensor_interfaces) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[1.667506] (sensor_interfaces) StderrLine: {'line': b'\n'}
+[1.667667] (sensor_interfaces) StderrLine: {'line': b'  The file\n'}
+[1.667824] (sensor_interfaces) StderrLine: {'line': b'\n'}
+[1.667976] (sensor_interfaces) StderrLine: {'line': b'    /home/chuil/Desktop/zhongxi/build/sensor_interfaces/ydlidar_sdk/ydlidar_sdkTargets.cmake\n'}
+[1.668267] (sensor_interfaces) StderrLine: {'line': b'\n'}
+[1.668426] (sensor_interfaces) StderrLine: {'line': b'  was generated by the export() command.  It should not be installed with the\n'}
+[1.668626] (sensor_interfaces) StderrLine: {'line': b'  install() command.  Use the install(EXPORT) mechanism instead.  See the\n'}
+[1.668789] (sensor_interfaces) StderrLine: {'line': b'  cmake-packages(7) manual for more.\n'}
+[1.668955] (sensor_interfaces) StderrLine: {'line': b'\n'}
+[1.669107] (sensor_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.669256] (sensor_interfaces) StderrLine: {'line': b'  /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro\xe6\xbf\x80\xe5\x85\x89\xe9\x9b\xb7\xe8\xbe\xbe/ROS2-\xe6\xba\x90\xe7\xa0\x81/\xe6\xba\x90\xe7\xa0\x81/YDLidar-SDK-master/CMakeLists.txt:161 (install_package)\n'}
+[1.669416] (sensor_interfaces) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.669570] (sensor_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[1.669724] (sensor_interfaces) StderrLine: {'line': b'\x1b[31mCMake Error at /home/chuil/Desktop/ori_resource/EAI X3&X3 Pro\xe6\xbf\x80\xe5\x85\x89\xe9\x9b\xb7\xe8\xbe\xbe/ROS2-\xe6\xba\x90\xe7\xa0\x81/\xe6\xba\x90\xe7\xa0\x81/YDLidar-SDK-master/CMakeLists.txt:186 (add_custom_target):\n'}
+[1.669911] (sensor_interfaces) StderrLine: {'line': b'  add_custom_target cannot create target "uninstall" because another target\n'}
+[1.670064] (sensor_interfaces) StderrLine: {'line': b'  with the same name already exists.  The existing target is a custom target\n'}
+[1.670255] (sensor_interfaces) StderrLine: {'line': b'  created in source directory\n'}
+[1.670416] (sensor_interfaces) StderrLine: {'line': b'  "/home/chuil/Desktop/zhongxi/src/sensor_interfaces".  See documentation for\n'}
+[1.670571] (sensor_interfaces) StderrLine: {'line': b'  policy CMP0002 for more details.\n'}
+[1.670726] (sensor_interfaces) StderrLine: {'line': b'\n'}
+[1.670883] (sensor_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[1.706651] (-) TimerEvent: {}
+[1.710386] (sensor_interfaces) StdoutLine: {'line': b'-- \n'}
+[1.711408] (sensor_interfaces) StdoutLine: {'line': b'-- +===========================================================================+\n'}
+[1.711683] (sensor_interfaces) StdoutLine: {'line': b'-- |         Resulting configuration for                             |\n'}
+[1.711885] (sensor_interfaces) StdoutLine: {'line': b'-- +===========================================================================+\n'}
+[1.712072] (sensor_interfaces) StdoutLine: {'line': b'--  _________________________ PLATFORM _____________________________\n'}
+[1.712285] (sensor_interfaces) StdoutLine: {'line': b'--  Host                        : Linux5.15.185-tegraaarch64\n'}
+[1.712471] (sensor_interfaces) StdoutLine: {'line': b'--  Is the system big endian?   :  No \n'}
+[1.712651] (sensor_interfaces) StdoutLine: {'line': b'--  Word size (32/64 bit)       : 64\n'}
+[1.716088] (sensor_interfaces) StdoutLine: {'line': b'--  CMake version               : 3.22.1\n'}
+[1.716372] (sensor_interfaces) StdoutLine: {'line': b'--  CMake generator             : Unix Makefiles\n'}
+[1.716566] (sensor_interfaces) StdoutLine: {'line': b'--  CMake build tool            : /usr/bin/gmake\n'}
+[1.716737] (sensor_interfaces) StdoutLine: {'line': b'--  Compiler                    : GNU\n'}
+[1.716900] (sensor_interfaces) StdoutLine: {'line': b'--  Configuration               : \n'}
+[1.717064] (sensor_interfaces) StdoutLine: {'line': b'-- \n'}
+[1.717228] (sensor_interfaces) StdoutLine: {'line': b'--  __________________________ OPTIONS _____________________________\n'}
+[1.717399] (sensor_interfaces) StdoutLine: {'line': b'--  Build YDLidar-SDK as a shared library?\xe3\x80\x80\xe3\x80\x80 :  No \n'}
+[1.717584] (sensor_interfaces) StdoutLine: {'line': b'--  Build Examples?\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80 : Yes \n'}
+[1.717759] (sensor_interfaces) StdoutLine: {'line': b'--  Build C Sharp API?\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80 :  No \n'}
+[1.717932] (sensor_interfaces) StdoutLine: {'line': b'--  Build TEST?  \t\t\t\xe3\x80\x80\xe3\x80\x80\xe3\x80\x80 : Yes \n'}
+[1.718098] (sensor_interfaces) StdoutLine: {'line': b'-- \n'}
+[1.718299] (sensor_interfaces) StdoutLine: {'line': b'--  _________________________ INSTALL _____________________\n'}
+[1.718476] (sensor_interfaces) StdoutLine: {'line': b'--  Install prefix                    : /home/chuil/Desktop/zhongxi/install/sensor_interfaces\n'}
+[1.718652] (sensor_interfaces) StdoutLine: {'line': b'-- \n'}
+[1.718821] (sensor_interfaces) StdoutLine: {'line': b'--  _______________________ WRAPPERS/BINDINGS ______________________\n'}
+[1.718984] (sensor_interfaces) StdoutLine: {'line': b'--  Python bindings (pyydlidar)   :  No \n'}
+[1.719144] (sensor_interfaces) StdoutLine: {'line': b'--   - dep: Swig found?       :  No [Version: ]\n'}
+[1.719306] (sensor_interfaces) StdoutLine: {'line': b'--   - dep: PythonLibs found?  : Yes [Version: 3.10.12]\n'}
+[1.719469] (sensor_interfaces) StdoutLine: {'line': b'-- \n'}
+[1.806868] (-) TimerEvent: {}
+[1.906604] (sensor_interfaces) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.907406] (-) TimerEvent: {}
+[1.907730] (sensor_interfaces) StdoutLine: {'line': b'See also "/home/chuil/Desktop/zhongxi/build/sensor_interfaces/CMakeFiles/CMakeOutput.log".\n'}
+[1.965973] (sensor_interfaces) StderrLine: {'line': b'gmake: *** [Makefile:308\xef\xbc\x9acmake_check_build_system] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[1.976393] (sensor_interfaces) CommandEnded: {'returncode': 2}
+[2.008613] (-) TimerEvent: {}
+[2.029417] (sensor_interfaces) JobEnded: {'identifier': 'sensor_interfaces', 'rc': 2}
+[2.034206] (-) EventReactorShutdown: {}

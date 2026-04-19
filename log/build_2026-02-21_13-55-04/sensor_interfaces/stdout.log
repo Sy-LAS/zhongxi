@@ -1,0 +1,9 @@
+[ 64%] Built target ydlidar_sdk
+[ 72%] Built target sensor_interfaces_base
+[35m[1mConsolidate compiler generated dependencies of target control_board_interface[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/lidar_driver.dir/src/lidar_driver.cpp.o[0m
+[ 84%] Built target camera_driver
+[ 92%] [32mBuilding CXX object CMakeFiles/control_board_interface.dir/src/stm32_comms_manager.cpp.o[0m
+[ 92%] [32mBuilding CXX object CMakeFiles/control_board_interface.dir/src/control_board_interface.cpp.o[0m
+[ 96%] [32m[1mLinking CXX executable control_board_interface[0m
+[ 96%] Built target control_board_interface

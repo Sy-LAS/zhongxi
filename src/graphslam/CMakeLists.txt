@@ -104,6 +104,7 @@ if(NOT DISABLE_GUI AND QGLViewer_LIBRARIES)
         slam2d_viewer.cpp
         slam2d_viewer.h
         slam2d_g2o.cpp
+<<<<<<< HEAD
         main_window.ui
         main_window.h
     )
@@ -120,6 +121,12 @@ if(NOT DISABLE_GUI AND QGLViewer_LIBRARIES)
         std_msgs
     )
 
+=======
+        base_main_window.ui
+        main_window.h
+    )
+
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
     target_link_libraries(graphslam_g2o
         ${G2O_LIBRARIES}
         ${QGLViewer_LIBRARIES}

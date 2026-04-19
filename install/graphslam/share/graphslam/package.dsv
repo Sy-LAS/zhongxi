@@ -1,0 +1,8 @@
+source;share/graphslam/hook/cmake_prefix_path.ps1
+source;share/graphslam/hook/cmake_prefix_path.dsv
+source;share/graphslam/hook/cmake_prefix_path.sh
+source;share/graphslam/local_setup.bash
+source;share/graphslam/local_setup.dsv
+source;share/graphslam/local_setup.ps1
+source;share/graphslam/local_setup.sh
+source;share/graphslam/local_setup.zsh

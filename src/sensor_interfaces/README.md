@@ -56,7 +56,11 @@
 - `serial_port`: 串口通信端口 (默认: '/dev/ttyUSB0')
 - `baud_rate`: 串口通信波特率 (默认: 115200)
 - `wheel_separation`: 轮子间距 (默认: 0.3)
+<<<<<<< HEAD
 - `wheel_radius`: 轮子半径 (默认: 0.03)
+=======
+- `wheel_radius`: 轮子半径 (默认: 0.05)
+>>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
 - `publish_rate`: 里程计发布频率 (默认: 50.0)
 
 ## 启动文件

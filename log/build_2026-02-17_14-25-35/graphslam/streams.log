@@ -1,0 +1,69 @@
+[0.024s] Invoking command in '/home/chuil/Desktop/zhongxi/build/graphslam': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/graphslam -- -j6 -l6
+[0.093s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.434s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.512s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.516s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.533s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.556s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.582s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.654s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.656s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.908s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.014s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.075s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.108s] -- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)
+[1.116s] -- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.331s] -- Found QGLViewer: /usr/include/QGLViewer
+[1.534s] -- Configuring done
+[1.673s] -- Generating done
+[1.690s] -- Build files have been written to: /home/chuil/Desktop/zhongxi/build/graphslam
+[1.802s] [ 12%] [34m[1mAutomatic MOC and UIC for target graphslam_g2o[0m
+[1.803s] [ 12%] [34m[1mAutomatic MOC and UIC for target graphslam_node[0m
+[1.853s] [ 12%] Built target graphslam_node_autogen
+[1.854s] [ 12%] Built target graphslam_g2o_autogen
+[1.882s] [35m[1mConsolidate compiler generated dependencies of target graphslam_g2o[0m
+[1.883s] [35m[1mConsolidate compiler generated dependencies of target graphslam_node[0m
+[1.945s] [ 43%] Built target graphslam_g2o
+[1.959s] [ 50%] [32mBuilding CXX object CMakeFiles/graphslam_node.dir/src/node/graphslam_node.cpp.o[0m
+[34.945s] [ 56%] [32m[1mLinking CXX executable graphslam_node[0m
+[37.129s] [100%] Built target graphslam_node
+[37.170s] Invoked command in '/home/chuil/Desktop/zhongxi/build/graphslam' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/graphslam -- -j6 -l6
+[37.200s] Invoking command in '/home/chuil/Desktop/zhongxi/build/graphslam': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chuil/Desktop/zhongxi/build/graphslam
+[37.224s] -- Install configuration: ""
+[37.225s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/lib/graphslam/graphslam_g2o
+[37.225s] -- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/lib/graphslam/graphslam_node
+[37.245s] -- Set runtime path of "/home/chuil/Desktop/zhongxi/install/graphslam/lib/graphslam/graphslam_node" to ""
+[37.245s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/lib/graphslam/graphslam_g2o
+[37.246s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam//launch
+[37.246s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam//launch/slam_with_robot.launch.py
+[37.247s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam//launch/slam_launch.py
+[37.247s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam//config
+[37.248s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam//config/camera.yalm
+[37.248s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam//config/parsms.yalm
+[37.248s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam
+[37.248s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d
+[37.248s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/utils
+[37.249s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/utils/camera_model.h
+[37.249s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/utils/transformations.h
+[37.249s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/utils/laser_scan.h
+[37.249s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/back_end.h
+[37.249s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/utils.h
+[37.250s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/map.h
+[37.250s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/front_end.h
+[37.250s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/include/graphslam/slam2d/types.h
+[37.250s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/share/ament_index/resource_index/package_run_dependencies/graphslam
+[37.250s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/share/ament_index/resource_index/parent_prefix_path/graphslam
+[37.252s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/environment/ament_prefix_path.sh
+[37.252s] -- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/environment/ament_prefix_path.dsv
+[37.253s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/environment/path.sh
+[37.253s] -- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/environment/path.dsv
+[37.253s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/local_setup.bash
+[37.254s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/local_setup.sh
+[37.254s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/local_setup.zsh
+[37.255s] -- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/local_setup.dsv
+[37.255s] -- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/package.dsv
+[37.256s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/share/ament_index/resource_index/packages/graphslam
+[37.259s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/cmake/graphslamConfig.cmake
+[37.259s] -- Up-to-date: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/cmake/graphslamConfig-version.cmake
+[37.260s] -- Installing: /home/chuil/Desktop/zhongxi/install/graphslam/share/graphslam/package.xml
+[37.261s] Invoked command in '/home/chuil/Desktop/zhongxi/build/graphslam' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/chuil/Desktop/zhongxi/build/graphslam

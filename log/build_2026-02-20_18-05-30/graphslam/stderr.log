@@ -1,0 +1,32 @@
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:[m[K In constructor ‘[01m[Kslam2d::G2OBackend::G2OBackend()[m[K’:
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:23:70:[m[K [01;31m[Kerror: [m[K‘[01m[KBlockSolver_2_2[m[K’ is not a member of ‘[01m[Kg2o[m[K’; did you mean ‘[01m[KBlockSolver_3_2[m[K’?
+   23 |     auto linearSolver = std::make_unique<g2o::LinearSolverEigen<g2o::[01;31m[KBlockSolver_2_2[m[K::PoseMatrixType>>();
+      |                                                                      [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                                                      [32m[KBlockSolver_3_2[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:23:101:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   23 |     auto linearSolver = std::make_unique<g2o::LinearSolverEigen<g2o::BlockSolver_2_2::PoseMatrixType[01;31m[K>>[m[K();
+      |                                                                                                     [01;31m[K^~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:23:30:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   23 |     auto linearSolver = std::[01;31m[Kmake_unique<g2o::LinearSolverEigen<g2o::BlockSolver_2_2::PoseMatrixType>>()[m[K;
+      |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:23:30:[m[K [01;31m[Kerror: [m[Kunable to deduce ‘[01m[Kauto[m[K’ from ‘[01m[Kmake_unique<<expression error> >[m[K’
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:23:30:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[Kauto[m[K’
+[01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:24:46:[m[K [01;31m[Kerror: [m[K‘[01m[KBlockSolver_2_2[m[K’ is not a member of ‘[01m[Kg2o[m[K’; did you mean ‘[01m[KBlockSolver_3_2[m[K’?
+   24 |     auto blockSolver = std::make_unique<g2o::[01;31m[KBlockSolver_2_2[m[K>(std::move(linearSolver));
+      |                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |                                              [32m[KBlockSolver_3_2[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Geometry:41[m[K,
+                 from [01m[K/usr/local/include/g2o/core/eigen_types.h:31[m[K,
+                 from [01m[K/usr/local/include/g2o/core/jacobian_workspace.h:34[m[K,
+                 from [01m[K/usr/local/include/g2o/core/optimizable_graph.h:39[m[K,
+                 from [01m[K/usr/local/include/g2o/core/sparse_optimizer.h:33[m[K,
+                 from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/include/slam2d/back_end.h:8[m[K,
+                 from [01m[K/home/chuil/Desktop/zhongxi/src/graphslam/src/slam2d/back_end.cpp:1[m[K:
+/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h: In instantiation of ‘[01m[KEigen::Rotation2D<Scalar> Eigen::Rotation2D<Scalar>::inverse() const [with _Scalar = double][m[K’:
+[01m[K/usr/local/include/g2o/types/slam2d/se2.h:85:24:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:98:39:[m[K [01;36m[Knote: [m[Kparameter passing for argument of type ‘[01m[KEigen::Rotation2D<double>[m[K’ when C++17 is enabled changed to match C++14 ]8;;https://gcc.gnu.org/gcc-10/changes.html#empty_basein GCC 10.1]8;;
+   98 |   EIGEN_DEVICE_FUNC inline Rotation2D [01;36m[Kinverse[m[K() const { return Rotation2D(-m_angle); }
+      |                                       [01;36m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:104：CMakeFiles/graphslam_node.dir/src/slam2d/back_end.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:170：CMakeFiles/graphslam_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

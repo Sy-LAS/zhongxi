@@ -1,0 +1,15 @@
+[0.025s] Invoking command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/sensor_interfaces -- -j6 -l6
+[0.184s] [ 20%] Built target sensor_interfaces_base
+[0.185s] [ 75%] Built target ydlidar_sdk
+[0.220s] [35m[1mConsolidate compiler generated dependencies of target lidar_driver[0m
+[0.268s] [ 83%] Built target camera_driver
+[0.273s] [ 95%] Built target control_board_interface
+[0.274s] [ 95%] [32mBuilding CXX object CMakeFiles/lidar_driver.dir/src/lidar_driver.cpp.o[0m
+[0.890s] [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/lidar_driver.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Ksdk/src/CYdLidar.h: 没有那个文件或目录
+[0.891s]     3 | #include [01;31m[K"sdk/src/CYdLidar.h"[m[K
+[0.891s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[0.891s] compilation terminated.
+[0.903s] gmake[2]: *** [CMakeFiles/lidar_driver.dir/build.make:76：CMakeFiles/lidar_driver.dir/src/lidar_driver.cpp.o] 错误 1
+[0.904s] gmake[1]: *** [CMakeFiles/Makefile2:224：CMakeFiles/lidar_driver.dir/all] 错误 2
+[0.904s] gmake: *** [Makefile:146：all] 错误 2
+[0.914s] Invoked command in '/home/chuil/Desktop/zhongxi/build/sensor_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chuil/Desktop/zhongxi/install/demo_py:/opt/ros/humble /usr/bin/cmake --build /home/chuil/Desktop/zhongxi/build/sensor_interfaces -- -j6 -l6

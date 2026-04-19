@@ -1,0 +1,87 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+-- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found tf2: 0.25.18 (/opt/ros/humble/share/tf2/cmake)
+-- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/chuil/Desktop/zhongxi/build/sensor_interfaces
+[35m[1mConsolidate compiler generated dependencies of target camera_driver[0m
+[ 10%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/core/serial/serial.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ETLidarDriver.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ydlidar_driver.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/CYdLidar.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ydlidar_sdk.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o[0m
+[01m[K/home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ETLidarDriver.cpp:31:10:[m[K [01;31m[Kfatal error: [m[Kcore/network/PassiveSocket.h: 没有那个文件或目录
+   31 | #include [01;31m[K<core/network/PassiveSocket.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/CYdLidar.cpp:24[m[K:
+[01m[K/home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/CYdLidar.h:46:10:[m[K [01;31m[Kfatal error: [m[Kcore/base/utils.h: 没有那个文件或目录
+   46 | #include [01;31m[K<core/base/utils.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[01m[K/home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ydlidar_driver.cpp:24:10:[m[K [01;31m[Kfatal error: [m[Kcore/serial/serial.h: 没有那个文件或目录
+   24 | #include [01;31m[K<core/serial/serial.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/ydlidar_sdk_lib.dir/build.make:104：CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ETLidarDriver.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[2]: *** [CMakeFiles/ydlidar_sdk_lib.dir/build.make:118：CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ydlidar_driver.cpp.o] 错误 1
+gmake[2]: *** [CMakeFiles/ydlidar_sdk_lib.dir/build.make:90：CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/CYdLidar.cpp.o] 错误 1
+In file included from [01m[K/home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ydlidar_sdk.cpp:26[m[K:
+[01m[K/home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ydlidar_sdk.h:47:10:[m[K [01;31m[Kfatal error: [m[Kcore/common/ydlidar_def.h: 没有那个文件或目录
+   47 | #include [01;31m[K<core/common/ydlidar_def.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/ydlidar_sdk_lib.dir/build.make:132：CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/src/ydlidar_sdk.cpp.o] 错误 1
+In file included from [01m[K/home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/core/serial/serial.cpp:11[m[K:
+[01m[K/home/chuil/Desktop/ori_resource/EAI X3&X3 Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/core/serial/serial.h:9:10:[m[K [01;31m[Kfatal error: [m[Kcore/base/v8stdint.h: 没有那个文件或目录
+    9 | #include [01;31m[K<core/base/v8stdint.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/ydlidar_sdk_lib.dir/build.make:76：CMakeFiles/ydlidar_sdk_lib.dir/home/chuil/Desktop/ori_resource/EAI_X3&X3_Pro激光雷达/ROS2-源码/源码/YDLidar-SDK-master/core/serial/serial.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:141：CMakeFiles/ydlidar_sdk_lib.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+[01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/camera_driver.cpp:[m[K In constructor ‘[01m[KCameraDriver::CameraDriver()[m[K’:
+[01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/camera_driver.cpp:27:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcamera_id[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   27 |         int [01;35m[Kcamera_id[m[K = this->get_parameter("camera_id").as_int();
+      |             [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/camera_driver.cpp:[m[K In member function ‘[01m[Kvoid CameraDriver::publish_image()[m[K’:
+[01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/camera_driver.cpp:153:35:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kimage_transport::CameraPublisher::publish(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >&, sensor_msgs::msg::CameraInfo&)[m[K’
+  153 |                 [01;31m[Kimage_pub_.publish(img_msg, camera_info_msg_)[m[K;
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/image_transport/image_transport/image_transport.hpp:39[m[K,
+                 from [01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/camera_driver.cpp:7[m[K:
+[01m[K/opt/ros/humble/include/image_transport/image_transport/camera_publisher.hpp:103:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid image_transport::CameraPublisher::publish(const Image&, const CameraInfo&) const[m[K’
+  103 |   void [01;36m[Kpublish[m[K(
+      |        [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/camera_publisher.hpp:104:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ to ‘[01m[Kconst Image&[m[K’ {aka ‘[01m[Kconst sensor_msgs::msg::Image_<std::allocator<void> >&[m[K’}
+  104 |     [01;36m[Kconst sensor_msgs::msg::Image & image[m[K,
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/camera_publisher.hpp:111:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid image_transport::CameraPublisher::publish(const ConstSharedPtr&, const ConstSharedPtr&) const[m[K’
+  111 |   void [01;36m[Kpublish[m[K(
+      |        [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/camera_publisher.hpp:113:58:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Ksensor_msgs::msg::CameraInfo[m[K’ {aka ‘[01m[Ksensor_msgs::msg::CameraInfo_<std::allocator<void> >[m[K’} to ‘[01m[Kconst ConstSharedPtr&[m[K’ {aka ‘[01m[Kconst std::shared_ptr<const sensor_msgs::msg::CameraInfo_<std::allocator<void> > >&[m[K’}
+  113 |     [01;36m[Kconst sensor_msgs::msg::CameraInfo::ConstSharedPtr & info[m[K) const;
+      |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/camera_publisher.hpp:123:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid image_transport::CameraPublisher::publish(sensor_msgs::msg::Image&, sensor_msgs::msg::CameraInfo&, rclcpp::Time) const[m[K’
+  123 |   void [01;36m[Kpublish[m[K(
+      |        [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/humble/include/image_transport/image_transport/camera_publisher.hpp:123:8:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+gmake[2]: *** [CMakeFiles/camera_driver.dir/build.make:76：CMakeFiles/camera_driver.dir/src/camera_driver.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:167：CMakeFiles/camera_driver.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

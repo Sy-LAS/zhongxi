@@ -1,0 +1,3 @@
+gmake[2]: *** [CMakeFiles/graphslam_node.dir/build.make:90: CMakeFiles/graphslam_node.dir/src/node/graphslam_node.cpp.o] 中断
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/graphslam_node.dir/all] 中断
+gmake: *** [Makefile:146: all] 中断

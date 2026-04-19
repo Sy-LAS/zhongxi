@@ -1,0 +1,9 @@
+[  4%] [32mBuilding CXX object CMakeFiles/sensor_interfaces_base.dir/src/sensor_interfaces.cpp.o[0m
+[ 70%] Built target ydlidar_sdk
+[01m[K/home/chuil/Desktop/zhongxi/src/sensor_interfaces/src/sensor_interfaces.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Ksensor_interfaces/sensor_interfaces.h: 没有那个文件或目录
+    1 | #include [01;31m[K"sensor_interfaces/sensor_interfaces.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/sensor_interfaces_base.dir/build.make:76：CMakeFiles/sensor_interfaces_base.dir/src/sensor_interfaces.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:171：CMakeFiles/sensor_interfaces_base.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2
