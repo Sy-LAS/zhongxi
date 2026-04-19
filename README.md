@@ -2,12 +2,9 @@
 
 该项目是名为“踵息”的Graph SLAM（Simultaneous Localization and Mapping，即时定位与地图构建）探索系统。本项目旨在展示全栈的自主导航、传感器融合和路径规划的能力。
 
-<<<<<<< HEAD
-软件、硬件、设计纯单人实现项目
-=======
 软件、硬件、设计纯单人实现
->>>>>>> dd8d0fe6d3f1432a37d2566daf8d0127a1310c90
-开发日志见yuanmo
+
+开发日志见https://github.com/Sy-LAS/yuanmo
 
 ## 硬件配置
 
